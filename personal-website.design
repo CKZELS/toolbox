@@ -1,0 +1,138 @@
+{
+  "data": [
+    {
+      "id": "page-index",
+      "title": "首页",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1750915200000,
+      "canvasData": {
+        "x": 0,
+        "y": 0,
+        "group": 0
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/index.html",
+        "interactions": [
+          {
+            "domId": "link-tool-detail",
+            "targetPageId": "page-tool-detail",
+            "transitionLabel": "查看工具详情"
+          },
+          {
+            "domId": "shortcut-guide",
+            "targetPageId": "page-writing-guide",
+            "hideEdge": true,
+            "transitionLabel": "查看写作指南"
+          },
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "hideEdge": true,
+            "transitionLabel": "首页"
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-tool-detail",
+      "title": "工具详情页",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1750915200000,
+      "canvasData": {
+        "x": 620,
+        "y": 0,
+        "group": 0
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/tool-detail.html",
+        "interactions": [
+          {
+            "domId": "link-markdown-demo",
+            "targetPageId": "page-markdown-demo",
+            "transitionLabel": "查看渲染示例"
+          },
+          {
+            "domId": "back-home",
+            "targetPageId": "page-index",
+            "hideEdge": true,
+            "transitionLabel": "返回首页"
+          },
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "hideEdge": true,
+            "transitionLabel": "首页"
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-writing-guide",
+      "title": "写作指南",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1750915200000,
+      "canvasData": {
+        "x": 0,
+        "y": 596,
+        "group": 0
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/writing-guide.html",
+        "interactions": [
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "hideEdge": true,
+            "transitionLabel": "首页"
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-markdown-demo",
+      "title": "内容渲染示例",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1750915200000,
+      "canvasData": {
+        "x": 1240,
+        "y": 0,
+        "group": 0
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/markdown-demo.html",
+        "interactions": [
+          {
+            "domId": "back-detail",
+            "targetPageId": "page-tool-detail",
+            "hideEdge": true,
+            "transitionLabel": "返回工具详情"
+          },
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-index",
+            "hideEdge": true,
+            "transitionLabel": "首页"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "autoLayout": true,
+    "deviceType": "desktop",
+    "projectName": "个人网站",
+    "designLibrary": {
+      "name": "TRAE Work",
+      "id": "dl_builtin_trae_work",
+      "version": null,
+      "scope": "built-in-global",
+      "path": "/Users/zelcao/.trae-cn/design_libraries/dl_builtin_trae_work",
+      "versionSource": "selected-context"
+    },
+    "showEdge": true
+  }
+}

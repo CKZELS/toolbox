@@ -1,0 +1,346 @@
+{
+  "project": {
+    "name": "个人网站",
+    "path": "/Users/zelcao/Library/Application Support/TRAE SOLO CN/ModularData/ai-agent/work-mode-projects/6a3e70f3010b72aba992e1b8/personal-website",
+    "operation": "create",
+    "deviceType": "desktop",
+    "language": "zh-CN",
+    "dashboardMode": false,
+    "replicationMode": null,
+    "sourceUrl": null,
+    "visualSpecExcerpt": null,
+    "styleDefinitionBrief": "Light-mode personal tool showcase site, restrained workspace aesthetic, TRAE Work tokens, type-first hierarchy, card-based tool tiles, clean Markdown rendering, developer-friendly",
+    "designRead": "personal tool showcase / tech-savvy individual / calm workspace utility / medium density / avoid decorative illustration",
+    "designDials": {
+      "layoutVariance": 2,
+      "motionIntensity": 1,
+      "visualDensity": 3
+    },
+    "sharedProjectShellContract": {
+      "navigationShell": "top nav bar with site logo/name on left, nav links center, GitHub link right; active nav uses brand underline",
+      "primaryColorSystem": "TRAE Work brand #4b3fe3 for primary actions and active states only",
+      "typographySystem": "body-base 14px/20px for body, heading levels for hierarchy, code-editor for code",
+      "radiusScale": "radius-8 default, radius-12 for cards/dialogs",
+      "surfaceDepthModel": "bg-base-default page, bg-base-secondary cards, border-neutral-l1 separators",
+      "ctaStyle": "ds-btn brand variant for primary, neutral for secondary",
+      "alignmentRules": "max-width 1200px centered, spacer-32 page padding desktop, spacer-16 mobile"
+    },
+    "generationTree": {
+      "root": {
+        "nodeId": "gen-project-shell",
+        "kind": "project-shell",
+        "pageIds": ["page-index", "page-tool-detail", "page-writing-guide", "page-markdown-demo"],
+        "output": "partials/project-shell.html",
+        "sharedRegions": ["header", "footer"],
+        "privateRegions": [],
+        "mutableSlots": ["activeNavItem", "pageTitle"],
+        "status": "planned",
+        "children": [
+          {
+            "nodeId": "gen-page-index",
+            "kind": "page-leaf",
+            "pageIds": ["page-index"],
+            "output": "pages/index.html",
+            "sharedRegions": [],
+            "privateRegions": ["hero section", "category grid", "tool cards grid"],
+            "mutableSlots": ["activeNavItem"],
+            "status": "planned",
+            "children": []
+          },
+          {
+            "nodeId": "gen-page-tool-detail",
+            "kind": "page-leaf",
+            "pageIds": ["page-tool-detail"],
+            "output": "pages/tool-detail.html",
+            "sharedRegions": [],
+            "privateRegions": ["tool detail body", "markdown rendered content"],
+            "mutableSlots": ["activeNavItem"],
+            "status": "planned",
+            "children": []
+          },
+          {
+            "nodeId": "gen-page-writing-guide",
+            "kind": "page-leaf",
+            "pageIds": ["page-writing-guide"],
+            "output": "pages/writing-guide.html",
+            "sharedRegions": [],
+            "privateRegions": ["guide content sections"],
+            "mutableSlots": ["activeNavItem"],
+            "status": "planned",
+            "children": []
+          },
+          {
+            "nodeId": "gen-page-markdown-demo",
+            "kind": "page-leaf",
+            "pageIds": ["page-markdown-demo"],
+            "output": "pages/markdown-demo.html",
+            "sharedRegions": [],
+            "privateRegions": ["rendered markdown body"],
+            "mutableSlots": ["activeNavItem"],
+            "status": "planned",
+            "children": []
+          }
+        ]
+      }
+    }
+  },
+  "designSource": {
+    "operatingMode": "library-bound",
+    "libraryIdentity": {
+      "name": "TRAE Work",
+      "id": "dl_builtin_trae_work",
+      "version": null,
+      "scope": "built-in-global",
+      "path": "/Users/zelcao/.trae-cn/design_libraries/dl_builtin_trae_work",
+      "versionSource": "selected-context"
+    },
+    "libraryPath": "/Users/zelcao/.trae-cn/design_libraries/dl_builtin_trae_work",
+    "cssFilePath": "/Users/zelcao/.trae-cn/design_libraries/dl_builtin_trae_work/colors_and_type.css",
+    "brandPrefix": "",
+    "themeMode": "light",
+    "designDecisionSummary": "TRAE Work Light-mode: white page bg, #f5f5f5 cards, brand #4b3fe3 accent, 14px body, radius-8/12, restrained motion, token-first",
+    "componentContractKind": "evidence",
+    "forbiddenInventedComponents": ["layout", "space"],
+    "allowedComponents": ["alert", "avatar", "breadcrumb", "buttons", "cards", "dialog", "forms", "menu", "pagination", "progress", "skeleton", "table", "tabs", "tag"],
+    "styleConstraints": {
+      "radiusMax": 12,
+      "spacingBase": 4,
+      "fontSizeBody": 14,
+      "fontSizeMin": 10,
+      "controlHeightDefault": 32,
+      "controlHeightLarge": 38
+    },
+    "productContext": {
+      "kitType": "enterprise-ai-design-system",
+      "productType": "personal tool showcase website"
+    },
+    "actualTokenNameReference": [
+      { "semanticPurpose": "Page background", "tokenName": "--bg-base-default" },
+      { "semanticPurpose": "Card/secondary surface", "tokenName": "--bg-base-secondary" },
+      { "semanticPurpose": "Brand primary", "tokenName": "--bg-brand" },
+      { "semanticPurpose": "Brand hover", "tokenName": "--bg-brand-hover" },
+      { "semanticPurpose": "Body text", "tokenName": "--text-default" },
+      { "semanticPurpose": "Secondary text", "tokenName": "--text-secondary" },
+      { "semanticPurpose": "Tertiary text", "tokenName": "--text-tertiary" },
+      { "semanticPurpose": "Default icon", "tokenName": "--icon-default" },
+      { "semanticPurpose": "Border neutral", "tokenName": "--border-neutral-l1" },
+      { "semanticPurpose": "Overlay level 1", "tokenName": "--bg-overlay-l1" },
+      { "semanticPurpose": "Overlay level 2", "tokenName": "--bg-overlay-l2" },
+      { "semanticPurpose": "Radius 8px", "tokenName": "--radius-8" },
+      { "semanticPurpose": "Radius 12px", "tokenName": "--radius-12" },
+      { "semanticPurpose": "Body font", "tokenName": "--body-base-font-size" },
+      { "semanticPurpose": "Heading 1", "tokenName": "--heading-h1-font-size" },
+      { "semanticPurpose": "Heading 2", "tokenName": "--heading-h2-font-size" },
+      { "semanticPurpose": "Heading 3", "tokenName": "--heading-h3-font-size" },
+      { "semanticPurpose": "Spacer 8", "tokenName": "--spacer-8" },
+      { "semanticPurpose": "Spacer 16", "tokenName": "--spacer-16" },
+      { "semanticPurpose": "Spacer 24", "tokenName": "--spacer-24" },
+      { "semanticPurpose": "Spacer 32", "tokenName": "--spacer-32" },
+      { "semanticPurpose": "Spacer 48", "tokenName": "--spacer-48" }
+    ],
+    "iconAssets": {
+      "source": "assets/icons",
+      "projectIconDir": "assets/icons/dl_builtin_trae_work",
+      "libraryKey": "dl_builtin_trae_work",
+      "renderMethod": "css-mask",
+      "pathTemplate": "../assets/icons/dl_builtin_trae_work/{name}.svg",
+      "availableNames": ["home", "search", "code", "browser", "link", "copy", "chevron-down", "chevron-right", "arrow-right", "github", "star", "eye", "document", "folder", "edit", "check", "close", "info", "error", "warning", "plus", "minus", "refresh", "cloud", "download", "upload"],
+      "totalCount": 671,
+      "coloringRule": "currentColor by default; override with Library token when needed"
+    }
+  },
+  "pages": [
+    {
+      "nodeId": "page-index",
+      "slug": "index",
+      "title": "首页",
+      "htmlSrc": "pages/index.html",
+      "pageIndex": 1,
+      "stateGroupId": null,
+      "stateRole": null,
+      "baseStatePageId": null,
+      "sharedShellContract": [],
+      "mutableRegions": [],
+      "derivedFromHtmlSrc": null,
+      "derivationType": "original",
+      "sourcePageId": null,
+      "sourceHtmlSrc": null,
+      "pageType": "information-dense",
+      "businessScenario": "homepage showcasing categorized tool cards in grid layout",
+      "visualNorthStar": "clean workspace-style dashboard of tool cards organized by category, type-first hierarchy with neutral surfaces",
+      "compositionPattern": "Section-stack: hero intro + category sections with card grids",
+      "continuityAnchors": ["header treatment", "card surface style", "CTA style", "surface depth"],
+      "libraryRestraintMode": false,
+      "uiKitPath": "/Users/zelcao/.trae-cn/design_libraries/dl_builtin_trae_work/ui_kits/landing/index.html",
+      "componentPlan": [
+        { "slug": "cards", "contractKind": "evidence", "contractFile": "components/cards.json", "previewFile": "preview/component-cards.html" },
+        { "slug": "buttons", "contractKind": "evidence", "contractFile": "components/buttons.json", "previewFile": "preview/component-buttons.html" },
+        { "slug": "tag", "contractKind": "evidence", "contractFile": "components/tag.json", "previewFile": "preview/component-tag.html" }
+      ],
+      "imagePlan": [],
+      "chartsRequired": false,
+      "miniProgramStyle": false,
+      "qualityRisks": []
+    },
+    {
+      "nodeId": "page-tool-detail",
+      "slug": "tool-detail",
+      "title": "工具详情页",
+      "htmlSrc": "pages/tool-detail.html",
+      "pageIndex": 2,
+      "stateGroupId": null,
+      "stateRole": null,
+      "baseStatePageId": null,
+      "sharedShellContract": [],
+      "mutableRegions": [],
+      "derivedFromHtmlSrc": null,
+      "derivationType": "original",
+      "sourcePageId": null,
+      "sourceHtmlSrc": null,
+      "pageType": "information-dense",
+      "businessScenario": "tool detail page with markdown-rendered content showing tool introduction and usage info",
+      "visualNorthStar": "document-style reading page with breadcrumb, clean markdown typography, subtle card surface for metadata sidebar",
+      "compositionPattern": "Document: breadcrumb + title block + two-column (sidebar metadata + rendered markdown body)",
+      "continuityAnchors": ["header treatment", "card surface style", "typography scale", "surface depth"],
+      "libraryRestraintMode": false,
+      "uiKitPath": "/Users/zelcao/.trae-cn/design_libraries/dl_builtin_trae_work/ui_kits/Document1/index.html",
+      "componentPlan": [
+        { "slug": "cards", "contractKind": "evidence", "contractFile": "components/cards.json", "previewFile": "preview/component-cards.html" },
+        { "slug": "breadcrumb", "contractKind": "evidence", "contractFile": "components/breadcrumb.json", "previewFile": "preview/component-breadcrumb.html" },
+        { "slug": "tag", "contractKind": "evidence", "contractFile": "components/tag.json", "previewFile": "preview/component-tag.html" },
+        { "slug": "buttons", "contractKind": "evidence", "contractFile": "components/buttons.json", "previewFile": "preview/component-buttons.html" }
+      ],
+      "imagePlan": [],
+      "chartsRequired": false,
+      "miniProgramStyle": false,
+      "qualityRisks": []
+    },
+    {
+      "nodeId": "page-writing-guide",
+      "slug": "writing-guide",
+      "title": "写作指南",
+      "htmlSrc": "pages/writing-guide.html",
+      "pageIndex": 3,
+      "stateGroupId": null,
+      "stateRole": null,
+      "baseStatePageId": null,
+      "sharedShellContract": [],
+      "mutableRegions": [],
+      "derivedFromHtmlSrc": null,
+      "derivationType": "original",
+      "sourcePageId": null,
+      "sourceHtmlSrc": null,
+      "pageType": "task-driven",
+      "businessScenario": "guide page explaining the markdown template syntax and how to add new content",
+      "visualNorthStar": "clean documentation page with code blocks showing frontmatter syntax, step-by-step instructions",
+      "compositionPattern": "Document: title + numbered steps with code examples",
+      "continuityAnchors": ["header treatment", "typography scale", "code block style", "surface depth"],
+      "libraryRestraintMode": false,
+      "uiKitPath": "/Users/zelcao/.trae-cn/design_libraries/dl_builtin_trae_work/ui_kits/Document2/index.html",
+      "componentPlan": [
+        { "slug": "cards", "contractKind": "evidence", "contractFile": "components/cards.json", "previewFile": "preview/component-cards.html" },
+        { "slug": "breadcrumb", "contractKind": "evidence", "contractFile": "components/breadcrumb.json", "previewFile": "preview/component-breadcrumb.html" },
+        { "slug": "buttons", "contractKind": "evidence", "contractFile": "components/buttons.json", "previewFile": "preview/component-buttons.html" }
+      ],
+      "imagePlan": [],
+      "chartsRequired": false,
+      "miniProgramStyle": false,
+      "qualityRisks": []
+    },
+    {
+      "nodeId": "page-markdown-demo",
+      "slug": "markdown-demo",
+      "title": "内容渲染示例",
+      "htmlSrc": "pages/markdown-demo.html",
+      "pageIndex": 4,
+      "stateGroupId": null,
+      "stateRole": null,
+      "baseStatePageId": null,
+      "sharedShellContract": [],
+      "mutableRegions": [],
+      "derivedFromHtmlSrc": null,
+      "derivationType": "original",
+      "sourcePageId": null,
+      "sourceHtmlSrc": null,
+      "pageType": "information-dense",
+      "businessScenario": "example page showing how markdown content renders in the final site",
+      "visualNorthStar": "rendered markdown article with headings, code blocks, lists, links, and blockquotes in clean document style",
+      "compositionPattern": "Document: breadcrumb + article body with rich markdown typography",
+      "continuityAnchors": ["header treatment", "typography scale", "code block style", "surface depth"],
+      "libraryRestraintMode": false,
+      "uiKitPath": "/Users/zelcao/.trae-cn/design_libraries/dl_builtin_trae_work/ui_kits/Document3/index.html",
+      "componentPlan": [
+        { "slug": "cards", "contractKind": "evidence", "contractFile": "components/cards.json", "previewFile": "preview/component-cards.html" },
+        { "slug": "breadcrumb", "contractKind": "evidence", "contractFile": "components/breadcrumb.json", "previewFile": "preview/component-breadcrumb.html" }
+      ],
+      "imagePlan": [],
+      "chartsRequired": false,
+      "miniProgramStyle": false,
+      "qualityRisks": []
+    }
+  ],
+  "assets": [],
+  "wiringPlan": [
+    {
+      "sourceNodeId": "page-index",
+      "domId": "link-tool-detail",
+      "targetPageId": "page-tool-detail"
+    },
+    {
+      "sourceNodeId": "page-tool-detail",
+      "domId": "link-markdown-demo",
+      "targetPageId": "page-markdown-demo"
+    }
+  ],
+  "hiddenInteractionPlan": [
+    {
+      "sourceNodeId": "page-index",
+      "domId": "nav-home",
+      "targetPageId": "page-index",
+      "hideEdge": true,
+      "reason": "global nav"
+    },
+    {
+      "sourceNodeId": "page-index",
+      "domId": "shortcut-guide",
+      "targetPageId": "page-writing-guide",
+      "hideEdge": true,
+      "reason": "secondary shortcut"
+    },
+    {
+      "sourceNodeId": "page-tool-detail",
+      "domId": "back-home",
+      "targetPageId": "page-index",
+      "hideEdge": true,
+      "reason": "back"
+    },
+    {
+      "sourceNodeId": "page-tool-detail",
+      "domId": "nav-home",
+      "targetPageId": "page-index",
+      "hideEdge": true,
+      "reason": "global nav"
+    },
+    {
+      "sourceNodeId": "page-writing-guide",
+      "domId": "nav-home",
+      "targetPageId": "page-index",
+      "hideEdge": true,
+      "reason": "global nav"
+    },
+    {
+      "sourceNodeId": "page-markdown-demo",
+      "domId": "nav-home",
+      "targetPageId": "page-index",
+      "hideEdge": true,
+      "reason": "global nav"
+    },
+    {
+      "sourceNodeId": "page-markdown-demo",
+      "domId": "back-detail",
+      "targetPageId": "page-tool-detail",
+      "hideEdge": true,
+      "reason": "back"
+    }
+  ]
+}

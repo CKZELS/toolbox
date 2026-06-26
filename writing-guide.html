@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="light" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>写作指南 - My Toolbox</title>
+    <link rel="stylesheet" href="/src/css/main.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="site-header">
+            <nav class="site-nav">
+                <a href="index.html" class="site-logo">My Toolbox</a>
+                <div class="site-nav-links">
+                    <a href="index.html" class="site-nav-link" data-nav-key="home">首页</a>
+                    <a href="writing-guide.html" class="site-nav-link is-active" data-nav-key="guide">写作指南</a>
+                </div>
+                <div style="display: flex; align-items: center; gap: var(--spacer-8);">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="github-link">
+                        <span data-icon style="width: 20px; height: 20px; -webkit-mask-image: url('assets/image_0_k3w9ss.svg'); mask-image: url('assets/image_0_k3w9ss.svg');"></span>
+                    </a>
+                    <button class="mobile-menu-btn" aria-label="菜单">
+                        <span data-icon style="width: 20px; height: 20px; -webkit-mask-image: url('assets/image_1_j48i24.svg'); mask-image: url('assets/image_1_j48i24.svg');"></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <main class="site-main">
+            <section class="fade-in" style="margin-bottom: var(--spacer-48);">
+                <h1 style="font-family: var(--font-family-heading); font-size: var(--heading-display-sm-font-size); font-weight: var(--heading-display-sm-font-weight); line-height: var(--heading-display-sm-line-height); letter-spacing: var(--heading-display-sm-letter-spacing); color: var(--text-default); margin: 0 0 var(--spacer-8) 0;">
+                    写作指南
+                </h1>
+                <p style="font-size: var(--body-lg-font-size); font-weight: var(--body-lg-font-weight); line-height: var(--body-lg-line-height); color: var(--text-secondary); margin: 0;">
+                    三步添加新工具到你的网站
+                </p>
+            </section>
+
+            <section class="guide-section fade-in">
+                <div class="guide-steps">
+                    <div class="guide-step">
+                        <div class="guide-step-number">1</div>
+                        <h3 class="guide-step-title">创建新页面</h3>
+                        <p class="guide-step-desc">在项目根目录创建一个新的 HTML 文件，或者使用 content-example.html 作为模板复制一份。</p>
+                    </div>
+                    <div class="guide-step">
+                        <div class="guide-step-number">2</div>
+                        <h3 class="guide-step-title">填写内容</h3>
+                        <p class="guide-step-desc">按照 Markdown 风格编写工具介绍，包括标题、描述、标签和详细内容。</p>
+                    </div>
+                    <div class="guide-step">
+                        <div class="guide-step-number">3</div>
+                        <h3 class="guide-step-title">添加到列表</h3>
+                        <p class="guide-step-desc">在 main.js 的 toolsData 数组中添加新工具的基本信息，它就会出现在首页。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="guide-section fade-in">
+                <h2 class="section-title" style="margin-bottom: var(--spacer-20);">文章格式规范</h2>
+                <div class="ds-card" style="margin-bottom: var(--spacer-16);">
+                    <h3 class="ds-card__title">标题层级</h3>
+                    <p class="ds-card__desc">使用 h2 作为主要章节标题，h3 作为子标题。文章只有一个 h1（页面标题）。</p>
+                </div>
+                <div class="ds-card" style="margin-bottom: var(--spacer-16);">
+                    <h3 class="ds-card__title">内容元素</h3>
+                    <p class="ds-card__desc">支持段落、列表、代码块、引用、加粗等常见排版元素。</p>
+                </div>
+                <div class="ds-card">
+                    <h3 class="ds-card__title">标签分类</h3>
+                    <p class="ds-card__desc">每个工具属于一个主分类（开发工具/设计工具/效率工具），可以有多个标签。</p>
+                </div>
+            </section>
+
+            <section class="guide-section fade-in">
+                <h2 class="section-title" style="margin-bottom: var(--spacer-20);">查看示例</h2>
+                <div class="ds-card">
+                    <h3 class="ds-card__title">内容渲染示例</h3>
+                    <p class="ds-card__desc">想知道文章渲染出来是什么样子？查看内容渲染示例页面。</p>
+                    <a href="content-example.html" class="ds-btn ds-btn--primary" style="margin-top: var(--spacer-16);">
+                        查看示例
+                        <span data-icon style="width: 16px; height: 16px; -webkit-mask-image: url('assets/image_3_lk3vqr.svg'); mask-image: url('assets/image_3_lk3vqr.svg');"></span>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>© 2025 My Toolbox. Built with ❤️</p>
+        </footer>
+    </div>
+
+    <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

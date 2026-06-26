@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="light" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Toolbox - 我的工具箱</title>
+    <link rel="stylesheet" href="/src/css/main.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="site-header">
+            <nav class="site-nav">
+                <a href="index.html" class="site-logo">My Toolbox</a>
+                <div class="site-nav-links">
+                    <a href="index.html" class="site-nav-link is-active" data-nav-key="home">首页</a>
+                    <a href="writing-guide.html" class="site-nav-link" data-nav-key="guide">写作指南</a>
+                </div>
+                <div style="display: flex; align-items: center; gap: var(--spacer-8);">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="github-link">
+                        <span data-icon style="width: 20px; height: 20px; -webkit-mask-image: url('assets/image_0_k3w9ss.svg'); mask-image: url('assets/image_0_k3w9ss.svg');"></span>
+                    </a>
+                    <button class="mobile-menu-btn" aria-label="菜单">
+                        <span data-icon style="width: 20px; height: 20px; -webkit-mask-image: url('assets/image_1_j48i24.svg'); mask-image: url('assets/image_1_j48i24.svg');"></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <main class="site-main">
+            <section class="hero-section fade-in">
+                <h1 class="hero-title">我的工具箱</h1>
+                <p class="hero-subtitle">记录和分享我日常使用的软件、网站与工具</p>
+                <div class="hero-search">
+                    <div class="ds-input search-input">
+                        <span class="search-icon">
+                            <span data-icon style="width: 18px; height: 18px; -webkit-mask-image: url('assets/image_2_w3yqh8.svg'); mask-image: url('assets/image_2_w3yqh8.svg');"></span>
+                        </span>
+                        <input type="text" placeholder="搜索工具名称或标签..." />
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="section-header">
+                    <h2 class="section-title">全部工具</h2>
+                    <span class="ds-tag">9 个工具</span>
+                </div>
+
+                <div class="category-filters">
+                    <button class="category-tag is-active" data-category="全部">全部</button>
+                    <button class="category-tag" data-category="开发工具">开发工具</button>
+                    <button class="category-tag" data-category="设计工具">设计工具</button>
+                    <button class="category-tag" data-category="效率工具">效率工具</button>
+                </div>
+
+                <div class="tools-grid">
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>© 2025 My Toolbox. Built with ❤️</p>
+        </footer>
+    </div>
+
+    <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

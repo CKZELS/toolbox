@@ -1,0 +1,58 @@
+{
+  "root": {
+    "nodeId": "gen-project-shell",
+    "kind": "project-shell",
+    "pageIds": ["page-index", "page-tool-detail", "page-writing-guide", "page-markdown-demo"],
+    "output": "partials/project-shell.html",
+    "sharedRegions": ["header", "footer"],
+    "privateRegions": [],
+    "mutableSlots": ["activeNavItem", "pageTitle"],
+    "status": "generated",
+    "children": [
+      {
+        "nodeId": "gen-page-index",
+        "kind": "page-leaf",
+        "pageIds": ["page-index"],
+        "output": "pages/index.html",
+        "sharedRegions": [],
+        "privateRegions": ["hero section", "category grid", "tool cards grid"],
+        "mutableSlots": ["activeNavItem"],
+        "status": "planned",
+        "children": []
+      },
+      {
+        "nodeId": "gen-page-tool-detail",
+        "kind": "page-leaf",
+        "pageIds": ["page-tool-detail"],
+        "output": "pages/tool-detail.html",
+        "sharedRegions": [],
+        "privateRegions": ["tool detail body", "markdown rendered content"],
+        "mutableSlots": ["activeNavItem"],
+        "status": "planned",
+        "children": []
+      },
+      {
+        "nodeId": "gen-page-writing-guide",
+        "kind": "page-leaf",
+        "pageIds": ["page-writing-guide"],
+        "output": "pages/writing-guide.html",
+        "sharedRegions": [],
+        "privateRegions": ["guide content sections"],
+        "mutableSlots": ["activeNavItem"],
+        "status": "planned",
+        "children": []
+      },
+      {
+        "nodeId": "gen-page-markdown-demo",
+        "kind": "page-leaf",
+        "pageIds": ["page-markdown-demo"],
+        "output": "pages/markdown-demo.html",
+        "sharedRegions": [],
+        "privateRegions": ["rendered markdown body"],
+        "mutableSlots": ["activeNavItem"],
+        "status": "planned",
+        "children": []
+      }
+    ]
+  }
+}

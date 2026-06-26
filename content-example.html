@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="light" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内容渲染示例 - My Toolbox</title>
+    <link rel="stylesheet" href="/src/css/main.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="site-header">
+            <nav class="site-nav">
+                <a href="index.html" class="site-logo">My Toolbox</a>
+                <div class="site-nav-links">
+                    <a href="index.html" class="site-nav-link" data-nav-key="home">首页</a>
+                    <a href="writing-guide.html" class="site-nav-link" data-nav-key="guide">写作指南</a>
+                </div>
+                <div style="display: flex; align-items: center; gap: var(--spacer-8);">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="github-link">
+                        <span data-icon style="width: 20px; height: 20px; -webkit-mask-image: url('assets/image_0_k3w9ss.svg'); mask-image: url('assets/image_0_k3w9ss.svg');"></span>
+                    </a>
+                    <button class="mobile-menu-btn" aria-label="菜单">
+                        <span data-icon style="width: 20px; height: 20px; -webkit-mask-image: url('assets/image_1_j48i24.svg'); mask-image: url('assets/image_1_j48i24.svg');"></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <main class="site-main">
+            <div class="article-content fade-in">
+                <nav class="ds-breadcrumb breadcrumb-nav">
+                    <a href="index.html">首页</a>
+                    <span class="ds-breadcrumb__sep">/</span>
+                    <a href="writing-guide.html">写作指南</a>
+                    <span class="ds-breadcrumb__sep">/</span>
+                    <span class="ds-breadcrumb__current">内容渲染示例</span>
+                </nav>
+
+                <h1 style="font-family: var(--font-family-heading); font-size: var(--heading-2xl-font-size); font-weight: var(--heading-2xl-font-weight); line-height: var(--heading-2xl-line-height); color: var(--text-default); margin-bottom: var(--spacer-8);">内容渲染示例</h1>
+
+                <div style="display: flex; flex-wrap: wrap; gap: var(--spacer-8); margin-bottom: var(--spacer-24);">
+                    <span class="ds-tag">示例</span>
+                    <span class="ds-tag">排版</span>
+                    <span class="ds-tag">Markdown</span>
+                </div>
+
+                <article class="article-body">
+                    <p>这是一个内容渲染示例页面，展示所有支持的排版元素和样式效果。</p>
+
+                    <h2>二级标题</h2>
+                    <p>这是二级标题下的段落内容。段落之间会有适当的间距，阅读体验舒适。你可以在这里写任何你想分享的内容，比如工具的使用心得、配置技巧、或者踩坑记录。</p>
+
+                    <h3>三级标题</h3>
+                    <p>三级标题用于更细分的内容块。文字层级清晰，帮助读者快速定位信息。</p>
+
+                    <h2>列表样式</h2>
+                    <p>无序列表：</p>
+                    <ul>
+                        <li>第一项内容，简单描述</li>
+                        <li>第二项内容，可以写得更长一点，看看换行效果怎么样。应该是没问题的，文字会自然换行。</li>
+                        <li>第三项内容，带有 <strong>加粗文字</strong> 和 <em>斜体文字</em></li>
+                        <li>第四项，包含 <code>行内代码</code> 样式</li>
+                    </ul>
+
+                    <p>有序列表：</p>
+                    <ol>
+                        <li>第一步：打开软件</li>
+                        <li>第二步：配置设置</li>
+                        <li>第三步：开始使用</li>
+                    </ol>
+
+                    <h2>代码块</h2>
+                    <p>行内代码：使用 <code>const name = "Hello"</code> 来定义变量。</p>
+                    <p>代码块：</p>
+                    <pre><code>// JavaScript 示例
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+
+const message = greet('World');
+console.log(message);</code></pre>
+
+                    <h2>引用样式</h2>
+                    <blockquote>
+                        这是一段引用文字。可以用来强调重要的观点，或者引用他人的话语。引用样式有左侧边框和斜体效果。
+                    </blockquote>
+
+                    <h2>强调样式</h2>
+                    <p>这是 <strong>加粗文字</strong>，这是 <em>斜体文字</em>，这是 <strong><em>加粗斜体</em></strong>。</p>
+
+                    <h2>链接样式</h2>
+                    <p>这是一个 <a href="https://example.com" target="_blank">外部链接</a> 的示例，链接会有颜色区分。</p>
+
+                    <h3>提示信息</h3>
+                    <div class="ds-alert ds-alert--info" style="margin: var(--spacer-16) 0;">
+                        <div class="ds-alert__icon">
+                            <span data-icon style="width: 16px; height: 16px; -webkit-mask-image: url('assets/image_9_71wfj5.svg'); mask-image: url('assets/image_9_71wfj5.svg');"></span>
+                        </div>
+                        <div>
+                            <div class="ds-alert__title">提示</div>
+                            <div class="ds-alert__desc">这是一条信息提示，用于展示中性的提示信息。</div>
+                        </div>
+                    </div>
+
+                    <div class="ds-alert ds-alert--success" style="margin: var(--spacer-16) 0;">
+                        <div class="ds-alert__icon">
+                            <span data-icon style="width: 16px; height: 16px; -webkit-mask-image: url('assets/image_4_x78ept.svg'); mask-image: url('assets/image_4_x78ept.svg');"></span>
+                        </div>
+                        <div>
+                            <div class="ds-alert__title">成功</div>
+                            <div class="ds-alert__desc">操作成功完成，一切正常。</div>
+                        </div>
+                    </div>
+
+                    <div class="ds-alert ds-alert--warning" style="margin: var(--spacer-16) 0;">
+                        <div class="ds-alert__icon">
+                            <span data-icon style="width: 16px; height: 16px; -webkit-mask-image: url('assets/image_5_quxgn8.svg'); mask-image: url('assets/image_5_quxgn8.svg');"></span>
+                        </div>
+                        <div>
+                            <div class="ds-alert__title">注意</div>
+                            <div class="ds-alert__desc">这是一条警告信息，请留意相关内容。</div>
+                        </div>
+                    </div>
+
+                    <h2>标签组件</h2>
+                    <p>可以使用标签来标记工具的特性：</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: var(--spacer-6); margin: var(--spacer-16) 0;">
+                        <span class="ds-tag">开源</span>
+                        <span class="ds-tag">跨平台</span>
+                        <span class="ds-tag">免费</span>
+                        <span class="ds-tag">Mac</span>
+                        <span class="ds-tag">效率</span>
+                    </div>
+
+                    <h2>更多内容</h2>
+                    <p>文章内容可以写得很长，页面会自动适应高度。建议每篇文章都有清晰的结构，使用合适的标题层级来组织内容。</p>
+                    <p>这样读者可以快速浏览，找到自己感兴趣的部分。好的排版不仅美观，更重要的是提升阅读效率。</p>
+                </article>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <p>© 2025 My Toolbox. Built with ❤️</p>
+        </footer>
+    </div>
+
+    <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
