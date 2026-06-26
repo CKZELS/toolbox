@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Toolbox</title>
+    <title>内容渲染示例</title>
     <style id="theme-vars">
 /**
  * TraeWork design library tokens
@@ -889,7 +889,7 @@
 
         <!-- Center Navigation Links -->
         <div style="display: flex; align-items: center; gap: var(--spacer-32);">
-          <a data-dom-id="nav-home" data-nav-key="home" href="#" data-active="true" style="position: relative; padding: var(--spacer-8) 0; font-size: var(--body-base-font-size); font-weight: var(--font-weight-medium); color: var(--text-secondary); text-decoration: none; transition: color 120ms ease;">
+          <a data-nav-key="home" data-dom-id="nav-home" href="#" style="position: relative; padding: var(--spacer-8) 0; font-size: var(--body-base-font-size); font-weight: var(--font-weight-medium); color: var(--text-secondary); text-decoration: none; transition: color 120ms ease;">
             首页
           </a>
           <a data-nav-key="guide" href="#" style="position: relative; padding: var(--spacer-8) 0; font-size: var(--body-base-font-size); font-weight: var(--font-weight-medium); color: var(--text-secondary); text-decoration: none; transition: color 120ms ease;">
@@ -899,7 +899,7 @@
 
         <!-- GitHub Icon -->
         <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: var(--radius-8); color: var(--icon-secondary); text-decoration: none; transition: background 120ms ease, color 120ms ease;">
-          <span data-icon style="width: 20px; height: 20px; -webkit-mask-image: url('../assets/icons/dl_builtin_trae_work/Github.svg'); mask-image: url('../assets/icons/dl_builtin_trae_work/Github.svg');"></span>
+          <span data-icon style="width: 20px; height: 20px; -webkit-mask-image: url('assets/icons/dl_builtin_trae_work/Github.svg'); mask-image: url('assets/icons/dl_builtin_trae_work/Github.svg');"></span>
         </a>
       </nav>
     </header>
@@ -907,156 +907,113 @@
     <!-- ===== Main Content ===== -->
     <main style="max-width: 1200px; margin: 0 auto; padding: var(--spacer-32) var(--spacer-24); min-height: calc(100vh - 56px - 80px);">
 
-      <!-- Hero Section -->
-      <section style="text-align: center; padding: var(--spacer-32) 0;">
-        <h1 style="font-family: var(--font-family-heading); font-size: var(--heading-display-sm-font-size); font-weight: var(--heading-display-sm-font-weight); line-height: var(--heading-display-sm-line-height); letter-spacing: var(--heading-display-sm-letter-spacing); color: var(--text-default); margin: 0 0 var(--spacer-8) 0;">我的工具箱</h1>
-        <p style="font-size: var(--body-lg-font-size); font-weight: var(--body-lg-font-weight); line-height: var(--body-lg-line-height); color: var(--text-secondary); margin: 0 0 var(--spacer-24) 0;">记录和分享我日常使用的软件、网站与工具</p>
-        <div style="max-width: 480px; margin: 0 auto;">
-          <div class="ds-input" style="height: 40px; padding: 0 var(--spacer-16);">
-            <span class="ds-input__icon">
-              <span data-icon style="width: 16px; height: 16px; -webkit-mask-image: url('../assets/icons/dl_builtin_trae_work/Search.svg'); mask-image: url('../assets/icons/dl_builtin_trae_work/Search.svg');"></span>
-            </span>
-            <input type="text" placeholder="搜索工具..." />
-          </div>
+      <!-- Article wrapper: centered, max-width 780px -->
+      <article style="max-width: 780px; margin: 0 auto;">
+
+        <!-- Breadcrumb -->
+        <nav class="ds-breadcrumb" style="margin-bottom: var(--spacer-24);">
+          <a href="#">首页</a>
+          <span class="ds-breadcrumb__sep">/</span>
+          <a href="#">VS Code</a>
+          <span class="ds-breadcrumb__sep">/</span>
+          <span class="ds-breadcrumb__current">内容渲染示例</span>
+        </nav>
+
+        <!-- Article Title -->
+        <h1 style="font-family: var(--font-family-heading); font-size: var(--heading-2xl-font-size); font-weight: var(--heading-2xl-font-weight); line-height: var(--heading-2xl-line-height); color: var(--text-default); margin-bottom: var(--spacer-8);">VS Code 使用心得</h1>
+
+        <!-- Meta tags -->
+        <div style="display: flex; align-items: center; gap: var(--spacer-16); color: var(--text-tertiary); font-size: var(--body-base-font-size); line-height: var(--body-base-line-height); margin-bottom: var(--spacer-32);">
+          <span>2024-06-15</span>
+          <span>&middot;</span>
+          <span>5 分钟阅读</span>
         </div>
-      </section>
 
-      <!-- 开发工具 Section -->
-      <section style="margin-bottom: var(--spacer-32);">
-        <h2 style="font-family: var(--font-family-heading); font-size: var(--heading-lg-font-size); font-weight: var(--heading-lg-font-weight); line-height: var(--heading-lg-line-height); color: var(--text-default); margin: 0 0 var(--spacer-16) 0;">开发工具</h2>
-        <div class="tool-grid">
+        <!-- Markdown Rendered Content -->
 
-          <!-- Card: VS Code -->
-          <a href="#" data-dom-id="link-tool-detail" class="tool-card">
-            <div class="tool-card__icon">
-              <span data-icon style="width: 24px; height: 24px; -webkit-mask-image: url('../assets/icons/dl_builtin_trae_work/CodeFile.svg'); mask-image: url('../assets/icons/dl_builtin_trae_work/CodeFile.svg');"></span>
-            </div>
-            <div class="tool-card__body">
-              <h3 style="font-family: var(--font-family-default); font-size: var(--heading-xs-font-size); font-weight: var(--heading-xs-font-weight); line-height: var(--heading-xs-line-height); color: var(--text-default); margin: 0 0 var(--spacer-4) 0;">VS Code</h3>
-              <p style="font-size: var(--body-base-font-size); font-weight: var(--body-base-font-weight); line-height: var(--body-base-line-height); color: var(--text-secondary); margin: 0 0 var(--spacer-8) 0;">轻量级代码编辑器，支持丰富插件</p>
-              <div class="tool-card__tags">
-                <span class="ds-tag">编辑器</span>
-                <span class="ds-tag">免费</span>
-              </div>
-            </div>
-          </a>
+        <!-- h2 + Paragraph -->
+        <h2 style="font-family: var(--font-family-heading); font-size: var(--heading-xl-font-size); font-weight: var(--heading-xl-font-weight); line-height: var(--heading-xl-line-height); color: var(--text-default); margin-bottom: var(--spacer-16);">段落文本</h2>
+        <p style="font-size: var(--body-base-font-size); line-height: 1.6; color: var(--text-default); margin-bottom: var(--spacer-24);">
+          一段正常的段落文字，包含 <strong>加粗</strong> 和 <em>斜体</em> 以及 <code style="background: var(--bg-overlay-l1); padding: 2px 6px; border-radius: var(--radius-4); font-family: var(--font-family-mono); font-size: var(--code-editor-font-size); color: var(--text-default);">行内代码</code>。
+        </p>
 
-          <!-- Card: Docker -->
-          <a href="#" class="tool-card">
-            <div class="tool-card__icon">
-              <span data-icon style="width: 24px; height: 24px; -webkit-mask-image: url('../assets/icons/dl_builtin_trae_work/Deploy.svg'); mask-image: url('../assets/icons/dl_builtin_trae_work/Deploy.svg');"></span>
-            </div>
-            <div class="tool-card__body">
-              <h3 style="font-family: var(--font-family-default); font-size: var(--heading-xs-font-size); font-weight: var(--heading-xs-font-weight); line-height: var(--heading-xs-line-height); color: var(--text-default); margin: 0 0 var(--spacer-4) 0;">Docker</h3>
-              <p style="font-size: var(--body-base-font-size); font-weight: var(--body-base-font-weight); line-height: var(--body-base-line-height); color: var(--text-secondary); margin: 0 0 var(--spacer-8) 0;">容器化部署工具，简化开发环境</p>
-              <div class="tool-card__tags">
-                <span class="ds-tag">DevOps</span>
-                <span class="ds-tag">开源</span>
-              </div>
-            </div>
-          </a>
+        <!-- h2 + Ordered List -->
+        <h2 style="font-family: var(--font-family-heading); font-size: var(--heading-xl-font-size); font-weight: var(--heading-xl-font-weight); line-height: var(--heading-xl-line-height); color: var(--text-default); margin-bottom: var(--spacer-16);">有序列表</h2>
+        <ol style="font-size: var(--body-base-font-size); line-height: 1.6; color: var(--text-default); padding-left: var(--spacer-24); margin-bottom: var(--spacer-24);">
+          <li style="margin-bottom: var(--spacer-8);">下载并安装 VS Code</li>
+          <li style="margin-bottom: var(--spacer-8);">安装常用扩展</li>
+          <li style="margin-bottom: var(--spacer-8);">配置 settings.json</li>
+          <li style="margin-bottom: var(--spacer-8);">开始编码</li>
+        </ol>
 
-          <!-- Card: Git -->
-          <a href="#" class="tool-card">
-            <div class="tool-card__icon">
-              <span data-icon style="width: 24px; height: 24px; -webkit-mask-image: url('../assets/icons/dl_builtin_trae_work/Branch.svg'); mask-image: url('../assets/icons/dl_builtin_trae_work/Branch.svg');"></span>
-            </div>
-            <div class="tool-card__body">
-              <h3 style="font-family: var(--font-family-default); font-size: var(--heading-xs-font-size); font-weight: var(--heading-xs-font-weight); line-height: var(--heading-xs-line-height); color: var(--text-default); margin: 0 0 var(--spacer-4) 0;">Git</h3>
-              <p style="font-size: var(--body-base-font-size); font-weight: var(--body-base-font-weight); line-height: var(--body-base-line-height); color: var(--text-secondary); margin: 0 0 var(--spacer-8) 0;">分布式版本控制系统</p>
-              <div class="tool-card__tags">
-                <span class="ds-tag">版本管理</span>
-                <span class="ds-tag">开源</span>
-              </div>
-            </div>
-          </a>
+        <!-- h2 + Unordered List -->
+        <h2 style="font-family: var(--font-family-heading); font-size: var(--heading-xl-font-size); font-weight: var(--heading-xl-font-weight); line-height: var(--heading-xl-line-height); color: var(--text-default); margin-bottom: var(--spacer-16);">无序列表</h2>
+        <ul style="font-size: var(--body-base-font-size); line-height: 1.6; color: var(--text-default); padding-left: var(--spacer-24); margin-bottom: var(--spacer-24);">
+          <li style="margin-bottom: var(--spacer-8);">智能代码补全</li>
+          <li style="margin-bottom: var(--spacer-8);">内置终端</li>
+          <li style="margin-bottom: var(--spacer-8);">Git 集成</li>
+          <li style="margin-bottom: var(--spacer-8);">调试支持</li>
+        </ul>
 
+        <!-- h2 + Code Block -->
+        <h2 style="font-family: var(--font-family-heading); font-size: var(--heading-xl-font-size); font-weight: var(--heading-xl-font-weight); line-height: var(--heading-xl-line-height); color: var(--text-default); margin-bottom: var(--spacer-16);">代码块</h2>
+        <div style="background: var(--bg-invert); border-radius: var(--radius-8); padding: var(--spacer-16) var(--spacer-20); margin-bottom: var(--spacer-24); overflow-x: auto;">
+          <pre style="margin: 0; font-family: var(--font-family-mono); font-size: var(--code-editor-font-size); line-height: var(--code-editor-line-height); color: var(--text-white);"><code>// 配置 settings.json
+{
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "workbench.colorTheme": "One Dark Pro"
+}</code></pre>
         </div>
-      </section>
 
-      <!-- 设计工具 Section -->
-      <section style="margin-bottom: var(--spacer-32);">
-        <h2 style="font-family: var(--font-family-heading); font-size: var(--heading-lg-font-size); font-weight: var(--heading-lg-font-weight); line-height: var(--heading-lg-line-height); color: var(--text-default); margin: 0 0 var(--spacer-16) 0;">设计工具</h2>
-        <div class="tool-grid">
+        <!-- h2 + Blockquote -->
+        <h2 style="font-family: var(--font-family-heading); font-size: var(--heading-xl-font-size); font-weight: var(--heading-xl-font-weight); line-height: var(--heading-xl-line-height); color: var(--text-default); margin-bottom: var(--spacer-16);">引用块</h2>
+        <blockquote style="border-left: 3px solid var(--bg-brand); background: var(--bg-overlay-l1); padding: var(--spacer-16) var(--spacer-20); border-radius: 0 var(--radius-8) var(--radius-8) 0; margin-bottom: var(--spacer-24);">
+          <p style="font-size: var(--body-base-font-size); line-height: 1.6; color: var(--text-default); margin: 0;">VS Code 不仅仅是一个编辑器，它是一个完整的开发环境。</p>
+        </blockquote>
 
-          <!-- Card: Figma -->
-          <a href="#" class="tool-card">
-            <div class="tool-card__icon">
-              <span data-icon style="width: 24px; height: 24px; -webkit-mask-image: url('../assets/icons/dl_builtin_trae_work/Font.svg'); mask-image: url('../assets/icons/dl_builtin_trae_work/Font.svg');"></span>
-            </div>
-            <div class="tool-card__body">
-              <h3 style="font-family: var(--font-family-default); font-size: var(--heading-xs-font-size); font-weight: var(--heading-xs-font-weight); line-height: var(--heading-xs-line-height); color: var(--text-default); margin: 0 0 var(--spacer-4) 0;">Figma</h3>
-              <p style="font-size: var(--body-base-font-size); font-weight: var(--body-base-font-weight); line-height: var(--body-base-line-height); color: var(--text-secondary); margin: 0 0 var(--spacer-8) 0;">在线协作设计工具</p>
-              <div class="tool-card__tags">
-                <span class="ds-tag">设计</span>
-                <span class="ds-tag">免费增值</span>
-              </div>
-            </div>
-          </a>
-
-          <!-- Card: Notion -->
-          <a href="#" class="tool-card">
-            <div class="tool-card__icon">
-              <span data-icon style="width: 24px; height: 24px; -webkit-mask-image: url('../assets/icons/dl_builtin_trae_work/DocFile.svg'); mask-image: url('../assets/icons/dl_builtin_trae_work/DocFile.svg');"></span>
-            </div>
-            <div class="tool-card__body">
-              <h3 style="font-family: var(--font-family-default); font-size: var(--heading-xs-font-size); font-weight: var(--heading-xs-font-weight); line-height: var(--heading-xs-line-height); color: var(--text-default); margin: 0 0 var(--spacer-4) 0;">Notion</h3>
-              <p style="font-size: var(--body-base-font-size); font-weight: var(--body-base-font-weight); line-height: var(--body-base-line-height); color: var(--text-secondary); margin: 0 0 var(--spacer-8) 0;">全能笔记与项目管理</p>
-              <div class="tool-card__tags">
-                <span class="ds-tag">效率</span>
-                <span class="ds-tag">免费增值</span>
-              </div>
-            </div>
-          </a>
-
+        <!-- h2 + Links and Image -->
+        <h2 style="font-family: var(--font-family-heading); font-size: var(--heading-xl-font-size); font-weight: var(--heading-xl-font-weight); line-height: var(--heading-xl-line-height); color: var(--text-default); margin-bottom: var(--spacer-16);">链接和图片</h2>
+        <p style="font-size: var(--body-base-font-size); line-height: 1.6; color: var(--text-default); margin-bottom: var(--spacer-16);">
+          访问 <a href="#" style="color: var(--bg-brand); text-decoration: none; transition: text-decoration 120ms ease;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">VS Code 官网</a> 了解更多信息。
+        </p>
+        <div style="width: 100%; background: var(--bg-base-secondary); border-radius: var(--radius-8); display: flex; align-items: center; justify-content: center; padding: var(--spacer-40) var(--spacer-16); margin-bottom: var(--spacer-24); color: var(--text-tertiary); font-size: var(--body-base-font-size);">
+          [截图]
         </div>
-      </section>
 
-      <!-- 效率工具 Section -->
-      <section style="margin-bottom: var(--spacer-32);">
-        <h2 style="font-family: var(--font-family-heading); font-size: var(--heading-lg-font-size); font-weight: var(--heading-lg-font-weight); line-height: var(--heading-lg-line-height); color: var(--text-default); margin: 0 0 var(--spacer-16) 0;">效率工具</h2>
-        <div class="tool-grid">
-
-          <!-- Card: Raycast -->
-          <a href="#" class="tool-card">
-            <div class="tool-card__icon">
-              <span data-icon style="width: 24px; height: 24px; -webkit-mask-image: url('../assets/icons/dl_builtin_trae_work/Dock.svg'); mask-image: url('../assets/icons/dl_builtin_trae_work/Dock.svg');"></span>
-            </div>
-            <div class="tool-card__body">
-              <h3 style="font-family: var(--font-family-default); font-size: var(--heading-xs-font-size); font-weight: var(--heading-xs-font-weight); line-height: var(--heading-xs-line-height); color: var(--text-default); margin: 0 0 var(--spacer-4) 0;">Raycast</h3>
-              <p style="font-size: var(--body-base-font-size); font-weight: var(--body-base-font-weight); line-height: var(--body-base-line-height); color: var(--text-secondary); margin: 0 0 var(--spacer-8) 0;">macOS 启动器与效率工具</p>
-              <div class="tool-card__tags">
-                <span class="ds-tag">macOS</span>
-                <span class="ds-tag">免费</span>
-              </div>
-            </div>
-          </a>
-
-          <!-- Card: 1Password -->
-          <a href="#" class="tool-card">
-            <div class="tool-card__icon">
-              <span data-icon style="width: 24px; height: 24px; -webkit-mask-image: url('../assets/icons/dl_builtin_trae_work/Lock.svg'); mask-image: url('../assets/icons/dl_builtin_trae_work/Lock.svg');"></span>
-            </div>
-            <div class="tool-card__body">
-              <h3 style="font-family: var(--font-family-default); font-size: var(--heading-xs-font-size); font-weight: var(--heading-xs-font-weight); line-height: var(--heading-xs-line-height); color: var(--text-default); margin: 0 0 var(--spacer-4) 0;">1Password</h3>
-              <p style="font-size: var(--body-base-font-size); font-weight: var(--body-base-font-weight); line-height: var(--body-base-line-height); color: var(--text-secondary); margin: 0 0 var(--spacer-8) 0;">密码管理器</p>
-              <div class="tool-card__tags">
-                <span class="ds-tag">安全</span>
-                <span class="ds-tag">订阅</span>
-              </div>
-            </div>
-          </a>
-
-          <!-- Helper Card: 写作指南 -->
-          <a href="#" data-dom-id="shortcut-guide" class="tool-card tool-card--helper">
-            <div class="tool-card__helper-content">
-              <span data-icon style="width: 24px; height: 24px; color: var(--text-tertiary); -webkit-mask-image: url('../assets/icons/dl_builtin_trae_work/Plus.svg'); mask-image: url('../assets/icons/dl_builtin_trae_work/Plus.svg');"></span>
-              <p style="font-size: var(--body-base-font-size); font-weight: var(--body-base-font-weight); line-height: var(--body-base-line-height); color: var(--text-tertiary); margin: var(--spacer-8) 0 0 0;">添加新工具？查看写作指南</p>
-            </div>
-          </a>
-
+        <!-- h2 + Table -->
+        <h2 style="font-family: var(--font-family-heading); font-size: var(--heading-xl-font-size); font-weight: var(--heading-xl-font-weight); line-height: var(--heading-xl-line-height); color: var(--text-default); margin-bottom: var(--spacer-16);">表格</h2>
+        <div style="overflow-x: auto; margin-bottom: var(--spacer-32); border: 1px solid var(--border-neutral-l1); border-radius: var(--radius-8);">
+          <table style="width: 100%; border-collapse: collapse; font-size: var(--body-base-font-size); line-height: var(--body-base-line-height);">
+            <thead>
+              <tr style="background: transparent;">
+                <th style="text-align: left; padding: var(--spacer-12) var(--spacer-16); border-bottom: 1px solid var(--border-neutral-l1); color: var(--text-tertiary); font-weight: var(--font-weight-medium); font-size: var(--body-md-font-size);">快捷键</th>
+                <th style="text-align: left; padding: var(--spacer-12) var(--spacer-16); border-bottom: 1px solid var(--border-neutral-l1); color: var(--text-tertiary); font-weight: var(--font-weight-medium); font-size: var(--body-md-font-size);">功能</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: var(--spacer-12) var(--spacer-16); border-bottom: 1px solid var(--border-neutral-l1); color: var(--text-default);">Cmd+P</td>
+                <td style="padding: var(--spacer-12) var(--spacer-16); border-bottom: 1px solid var(--border-neutral-l1); color: var(--text-secondary);">快速打开文件</td>
+              </tr>
+              <tr>
+                <td style="padding: var(--spacer-12) var(--spacer-16); border-bottom: 1px solid var(--border-neutral-l1); color: var(--text-default);">Cmd+Shift+P</td>
+                <td style="padding: var(--spacer-12) var(--spacer-16); border-bottom: 1px solid var(--border-neutral-l1); color: var(--text-secondary);">命令面板</td>
+              </tr>
+              <tr>
+                <td style="padding: var(--spacer-12) var(--spacer-16); color: var(--text-default);">Cmd+B</td>
+                <td style="padding: var(--spacer-12) var(--spacer-16); color: var(--text-secondary);">切换侧边栏</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </section>
+
+        <!-- Back Link -->
+        <div style="padding-top: var(--spacer-16); border-top: 1px solid var(--border-neutral-l1);">
+          <a href="#" data-dom-id="back-detail" style="display: inline-flex; align-items: center; gap: var(--spacer-8); color: var(--bg-brand); text-decoration: none; font-size: var(--body-base-font-size); font-weight: var(--font-weight-medium); transition: text-decoration 120ms ease;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">&larr; 返回工具详情</a>
+        </div>
+
+      </article>
 
     </main>
 
@@ -1109,85 +1066,8 @@
         color: var(--icon-default);
       }
 
-      /* Tool card grid */
-      .tool-grid {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: var(--spacer-16);
-      }
-
-      /* Tool card base */
-      .tool-card {
-        display: flex;
-        align-items: flex-start;
-        gap: var(--spacer-16);
-        padding: var(--spacer-20);
-        background: var(--bg-base-secondary);
-        border: 1px solid var(--border-neutral-l1);
-        border-radius: var(--radius-12);
-        text-decoration: none;
-        color: inherit;
-        transition: background 120ms ease, transform 120ms ease;
-        cursor: pointer;
-      }
-      .tool-card:hover {
-        background: var(--bg-overlay-l1);
-        transform: translateY(4px);
-      }
-      .tool-card:focus {
-        outline: none;
-        border-color: var(--border-contrast);
-      }
-
-      /* Tool card icon area */
-      .tool-card__icon {
-        flex: 0 0 40px;
-        width: 40px;
-        height: 40px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        background: var(--bg-overlay-l2);
-        border-radius: var(--radius-8);
-        color: var(--icon-secondary);
-      }
-
-      /* Tool card body */
-      .tool-card__body {
-        flex: 1;
-        min-width: 0;
-      }
-
-      /* Tool card tags */
-      .tool-card__tags {
-        display: flex;
-        align-items: center;
-        gap: var(--spacer-6);
-      }
-
-      /* Helper card (dashed border, centered content) */
-      .tool-card--helper {
-        justify-content: center;
-        align-items: center;
-        background: var(--bg-overlay-l1);
-        border: 1px dashed var(--border-neutral-l2);
-        min-height: 120px;
-      }
-      .tool-card--helper:hover {
-        background: var(--bg-overlay-l2);
-      }
-      .tool-card__helper-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-
-      /* Responsive: tablet (2 columns) */
+      /* Responsive: tablet */
       @media (max-width: 768px) {
-        .tool-grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
         header nav {
           padding-left: var(--spacer-16) !important;
           padding-right: var(--spacer-16) !important;
@@ -1196,16 +1076,16 @@
           padding-left: var(--spacer-16) !important;
           padding-right: var(--spacer-16) !important;
         }
+        article {
+          max-width: 100% !important;
+        }
         header nav div[style*="gap"] {
           gap: var(--spacer-24) !important;
         }
       }
 
-      /* Responsive: mobile (1 column) */
+      /* Responsive: mobile */
       @media (max-width: 480px) {
-        .tool-grid {
-          grid-template-columns: 1fr;
-        }
         header nav {
           flex-wrap: wrap;
           height: auto !important;

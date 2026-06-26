@@ -9,7 +9,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         'tool-detail': resolve(__dirname, 'tool-detail.html'),
         'writing-guide': resolve(__dirname, 'writing-guide.html'),
-        'content-example': resolve(__dirname, 'content-example.html'),
+        'markdown-demo': resolve(__dirname, 'markdown-demo.html'),
       },
     },
   },
