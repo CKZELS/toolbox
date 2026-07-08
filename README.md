@@ -68,5 +68,5 @@ src/js/main.js              首页和详情页交互
 src/css/                    设计系统和页面样式
 index.html                  首页
 tool-detail.html            工具详情页
-writing-guide.html          写作指南
+docs/writing-guide.md       维护者写作指南，不发布到公开网站
 ```

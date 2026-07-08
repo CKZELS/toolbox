@@ -123,7 +123,7 @@ export const toolDetails = {
     ],
     "description": "代码托管和协作平台，适合开源项目、个人网站和自动化部署。",
     "homepage": "https://github.com/",
-    "content": "<p>GitHub 不只是放代码的地方。对于个人网站来说，它还可以负责版本管理、协作修改和自动部署。</p>\n<h2>实用功能</h2>\n<ul>\n<li>Pull Request：在发布前检查改动</li>\n<li>Actions：自动构建和部署</li>\n<li>Pages：免费托管静态网站</li>\n<li>Issues：记录后续想做的功能</li>\n</ul>\n<h2>适合本项目的用法</h2>\n<p>把内容文章放在仓库里，修改 Markdown 后由平台自动生成网站。这样非技术用户也能通过网页编辑文件。</p>"
+    "content": "<p>GitHub 不只是放代码的地方。对于个人网站来说，它还可以负责版本管理、协作修改和自动部署。</p>\n<h2>实用功能</h2>\n<ul>\n<li>Pull Request：在发布前检查改动</li>\n<li>Actions：自动构建和部署</li>\n<li>Pages：免费托管静态网站</li>\n<li>Issues：记录后续想做的功能</li>\n</ul>\n<h2>适合个人项目的用法</h2>\n<p>用 GitHub 管理个人网站、知识库或作品集很方便。它能记录每次修改，也能让你在发布前清楚看到变更。</p>"
   },
   "notion": {
     "title": "Notion 知识库搭建",
@@ -149,7 +149,7 @@ export const toolDetails = {
     ],
     "description": "基于本地 Markdown 文件的知识管理工具，强调数据所有权和双向链接。",
     "homepage": "https://obsidian.md/",
-    "content": "<p>Obsidian 的核心优势是本地优先。你的笔记就是普通 Markdown 文件，不容易被某个平台锁住。</p>\n<h2>核心概念</h2>\n<ul>\n<li>双向链接：让笔记之间形成网络</li>\n<li>图谱视图：观察知识连接</li>\n<li>插件生态：补足日历、查询、模板等能力</li>\n</ul>\n<h2>和这个网站的关系</h2>\n<p>如果你习惯用 Obsidian 写 Markdown，可以直接把整理好的文章复制到 <code>content/tools</code> 目录里。</p>"
+    "content": "<p>Obsidian 的核心优势是本地优先。你的笔记就是普通 Markdown 文件，不容易被某个平台锁住。</p>\n<h2>核心概念</h2>\n<ul>\n<li>双向链接：让笔记之间形成网络</li>\n<li>图谱视图：观察知识连接</li>\n<li>插件生态：补足日历、查询、模板等能力</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>适合长期沉淀笔记、项目资料和个人知识库。越是想保留原始文件所有权，越能感受到它的价值。</p>"
   },
   "raycast": {
     "title": "Raycast 效率指南",

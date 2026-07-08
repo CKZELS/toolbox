@@ -9,8 +9,6 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         'tool-detail': resolve(__dirname, 'tool-detail.html'),
-        'writing-guide': resolve(__dirname, 'writing-guide.html'),
-        'markdown-demo': resolve(__dirname, 'markdown-demo.html'),
       },
     },
   },
