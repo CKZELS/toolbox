@@ -18,6 +18,22 @@ window.toolboxContent = {
     "order": 10
   },
   {
+    "id": "otty",
+    "name": "Otty",
+    "icon": "▣",
+    "description": "原生、现代的终端应用，强调手感、主题、会话管理和代码 Agent 工作流。",
+    "category": "开发工具",
+    "tags": [
+      "终端",
+      "开发",
+      "Agent"
+    ],
+    "detailUrl": "tool-detail.html?id=otty",
+    "color": "#0F766E",
+    "homepage": "https://otty.sh/",
+    "order": 12
+  },
+  {
     "id": "trae-ide",
     "name": "Trae IDE",
     "icon": "✦",
@@ -32,6 +48,22 @@ window.toolboxContent = {
     "color": "#111827",
     "homepage": "https://www.trae.ai/",
     "order": 15
+  },
+  {
+    "id": "snapzy",
+    "name": "Snapzy",
+    "icon": "◎",
+    "description": "免费开源的 macOS 截图和录屏工具，支持标注、长截图、OCR 和本地优先保存。",
+    "category": "截图工具",
+    "tags": [
+      "截图",
+      "录屏",
+      "macOS"
+    ],
+    "detailUrl": "tool-detail.html?id=snapzy",
+    "color": "#F97316",
+    "homepage": "https://snapzy.app/",
+    "order": 22
   },
   {
     "id": "cherry-studio",
@@ -146,6 +178,38 @@ window.toolboxContent = {
     "order": 60
   },
   {
+    "id": "brave",
+    "name": "Brave",
+    "icon": "◈",
+    "description": "注重隐私和速度的 Chromium 系浏览器，内置广告拦截、防追踪和可选 AI 功能。",
+    "category": "浏览器",
+    "tags": [
+      "浏览器",
+      "隐私",
+      "Chromium"
+    ],
+    "detailUrl": "tool-detail.html?id=brave",
+    "color": "#FB542B",
+    "homepage": "https://brave.com/",
+    "order": 64
+  },
+  {
+    "id": "zen-browser",
+    "name": "Zen Browser",
+    "icon": "◌",
+    "description": "基于 Firefox 的现代浏览器，强调可定制、工作区、侧边栏和更沉浸的浏览体验。",
+    "category": "浏览器",
+    "tags": [
+      "浏览器",
+      "Firefox",
+      "工作区"
+    ],
+    "detailUrl": "tool-detail.html?id=zen-browser",
+    "color": "#7C3AED",
+    "homepage": "https://zen-browser.app/",
+    "order": 66
+  },
+  {
     "id": "updf",
     "name": "UPDF",
     "icon": "📄",
@@ -160,6 +224,22 @@ window.toolboxContent = {
     "color": "#6D5DF6",
     "homepage": "https://updf.com/",
     "order": 70
+  },
+  {
+    "id": "gamehub",
+    "name": "GameHub",
+    "icon": "◒",
+    "description": "面向 Mac 的 Windows 游戏运行工具，整合 Steam、GOG、Epic 和兼容层配置。",
+    "category": "游戏工具",
+    "tags": [
+      "Mac 游戏",
+      "Windows 游戏",
+      "Steam"
+    ],
+    "detailUrl": "tool-detail.html?id=gamehub",
+    "color": "#16A34A",
+    "homepage": "https://www.gamemac.com/",
+    "order": 82
   }
 ],
   toolDetails: {
@@ -176,6 +256,19 @@ window.toolboxContent = {
     "homepage": "https://anysearch.com/",
     "content": "<p>AnySearch 更适合被理解成“给 AI Agent 用的搜索能力”，而不是普通浏览器搜索框。它的价值在于让智能体在需要外部信息时，可以通过统一接口查找、核验和读取网页内容。</p>\n<h2>适合什么场景</h2>\n<ul>\n<li>需要让 AI 助手查找最新资料、产品信息或网页内容</li>\n<li>希望把搜索能力接入 Codex、Claude、Cursor 等 Agent 工作流</li>\n<li>需要先搜索结果，再进一步读取网页正文</li>\n<li>想把“搜索、打开、提取内容”这类动作交给自动化流程</li>\n</ul>\n<h2>我会怎么用</h2>\n<p>把它放在需要联网核验的环节，而不是所有问题都默认搜索。比如产品资料、价格、版本、政策、新闻这类容易变化的信息，就适合先让 AnySearch 查一遍；但个人笔记、固定流程、项目内部规则，仍然应该优先看本地资料。</p>\n<h2>注意点</h2>\n<p>搜索工具的质量取决于 API 配置和结果来源。使用时最好让 AI 明确区分“查到的事实”和“根据事实做出的判断”，这样后续维护会更稳。</p>"
   },
+  "brave": {
+    "title": "Brave 使用心得",
+    "name": "Brave",
+    "category": "浏览器",
+    "tags": [
+      "浏览器",
+      "隐私",
+      "Chromium"
+    ],
+    "description": "注重隐私和速度的 Chromium 系浏览器，内置广告拦截、防追踪和可选 AI 功能。",
+    "homepage": "https://brave.com/",
+    "content": "<p>Brave 是一个基于 Chromium 的浏览器。它最值得推荐的地方不是“长得不一样”，而是默认就把广告拦截、防追踪和隐私保护做得比较积极。</p>\n<h2>核心特点</h2>\n<ul>\n<li>默认拦截广告、跟踪器和部分指纹识别</li>\n<li>基于 Chromium，兼容大多数 Chrome 扩展</li>\n<li>内置隐私搜索、阅读列表、同步和钱包等功能</li>\n<li>适合把它作为日常主浏览器或隐私优先的备用浏览器</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>适合不想折腾太多插件，但又希望浏览器默认更安静的人。对于经常查资料、看文档、打开大量网页的人，Brave 可以减少广告、弹窗和追踪带来的干扰。</p>\n<h2>使用建议</h2>\n<p>如果你已经长期使用 Chrome，可以先把 Brave 当作工作浏览器或资料搜索浏览器。等书签、扩展和同步都稳定后，再考虑完全迁移。</p>"
+  },
   "cherry-studio": {
     "title": "Cherry Studio 使用心得",
     "name": "Cherry Studio",
@@ -188,6 +281,19 @@ window.toolboxContent = {
     "description": "跨平台 AI 桌面工作站，可以统一接入多个大模型、助手和本地模型服务。",
     "homepage": "https://cherry-ai.com/",
     "content": "<p>Cherry Studio 是一个面向日常使用的大模型桌面客户端。它适合把不同模型服务、助手模板、文件处理和对话工作流放到同一个界面里管理。</p>\n<h2>核心特点</h2>\n<ul>\n<li>支持 OpenAI、Gemini、Anthropic 等云端模型服务</li>\n<li>可以连接 Ollama、LM Studio 等本地模型服务</li>\n<li>内置大量预设助手，也可以创建自己的助手</li>\n<li>支持文本、图片、Office、PDF 等材料处理</li>\n<li>支持 Windows、macOS 和 Linux</li>\n</ul>\n<h2>适合什么人</h2>\n<p>适合经常在多个模型之间切换的人。比如有时用云端模型做高质量写作，有时用本地模型处理私密材料，有时又想用不同助手模板完成翻译、总结、代码解释或资料整理。</p>\n<h2>使用建议</h2>\n<p>先配置一两个最常用模型，不要一开始塞满所有服务。等常用场景稳定后，再慢慢补助手、知识材料和自动化能力。</p>"
+  },
+  "gamehub": {
+    "title": "GameHub 使用心得",
+    "name": "GameHub",
+    "category": "游戏工具",
+    "tags": [
+      "Mac 游戏",
+      "Windows 游戏",
+      "Steam"
+    ],
+    "description": "面向 Mac 的 Windows 游戏运行工具，整合 Steam、GOG、Epic 和兼容层配置。",
+    "homepage": "https://www.gamemac.com/",
+    "content": "<p>GameHub 是一个让 Mac 用户更方便运行 Windows 游戏的工具。它把游戏库、兼容层、运行环境和启动配置放到一个更接近游戏启动器的界面里。</p>\n<h2>核心特点</h2>\n<ul>\n<li>支持管理和启动 Steam、GOG、Epic 等来源的游戏</li>\n<li>围绕 Wine、Proton、GPTK 等兼容技术做封装</li>\n<li>可以为不同游戏准备独立运行环境</li>\n<li>比手动配置命令行和容器更适合普通玩家上手</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>适合想在 Mac 上尝试 Windows 游戏，但不想自己折腾 Wine、Proton、DXVK、GPTK 和各种运行参数的人。它不能保证所有游戏都顺畅运行，但能把试错门槛降下来。</p>\n<h2>注意点</h2>\n<p>Mac 跑 Windows 游戏仍然有兼容性边界。反作弊、DRM、图形 API、输入设备和性能都会影响体验。建议把它当作“让更多游戏有机会运行”的工具，而不是当作稳定替代 Windows 游戏电脑。</p>"
   },
   "github": {
     "title": "GitHub 使用技巧",
@@ -241,6 +347,19 @@ window.toolboxContent = {
     "homepage": "https://obsidian.md/",
     "content": "<p>Obsidian 的核心优势是本地优先。你的笔记就是普通 Markdown 文件，不容易被某个平台锁住。</p>\n<h2>核心概念</h2>\n<ul>\n<li>双向链接：让笔记之间形成网络</li>\n<li>图谱视图：观察知识连接</li>\n<li>插件生态：补足日历、查询、模板等能力</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>适合长期沉淀笔记、项目资料和个人知识库。越是想保留原始文件所有权，越能感受到它的价值。</p>"
   },
+  "otty": {
+    "title": "Otty 使用心得",
+    "name": "Otty",
+    "category": "开发工具",
+    "tags": [
+      "终端",
+      "开发",
+      "Agent"
+    ],
+    "description": "原生、现代的终端应用，强调手感、主题、会话管理和代码 Agent 工作流。",
+    "homepage": "https://otty.sh/",
+    "content": "<p>Otty 是一个现代终端应用。它不像传统终端那样只关注“能不能跑命令”，而是更在意敲击手感、视觉体验、会话组织，以及现在越来越常见的 AI 编程 Agent 工作流。</p>\n<h2>核心特点</h2>\n<ul>\n<li>原生、GPU 加速，滚动和渲染体验更现代</li>\n<li>支持标签页、分屏、会话恢复和快速跳转</li>\n<li>支持丰富主题、真彩色、连字、Unicode 和内联图片</li>\n<li>对 Claude Code、Codex、opencode 等 Agent 工作流更友好</li>\n<li>可以追踪长时间运行的命令，并在结束时提醒</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>适合经常在终端里写代码、跑脚本、开本地服务和使用代码 Agent 的人。如果你的终端里同时有开发服务器、Git、SSH、AI Agent、日志窗口，Otty 的会话组织会很有价值。</p>\n<h2>使用建议</h2>\n<p>先把它当作主力终端试一周，重点观察分屏、会话恢复和 Agent 支持是否真的改善工作流。终端是高频工具，手感和稳定性比功能数量更重要。</p>"
+  },
   "positron-ide": {
     "title": "Positron IDE 使用心得",
     "name": "Positron IDE",
@@ -253,6 +372,19 @@ window.toolboxContent = {
     "description": "Posit 推出的数据科学 IDE，面向 Python 和 R 的分析、建模与应用开发。",
     "homepage": "https://positron.posit.co/",
     "content": "<p>Positron 是 Posit 推出的数据科学 IDE。它更像是面向数据分析场景的开发环境，而不是通用代码编辑器：重点放在 Python、R、交互式分析、模型探索和数据应用开发上。</p>\n<h2>核心特点</h2>\n<ul>\n<li>面向 Python 和 R 的数据科学工作流</li>\n<li>适合从问题探索一路推进到分析、建模和应用</li>\n<li>由 RStudio 背后的 Posit 团队推出</li>\n<li>免费使用，采用 source-available 许可</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>如果你的工作经常围绕数据表、脚本、Notebook、图表和模型来回切换，Positron 比普通编辑器更贴近这个流程。它尤其适合原本熟悉 RStudio，又希望把 Python 和 R 放在同一套现代 IDE 里的人。</p>\n<h2>使用建议</h2>\n<p>把它定位成数据分析工作台，而不是替代所有开发工具。网站、脚本、自动化项目可以继续用 VS Code 或 Trae；数据探索、统计分析和 R/Python 混合项目，则可以考虑放到 Positron。</p>"
+  },
+  "snapzy": {
+    "title": "Snapzy 使用心得",
+    "name": "Snapzy",
+    "category": "截图工具",
+    "tags": [
+      "截图",
+      "录屏",
+      "macOS"
+    ],
+    "description": "免费开源的 macOS 截图和录屏工具，支持标注、长截图、OCR 和本地优先保存。",
+    "homepage": "https://snapzy.app/",
+    "content": "<p>Snapzy 是一个原生 macOS 截图工具。它的定位很清楚：把截图、标注、录屏、OCR 和历史管理这些高频动作放到一个轻量、好看的工具里。</p>\n<h2>核心特点</h2>\n<ul>\n<li>支持区域截图、滚动截图和屏幕录制</li>\n<li>内置标注编辑，可以快速加箭头、文字和高亮</li>\n<li>支持 OCR，把截图里的文字直接提取到剪贴板</li>\n<li>本地优先，默认不把截图上传到外部服务</li>\n<li>免费开源，适合不想订阅重型截图工具的人</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>适合经常写教程、反馈问题、记录界面状态的人。相比系统自带截图，Snapzy 更适合“截完马上处理”的工作流：截图之后直接美化、标注、复制或保存。</p>\n<h2>使用建议</h2>\n<p>先把快捷键和保存位置设置好。截图工具最怕临时找不到文件，固定命名和固定目录会让后续整理轻松很多。</p>"
   },
   "trae-ide": {
     "title": "Trae IDE 使用心得",
@@ -292,13 +424,29 @@ window.toolboxContent = {
     "description": "轻量但强大的代码编辑器，适合前端、后端、数据分析和远程开发。",
     "homepage": "https://code.visualstudio.com/",
     "content": "<p>Visual Studio Code 是我日常开发中使用频率最高的工具。它轻量、快速，同时拥有成熟的插件生态。</p>\n<h2>适合谁</h2>\n<ul>\n<li>需要一个启动快、扩展多的代码编辑器</li>\n<li>经常在不同语言和项目之间切换</li>\n<li>希望把 Git、终端、调试都放在一个工作界面里</li>\n</ul>\n<h2>常用插件</h2>\n<ul>\n<li><code>ESLint</code>：JavaScript / TypeScript 代码检查</li>\n<li><code>Prettier</code>：统一代码格式</li>\n<li><code>GitLens</code>：增强 Git 历史和 blame 信息</li>\n</ul>\n<h2>小建议</h2>\n<p>先掌握命令面板和快速打开文件，再慢慢补插件。编辑器越轻，工作流越顺。</p>"
+  },
+  "zen-browser": {
+    "title": "Zen Browser 使用心得",
+    "name": "Zen Browser",
+    "category": "浏览器",
+    "tags": [
+      "浏览器",
+      "Firefox",
+      "工作区"
+    ],
+    "description": "基于 Firefox 的现代浏览器，强调可定制、工作区、侧边栏和更沉浸的浏览体验。",
+    "homepage": "https://zen-browser.app/",
+    "content": "<p>Zen Browser 是一个基于 Firefox 的现代浏览器。它更像是给重度网页工作流准备的浏览器：侧边栏、工作区、分屏和可定制界面会比传统浏览器更突出。</p>\n<h2>核心特点</h2>\n<ul>\n<li>基于 Firefox，适合不想完全依赖 Chromium 生态的人</li>\n<li>支持工作区，把不同项目或主题的标签分开管理</li>\n<li>侧边栏和紧凑界面适合宽屏和多任务浏览</li>\n<li>可以通过主题和布局调整，做出更个人化的浏览环境</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>适合标签页很多、经常在不同项目之间切换的人。比如一个工作区放研究资料，一个工作区放项目后台，一个工作区放写作和参考页面，会比所有标签挤在同一排更清楚。</p>\n<h2>使用建议</h2>\n<p>先不要一次性迁移所有浏览数据。可以把 Zen Browser 用作“研究和阅读浏览器”，等工作区和侧边栏习惯建立后，再决定它是否适合成为主浏览器。</p>"
   }
 },
   categories: [
   "全部",
   "开发工具",
+  "截图工具",
   "AI 工具",
   "效率工具",
-  "文档工具"
+  "浏览器",
+  "文档工具",
+  "游戏工具"
 ]
 }
