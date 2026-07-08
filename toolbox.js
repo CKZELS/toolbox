@@ -1,4 +1,4 @@
-import { categories, toolDetails, toolsData } from './generated-content.js'
+const { categories = [], toolDetails = {}, toolsData = [] } = window.toolboxContent || {}
 
 let currentCategory = '全部'
 let searchQuery = ''
@@ -12,15 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function initNavigation() {
-  const mobileMenuBtn = document.querySelector('.mobile-menu-btn')
-  const navLinks = document.querySelector('.site-nav-links')
-
-  if (mobileMenuBtn && navLinks) {
-    mobileMenuBtn.addEventListener('click', () => {
-      navLinks.classList.toggle('is-open')
-    })
-  }
-
   const pageKey = document.body.dataset.page
   document.querySelectorAll('[data-nav-key]').forEach(link => {
     if (link.dataset.navKey === pageKey) {
@@ -41,7 +32,7 @@ function initSearch() {
 
 function renderCategoryFilters() {
   const filters = document.querySelector('[data-category-filters]')
-  if (!filters) return
+  if (!filters || categories.length === 0) return
 
   filters.innerHTML = categories.map(category => `
     <button class="category-tag${category === currentCategory ? ' is-active' : ''}" type="button" data-category="${escapeAttribute(category)}">
@@ -82,7 +73,7 @@ function groupByCategory(tools) {
 
 function renderTools() {
   const sectionsContainer = document.querySelector('[data-tools-sections]')
-  if (!sectionsContainer) return
+  if (!sectionsContainer || toolsData.length === 0) return
 
   const filteredTools = getFilteredTools()
   if (filteredTools.length === 0) {
@@ -138,7 +129,7 @@ function initToolDetailPage() {
     articleContent.innerHTML = `
       <div class="empty-state">
         <div class="empty-state-icon">!</div>
-        <div class="empty-state-text">工具不存在，可能是 Markdown 文件里的 id 写错了。</div>
+        <div class="empty-state-text">工具不存在。</div>
       </div>
     `
     document.title = '工具不存在 - My Toolbox'

@@ -62,9 +62,11 @@ npm run build
 
 ```text
 content/tools/              Markdown 内容源
-scripts/generate-content.js 读取 Markdown 并生成前端数据
-src/js/generated-content.js 自动生成的数据文件
-src/js/main.js              首页和详情页交互
+scripts/generate-content.js 读取 Markdown，生成首页静态内容和前端数据
+generated-content.js        根目录数据文件，兼容根目录发布
+public/generated-content.js 构建时发布到 dist 的数据文件
+toolbox.js                  根目录交互脚本，兼容根目录发布
+public/toolbox.js           构建时发布到 dist 的交互脚本
 src/css/                    设计系统和页面样式
 index.html                  首页
 tool-detail.html            工具详情页
