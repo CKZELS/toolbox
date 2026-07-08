@@ -132,7 +132,7 @@ function initToolDetailPage() {
         <div class="empty-state-text">工具不存在。</div>
       </div>
     `
-    document.title = '工具不存在 - My Toolbox'
+    document.title = '工具不存在 - ZELCAO Toolbox'
     return
   }
 
@@ -172,7 +172,7 @@ function initToolDetailPage() {
     })
   }
 
-  document.title = `${detail.title} - My Toolbox`
+  document.title = `${detail.title} - ZELCAO Toolbox`
 }
 
 function setText(selector, value) {
