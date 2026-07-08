@@ -240,6 +240,38 @@ window.toolboxContent = {
     "color": "#16A34A",
     "homepage": "https://www.gamemac.com/",
     "order": 82
+  },
+  {
+    "id": "manbo",
+    "name": "曼波",
+    "icon": "🐱",
+    "description": "哈基米南北绿豆，曼波曼波。抽象、无意义、但洗脑的互联网精神图腾。",
+    "category": "效率工具",
+    "tags": [
+      "哈基米",
+      "曼波",
+      "抽象"
+    ],
+    "detailUrl": "tool-detail.html?id=manbo",
+    "color": "#F97316",
+    "homepage": "https://zh.moegirl.org.cn/哈基米",
+    "order": 95
+  },
+  {
+    "id": "laoda",
+    "name": "牢大",
+    "icon": "🏀",
+    "description": "Man! What can I say? Mamba out.",
+    "category": "效率工具",
+    "tags": [
+      "Man",
+      "Mamba out",
+      "地狱笑话"
+    ],
+    "detailUrl": "tool-detail.html?id=laoda",
+    "color": "#552583",
+    "homepage": "https://www.bilibili.com/search?keyword=牢大",
+    "order": 96
   }
 ],
   toolDetails: {
@@ -308,6 +340,19 @@ window.toolboxContent = {
     "homepage": "https://github.com/",
     "content": "<p>GitHub 不只是放代码的地方。对于个人网站来说，它还可以负责版本管理、协作修改和自动部署。</p>\n<h2>实用功能</h2>\n<ul>\n<li>Pull Request：在发布前检查改动</li>\n<li>Actions：自动构建和部署</li>\n<li>Pages：免费托管静态网站</li>\n<li>Issues：记录后续想做的功能</li>\n</ul>\n<h2>适合个人项目的用法</h2>\n<p>用 GitHub 管理个人网站、知识库或作品集很方便。它能记录每次修改，也能让你在发布前清楚看到变更。</p>"
   },
+  "laoda": {
+    "title": "牢大使用心得",
+    "name": "牢大",
+    "category": "效率工具",
+    "tags": [
+      "Man",
+      "Mamba out",
+      "地狱笑话"
+    ],
+    "description": "Man! What can I say? Mamba out.",
+    "homepage": "https://www.bilibili.com/search?keyword=牢大",
+    "content": "<p>Man! What can I say?</p>\n<h2>核心技能</h2>\n<ul>\n<li>肘击：近身攻击，儿童免肘</li>\n<li>坠机：从高空坠落自动触发，又称&quot;曼巴着陆&quot;</li>\n<li>冰红茶：选定一张蓝色背景定妆照，对手无法移开视线</li>\n</ul>\n<h2>经典连招</h2>\n<ul>\n<li><code>Man!</code> 起手</li>\n<li><code>What can I say?</code> 蓄力</li>\n<li><code>Mamba out.</code> 收尾</li>\n<li>全程保持微笑</li>\n</ul>\n<h2>适合什么场景</h2>\n<ul>\n<li>有人问&quot;你能说什么&quot;的时候</li>\n<li>需要肘击整顿职场、亲戚、熊孩子的时候</li>\n<li>看到直升机的时候</li>\n<li>想选一款饮料的时候</li>\n</ul>\n<h2>注意点</h2>\n<p>孩子们，这并不好笑。</p>\n<blockquote>事已至此，选一款饮料吧。</blockquote>"
+  },
   "lm-studio": {
     "title": "LM Studio 使用心得",
     "name": "LM Studio",
@@ -320,6 +365,19 @@ window.toolboxContent = {
     "description": "在本机下载、运行和测试开源大模型的桌面工具，适合本地 AI 实验。",
     "homepage": "https://lmstudio.ai/",
     "content": "<p>LM Studio 的重点是把本地大模型变得容易使用。它可以在自己的电脑上下载模型、运行对话，并提供兼容 OpenAI 风格的本地 API，方便被其他工具调用。</p>\n<h2>核心价值</h2>\n<ul>\n<li>在本机运行开源大模型，减少对云端服务的依赖</li>\n<li>图形界面友好，适合先试模型效果再决定是否长期使用</li>\n<li>可以作为本地模型服务，供 Cherry Studio、代码工具或自写脚本调用</li>\n<li>适合测试不同模型在写作、总结、翻译、代码等任务上的表现</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>如果你关心隐私，或者经常想测试新模型，LM Studio 很适合作为本地 AI 实验台。它不一定替代所有云端模型，但很适合处理不想上传的资料、做低成本试验，以及学习本地模型能力边界。</p>\n<h2>注意点</h2>\n<p>本地模型体验很依赖电脑性能。模型越大，对内存、显存和散热要求越高。建议从小模型开始试，确认速度和效果都能接受后，再尝试更大的模型。</p>"
+  },
+  "manbo": {
+    "title": "曼波使用心得",
+    "name": "曼波",
+    "category": "效率工具",
+    "tags": [
+      "哈基米",
+      "曼波",
+      "抽象"
+    ],
+    "description": "哈基米南北绿豆，曼波曼波。抽象、无意义、但洗脑的互联网精神图腾。",
+    "homepage": "https://zh.moegirl.org.cn/哈基米",
+    "content": "<p>曼波不是工具，是一种状态。当你脑子里只剩&quot;哈基米~哈基米~哈基米波~南北绿豆~&quot;的时候，你已经进入曼波段了。</p>\n<h2>它到底是个啥</h2>\n<ul>\n<li>哈基米来自《赛马娘》东海帝王哼的《蜂蜜之歌》，はちみつ（蜂蜜）的空耳</li>\n<li>曼波来自同作角色诗歌剧，原意是翻车鱼，因为游泳姿势像跳曼波舞</li>\n<li>两个梗在二创里混在一起，最后谁都分不清谁是谁</li>\n<li>现在的意思：没有意思。就是曼波曼波</li>\n</ul>\n<h2>适合什么场景</h2>\n<ul>\n<li>任何需要 BGM 的猫咪视频</li>\n<li>想把一首正经歌填词成&quot;哈基米南北绿豆&quot;</li>\n<li>别人问你问题时，回答&quot;曼波曼波&quot;</li>\n<li>需要让大脑短暂放空的时刻</li>\n</ul>\n<h2>使用建议</h2>\n<p>不要试图搞懂它。搞懂的那一刻，你就输了。把它当背景循环播放，该干活干活，该曼波曼波。</p>\n<blockquote>曼波就像人生：没有什么意思，但停不下来。</blockquote>"
   },
   "notion": {
     "title": "Notion 知识库搭建",
