@@ -130,6 +130,38 @@ window.toolboxContent = {
     "order": 45
   },
   {
+    "id": "rikkahub",
+    "name": "RikkaHub",
+    "icon": "🤖",
+    "description": "安卓原生 AI 聊天客户端，支持多家模型供应商，Material You 设计。",
+    "category": "AI 工具",
+    "tags": [
+      "AI 客户端",
+      "Android",
+      "多模型"
+    ],
+    "detailUrl": "tool-detail.html?id=rikkahub",
+    "color": "#6750A4",
+    "homepage": "https://rikka-ai.com/",
+    "order": 47
+  },
+  {
+    "id": "kelivo",
+    "name": "Kelivo",
+    "icon": "💬",
+    "description": "基于 Flutter 的跨平台 AI 聊天客户端，覆盖移动端和桌面端。",
+    "category": "AI 工具",
+    "tags": [
+      "AI 客户端",
+      "跨平台",
+      "Flutter"
+    ],
+    "detailUrl": "tool-detail.html?id=kelivo",
+    "color": "#0EA5E9",
+    "homepage": "https://kelivo.psycheas.top/",
+    "order": 48
+  },
+  {
     "id": "github",
     "name": "GitHub",
     "icon": "◇",
@@ -427,6 +459,19 @@ window.toolboxContent = {
     "homepage": "https://helium.computer/",
     "content": "<p>Helium 基于 ungoogled-chromium，主打隐私优先和极简体验。默认拦截广告、追踪和钓鱼网站，不内置任何分析或追踪，首次启动零网络请求。</p>\n<h2>核心特点</h2>\n<ul>\n<li>默认屏蔽广告、追踪器、第三方 cookie（uBlock Origin 内置）</li>\n<li>原生支持 Chromium 扩展，包括 MV2</li>\n<li>分屏浏览、原生 !bangs、<code>Cmd+Shift+C</code> 快速复制链接</li>\n<li>安装网页应用作为独立桌面应用，不重复启动 Chromium</li>\n<li>完全开源（GPL-3.0），可自托管服务</li>\n</ul>\n<h2>适合什么场景</h2>\n<ul>\n<li>想要开箱即用的隐私保护，不想手动配置</li>\n<li>受够了浏览器内置广告、弹窗和无用功能</li>\n<li>需要 Chromium 扩展生态但不想被 Google 追踪</li>\n<li>希望浏览器轻量、不打扰、不越权</li>\n</ul>\n<h2>注意点</h2>\n<p>仍在 Beta 阶段，偶有兼容性问题。基于 Chromium 所以网页兼容性没问题，但部分需要 Google 服务登录的网站可能需要额外处理。</p>"
   },
+  "kelivo": {
+    "title": "Kelivo 使用心得",
+    "name": "Kelivo",
+    "category": "AI 工具",
+    "tags": [
+      "AI 客户端",
+      "跨平台",
+      "Flutter"
+    ],
+    "description": "基于 Flutter 的跨平台 AI 聊天客户端，覆盖移动端和桌面端。",
+    "homepage": "https://kelivo.psycheas.top/",
+    "content": "<p>Kelivo 用 Flutter 开发，一套代码跑遍 Android、iOS、HarmonyOS、Windows、macOS 和 Linux。界面设计受 RikkaHub 启发，主打多平台、多供应商和本地优先。</p>\n<h2>核心特点</h2>\n<ul>\n<li>全平台：移动端（Android/iOS/鸿蒙）+ 桌面端（Windows/macOS/Linux）</li>\n<li>多供应商：OpenAI、Gemini、Anthropic 等主流模型，自配 API Key</li>\n<li>MCP 支持：工具集成 + 内置 fetch 工具</li>\n<li>联网搜索：Bing、Exa、Tavily、Brave、Metaso、SearXNG 等十多种</li>\n<li>多模态输入：图片、PDF、Word 文档</li>\n<li>语音 TTS：系统 TTS + OpenAI / Gemini / ElevenLabs</li>\n<li>数据备份：支持聊天记录备份恢复，可接 WebDAV / S3</li>\n<li>自定义字体、二维码分享供应商配置</li>\n</ul>\n<h2>适合什么场景</h2>\n<ul>\n<li>需要在手机和电脑上用同一个 AI 客户端</li>\n<li>想要鸿蒙端也能用的 AI 聊天工具</li>\n<li>需要联网搜索和 MCP 工具调用</li>\n<li>重视数据可控，想自己备份聊天记录</li>\n</ul>\n<h2>注意点</h2>\n<p>同样需要自备 API Key。多端同步靠手动备份恢复，不是自动云同步。内置本地 Bing 搜索质量一般，建议配置 Exa 或 Tavily 等 API 提升搜索效果。</p>"
+  },
   "laoda": {
     "title": "牢大使用心得",
     "name": "牢大",
@@ -517,6 +562,19 @@ window.toolboxContent = {
     "description": "Posit 推出的数据科学 IDE，面向 Python 和 R 的分析、建模与应用开发。",
     "homepage": "https://positron.posit.co/",
     "content": "<p>Positron 是 Posit 推出的数据科学 IDE。它更像是面向数据分析场景的开发环境，而不是通用代码编辑器：重点放在 Python、R、交互式分析、模型探索和数据应用开发上。</p>\n<h2>核心特点</h2>\n<ul>\n<li>面向 Python 和 R 的数据科学工作流</li>\n<li>适合从问题探索一路推进到分析、建模和应用</li>\n<li>由 RStudio 背后的 Posit 团队推出</li>\n<li>免费使用，采用 source-available 许可</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>如果你的工作经常围绕数据表、脚本、Notebook、图表和模型来回切换，Positron 比普通编辑器更贴近这个流程。它尤其适合原本熟悉 RStudio，又希望把 Python 和 R 放在同一套现代 IDE 里的人。</p>\n<h2>使用建议</h2>\n<p>把它定位成数据分析工作台，而不是替代所有开发工具。网站、脚本、自动化项目可以继续用 VS Code 或 Trae；数据探索、统计分析和 R/Python 混合项目，则可以考虑放到 Positron。</p>"
+  },
+  "rikkahub": {
+    "title": "RikkaHub 使用心得",
+    "name": "RikkaHub",
+    "category": "AI 工具",
+    "tags": [
+      "AI 客户端",
+      "Android",
+      "多模型"
+    ],
+    "description": "安卓原生 AI 聊天客户端，支持多家模型供应商，Material You 设计。",
+    "homepage": "https://rikka-ai.com/",
+    "content": "<p>RikkaHub 是用 Kotlin + Jetpack Compose 写的安卓原生 LLM 聊天客户端，界面遵循 Material You，支持动态主题色和深色模式。可以接入 OpenAI、Google、Anthropic 及所有兼容 API，自由切换模型。</p>\n<h2>核心特点</h2>\n<ul>\n<li>多供应商：自定义 API / URL / 模型，支持 OpenAI、Gemini、Anthropic</li>\n<li>多模态输入：图片、文档、PDF、Docx</li>\n<li>MCP 支持：集成 Model Context Protocol 工具调用</li>\n<li>搜索增强：Exa、Tavily、Brave、Perplexity 等多种搜索引擎</li>\n<li>消息分支：随时创建对话分支，探索不同回复方向</li>\n<li>智能记忆：类 ChatGPT 记忆功能，记住你的偏好</li>\n<li>Markdown 渲染：代码高亮、LaTeX 公式、表格、Mermaid 流程图</li>\n<li>Web 界面：不止手机端，浏览器也能用</li>\n</ul>\n<h2>适合什么场景</h2>\n<ul>\n<li>安卓用户想要一个原生体验的 AI 聊天客户端</li>\n<li>需要在多个模型供应商之间自由切换</li>\n<li>想要 MCP 工具调用和联网搜索能力</li>\n<li>重视本地隐私，API Key 只存在设备上</li>\n</ul>\n<h2>注意点</h2>\n<p>需要自备 API Key。它不是厂商官方客户端，默认不内置系统提示词，回答风格和官方 App 会有差异，可以在助手设置里自行调整。</p>"
   },
   "snapzy": {
     "title": "Snapzy 使用心得",
