@@ -18,20 +18,36 @@ window.toolboxContent = {
     "order": 10
   },
   {
-    "id": "figma",
-    "name": "Figma",
-    "icon": "🎨",
-    "description": "基于浏览器的协作式界面设计工具，适合 UI、原型和设计系统。",
-    "category": "设计工具",
+    "id": "trae-ide",
+    "name": "Trae IDE",
+    "icon": "✦",
+    "description": "字节跳动推出的 AI IDE，基于 Code OSS，强调对话、上下文理解和智能编码协作。",
+    "category": "开发工具",
     "tags": [
-      "设计",
-      "协作",
-      "云端"
+      "AI IDE",
+      "编程",
+      "Code OSS"
     ],
-    "detailUrl": "tool-detail.html?id=figma",
-    "color": "#F24E1E",
-    "homepage": "https://www.figma.com/",
-    "order": 20
+    "detailUrl": "tool-detail.html?id=trae-ide",
+    "color": "#111827",
+    "homepage": "https://www.trae.ai/",
+    "order": 15
+  },
+  {
+    "id": "cherry-studio",
+    "name": "Cherry Studio",
+    "icon": "🍒",
+    "description": "跨平台 AI 桌面工作站，可以统一接入多个大模型、助手和本地模型服务。",
+    "category": "AI 工具",
+    "tags": [
+      "AI 客户端",
+      "多模型",
+      "桌面应用"
+    ],
+    "detailUrl": "tool-detail.html?id=cherry-studio",
+    "color": "#D9466F",
+    "homepage": "https://cherry-ai.com/",
+    "order": 25
   },
   {
     "id": "notion",
@@ -50,20 +66,36 @@ window.toolboxContent = {
     "order": 30
   },
   {
-    "id": "raycast",
-    "name": "Raycast",
-    "icon": "⚡",
-    "description": "macOS 上的启动器和效率工具，可以快速执行常用操作。",
-    "category": "效率工具",
+    "id": "lm-studio",
+    "name": "LM Studio",
+    "icon": "◐",
+    "description": "在本机下载、运行和测试开源大模型的桌面工具，适合本地 AI 实验。",
+    "category": "AI 工具",
     "tags": [
-      "启动器",
-      "Mac",
-      "效率"
+      "本地模型",
+      "LLM",
+      "隐私"
     ],
-    "detailUrl": "tool-detail.html?id=raycast",
-    "color": "#FF6363",
-    "homepage": "https://www.raycast.com/",
-    "order": 40
+    "detailUrl": "tool-detail.html?id=lm-studio",
+    "color": "#10B981",
+    "homepage": "https://lmstudio.ai/",
+    "order": 35
+  },
+  {
+    "id": "anysearch",
+    "name": "AnySearch",
+    "icon": "🔎",
+    "description": "面向 AI Agent 的搜索基础设施，用来给智能体补充实时网页检索能力。",
+    "category": "AI 工具",
+    "tags": [
+      "AI 搜索",
+      "Agent",
+      "MCP"
+    ],
+    "detailUrl": "tool-detail.html?id=anysearch",
+    "color": "#2563EB",
+    "homepage": "https://anysearch.com/",
+    "order": 45
   },
   {
     "id": "github",
@@ -82,6 +114,22 @@ window.toolboxContent = {
     "order": 50
   },
   {
+    "id": "positron-ide",
+    "name": "Positron IDE",
+    "icon": "⬡",
+    "description": "Posit 推出的数据科学 IDE，面向 Python 和 R 的分析、建模与应用开发。",
+    "category": "开发工具",
+    "tags": [
+      "数据科学",
+      "Python",
+      "R"
+    ],
+    "detailUrl": "tool-detail.html?id=positron-ide",
+    "color": "#4F46E5",
+    "homepage": "https://positron.posit.co/",
+    "order": 55
+  },
+  {
     "id": "obsidian",
     "name": "Obsidian",
     "icon": "◆",
@@ -96,21 +144,50 @@ window.toolboxContent = {
     "color": "#7C3AED",
     "homepage": "https://obsidian.md/",
     "order": 60
+  },
+  {
+    "id": "updf",
+    "name": "UPDF",
+    "icon": "📄",
+    "description": "跨平台 PDF 编辑器，支持编辑、批注、转换、OCR 和 AI 阅读分析。",
+    "category": "文档工具",
+    "tags": [
+      "PDF",
+      "OCR",
+      "AI 阅读"
+    ],
+    "detailUrl": "tool-detail.html?id=updf",
+    "color": "#6D5DF6",
+    "homepage": "https://updf.com/",
+    "order": 70
   }
 ],
   toolDetails: {
-  "figma": {
-    "title": "Figma 设计指南",
-    "name": "Figma",
-    "category": "设计工具",
+  "anysearch": {
+    "title": "AnySearch 使用心得",
+    "name": "AnySearch",
+    "category": "AI 工具",
     "tags": [
-      "设计",
-      "协作",
-      "云端"
+      "AI 搜索",
+      "Agent",
+      "MCP"
     ],
-    "description": "基于浏览器的协作式界面设计工具，适合 UI、原型和设计系统。",
-    "homepage": "https://www.figma.com/",
-    "content": "<p>Figma 已经成为 UI/UX 设计里非常常见的工具。它最重要的价值不是“能画图”，而是让设计、产品、开发能在同一个文件里对齐。</p>\n<h2>核心优势</h2>\n<ul>\n<li>实时协作，适合团队一起看稿和改稿</li>\n<li>Auto Layout 可以更接近真实前端布局</li>\n<li>Components 和 Variants 适合沉淀设计系统</li>\n</ul>\n<h2>推荐用法</h2>\n<p>把常用组件先做成规范，再开始堆页面。这样后面改按钮、颜色、间距时，维护成本会低很多。</p>"
+    "description": "面向 AI Agent 的搜索基础设施，用来给智能体补充实时网页检索能力。",
+    "homepage": "https://anysearch.com/",
+    "content": "<p>AnySearch 更适合被理解成“给 AI Agent 用的搜索能力”，而不是普通浏览器搜索框。它的价值在于让智能体在需要外部信息时，可以通过统一接口查找、核验和读取网页内容。</p>\n<h2>适合什么场景</h2>\n<ul>\n<li>需要让 AI 助手查找最新资料、产品信息或网页内容</li>\n<li>希望把搜索能力接入 Codex、Claude、Cursor 等 Agent 工作流</li>\n<li>需要先搜索结果，再进一步读取网页正文</li>\n<li>想把“搜索、打开、提取内容”这类动作交给自动化流程</li>\n</ul>\n<h2>我会怎么用</h2>\n<p>把它放在需要联网核验的环节，而不是所有问题都默认搜索。比如产品资料、价格、版本、政策、新闻这类容易变化的信息，就适合先让 AnySearch 查一遍；但个人笔记、固定流程、项目内部规则，仍然应该优先看本地资料。</p>\n<h2>注意点</h2>\n<p>搜索工具的质量取决于 API 配置和结果来源。使用时最好让 AI 明确区分“查到的事实”和“根据事实做出的判断”，这样后续维护会更稳。</p>"
+  },
+  "cherry-studio": {
+    "title": "Cherry Studio 使用心得",
+    "name": "Cherry Studio",
+    "category": "AI 工具",
+    "tags": [
+      "AI 客户端",
+      "多模型",
+      "桌面应用"
+    ],
+    "description": "跨平台 AI 桌面工作站，可以统一接入多个大模型、助手和本地模型服务。",
+    "homepage": "https://cherry-ai.com/",
+    "content": "<p>Cherry Studio 是一个面向日常使用的大模型桌面客户端。它适合把不同模型服务、助手模板、文件处理和对话工作流放到同一个界面里管理。</p>\n<h2>核心特点</h2>\n<ul>\n<li>支持 OpenAI、Gemini、Anthropic 等云端模型服务</li>\n<li>可以连接 Ollama、LM Studio 等本地模型服务</li>\n<li>内置大量预设助手，也可以创建自己的助手</li>\n<li>支持文本、图片、Office、PDF 等材料处理</li>\n<li>支持 Windows、macOS 和 Linux</li>\n</ul>\n<h2>适合什么人</h2>\n<p>适合经常在多个模型之间切换的人。比如有时用云端模型做高质量写作，有时用本地模型处理私密材料，有时又想用不同助手模板完成翻译、总结、代码解释或资料整理。</p>\n<h2>使用建议</h2>\n<p>先配置一两个最常用模型，不要一开始塞满所有服务。等常用场景稳定后，再慢慢补助手、知识材料和自动化能力。</p>"
   },
   "github": {
     "title": "GitHub 使用技巧",
@@ -124,6 +201,19 @@ window.toolboxContent = {
     "description": "代码托管和协作平台，适合开源项目、个人网站和自动化部署。",
     "homepage": "https://github.com/",
     "content": "<p>GitHub 不只是放代码的地方。对于个人网站来说，它还可以负责版本管理、协作修改和自动部署。</p>\n<h2>实用功能</h2>\n<ul>\n<li>Pull Request：在发布前检查改动</li>\n<li>Actions：自动构建和部署</li>\n<li>Pages：免费托管静态网站</li>\n<li>Issues：记录后续想做的功能</li>\n</ul>\n<h2>适合个人项目的用法</h2>\n<p>用 GitHub 管理个人网站、知识库或作品集很方便。它能记录每次修改，也能让你在发布前清楚看到变更。</p>"
+  },
+  "lm-studio": {
+    "title": "LM Studio 使用心得",
+    "name": "LM Studio",
+    "category": "AI 工具",
+    "tags": [
+      "本地模型",
+      "LLM",
+      "隐私"
+    ],
+    "description": "在本机下载、运行和测试开源大模型的桌面工具，适合本地 AI 实验。",
+    "homepage": "https://lmstudio.ai/",
+    "content": "<p>LM Studio 的重点是把本地大模型变得容易使用。它可以在自己的电脑上下载模型、运行对话，并提供兼容 OpenAI 风格的本地 API，方便被其他工具调用。</p>\n<h2>核心价值</h2>\n<ul>\n<li>在本机运行开源大模型，减少对云端服务的依赖</li>\n<li>图形界面友好，适合先试模型效果再决定是否长期使用</li>\n<li>可以作为本地模型服务，供 Cherry Studio、代码工具或自写脚本调用</li>\n<li>适合测试不同模型在写作、总结、翻译、代码等任务上的表现</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>如果你关心隐私，或者经常想测试新模型，LM Studio 很适合作为本地 AI 实验台。它不一定替代所有云端模型，但很适合处理不想上传的资料、做低成本试验，以及学习本地模型能力边界。</p>\n<h2>注意点</h2>\n<p>本地模型体验很依赖电脑性能。模型越大，对内存、显存和散热要求越高。建议从小模型开始试，确认速度和效果都能接受后，再尝试更大的模型。</p>"
   },
   "notion": {
     "title": "Notion 知识库搭建",
@@ -151,18 +241,44 @@ window.toolboxContent = {
     "homepage": "https://obsidian.md/",
     "content": "<p>Obsidian 的核心优势是本地优先。你的笔记就是普通 Markdown 文件，不容易被某个平台锁住。</p>\n<h2>核心概念</h2>\n<ul>\n<li>双向链接：让笔记之间形成网络</li>\n<li>图谱视图：观察知识连接</li>\n<li>插件生态：补足日历、查询、模板等能力</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>适合长期沉淀笔记、项目资料和个人知识库。越是想保留原始文件所有权，越能感受到它的价值。</p>"
   },
-  "raycast": {
-    "title": "Raycast 效率指南",
-    "name": "Raycast",
-    "category": "效率工具",
+  "positron-ide": {
+    "title": "Positron IDE 使用心得",
+    "name": "Positron IDE",
+    "category": "开发工具",
     "tags": [
-      "启动器",
-      "Mac",
-      "效率"
+      "数据科学",
+      "Python",
+      "R"
     ],
-    "description": "macOS 上的启动器和效率工具，可以快速执行常用操作。",
-    "homepage": "https://www.raycast.com/",
-    "content": "<p>Raycast 适合希望减少鼠标操作的人。它把应用启动、剪贴板、窗口管理、扩展命令放在同一个入口。</p>\n<h2>常用功能</h2>\n<ul>\n<li>快速启动应用</li>\n<li>搜索剪贴板历史</li>\n<li>管理窗口位置</li>\n<li>通过扩展连接 GitHub、Linear、Notion 等工具</li>\n</ul>\n<h2>使用建议</h2>\n<p>先从启动应用和剪贴板历史开始。等形成肌肉记忆后，再逐步加入扩展。</p>"
+    "description": "Posit 推出的数据科学 IDE，面向 Python 和 R 的分析、建模与应用开发。",
+    "homepage": "https://positron.posit.co/",
+    "content": "<p>Positron 是 Posit 推出的数据科学 IDE。它更像是面向数据分析场景的开发环境，而不是通用代码编辑器：重点放在 Python、R、交互式分析、模型探索和数据应用开发上。</p>\n<h2>核心特点</h2>\n<ul>\n<li>面向 Python 和 R 的数据科学工作流</li>\n<li>适合从问题探索一路推进到分析、建模和应用</li>\n<li>由 RStudio 背后的 Posit 团队推出</li>\n<li>免费使用，采用 source-available 许可</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>如果你的工作经常围绕数据表、脚本、Notebook、图表和模型来回切换，Positron 比普通编辑器更贴近这个流程。它尤其适合原本熟悉 RStudio，又希望把 Python 和 R 放在同一套现代 IDE 里的人。</p>\n<h2>使用建议</h2>\n<p>把它定位成数据分析工作台，而不是替代所有开发工具。网站、脚本、自动化项目可以继续用 VS Code 或 Trae；数据探索、统计分析和 R/Python 混合项目，则可以考虑放到 Positron。</p>"
+  },
+  "trae-ide": {
+    "title": "Trae IDE 使用心得",
+    "name": "Trae IDE",
+    "category": "开发工具",
+    "tags": [
+      "AI IDE",
+      "编程",
+      "Code OSS"
+    ],
+    "description": "字节跳动推出的 AI IDE，基于 Code OSS，强调对话、上下文理解和智能编码协作。",
+    "homepage": "https://www.trae.ai/",
+    "content": "<p>Trae IDE 是面向 AI 编程的新一代开发环境。它基于 Code OSS，也就是 VS Code 的开源基础，因此整体交互会让 VS Code 用户比较熟悉。</p>\n<h2>核心特点</h2>\n<ul>\n<li>内置 AI 对话和代码辅助能力</li>\n<li>可以结合项目上下文理解代码</li>\n<li>适合用自然语言让 AI 解释、修改、生成和重构代码</li>\n<li>对 VS Code 用户迁移成本较低</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>适合想尝试 AI 编程，但又不想完全离开传统编辑器习惯的人。对于新项目搭建、代码解释、小功能修改、报错排查，它可以明显降低进入成本。</p>\n<h2>使用建议</h2>\n<p>把它当作“能读项目的编程搭档”，不要只让它补全单行代码。更好的用法是给它明确目标、约束和验收方式，让它围绕整个文件或整个功能协助修改。</p>"
+  },
+  "updf": {
+    "title": "UPDF 使用心得",
+    "name": "UPDF",
+    "category": "文档工具",
+    "tags": [
+      "PDF",
+      "OCR",
+      "AI 阅读"
+    ],
+    "description": "跨平台 PDF 编辑器，支持编辑、批注、转换、OCR 和 AI 阅读分析。",
+    "homepage": "https://updf.com/",
+    "content": "<p>UPDF 是一个偏全能型的 PDF 工具。它覆盖阅读、批注、编辑、页面整理、格式转换、OCR、签名和 AI 总结等常见 PDF 工作。</p>\n<h2>核心特点</h2>\n<ul>\n<li>可以直接编辑 PDF 中的文字、图片和链接</li>\n<li>支持批注、高亮、形状、贴纸和签名</li>\n<li>支持 PDF 转 Word、Excel、图片等格式</li>\n<li>支持 OCR、页面拆分合并、裁剪和旋转</li>\n<li>AI 功能可以总结、翻译、对 PDF 提问，也可以处理图片内容</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>适合经常处理论文、报告、合同、说明书和扫描件的人。相比只读型 PDF 工具，UPDF 更像是“PDF 工作台”，既能阅读，也能整理和修改。</p>\n<h2>使用建议</h2>\n<p>日常阅读可以先用批注和 AI 总结提高效率；真正修改合同、论文或正式文件前，建议保留原文件备份，避免改动后难以回溯。</p>"
   },
   "vscode": {
     "title": "VS Code 使用心得",
@@ -181,7 +297,8 @@ window.toolboxContent = {
   categories: [
   "全部",
   "开发工具",
-  "设计工具",
-  "效率工具"
+  "AI 工具",
+  "效率工具",
+  "文档工具"
 ]
 }
