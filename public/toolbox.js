@@ -13,10 +13,10 @@ const easterEggModes = {
     tags: ['搜索「曼波」触发', 'mambo verified', '节奏通过']
   },
   guard: {
-    kicker: 'Risky meme intercepted',
-    title: '争议梗已被轻轻刹住',
-    text: '这个词条更像带攻击性的黑称。页面选择只留一个刹车痕迹，不把它做成正面展示。',
-    tags: ['玩梗有边界', '已降噪', '继续看工具']
+    kicker: 'Man! What can I say?',
+    title: 'Mamba out.',
+    text: '孩子们，事已至此，选一款饮料吧。搜索触发，儿童免肘。',
+    tags: ['搜索「牢大」触发', '曼巴退场', '冰红茶已就位']
   },
   secret: {
     kicker: 'Title tap combo',
