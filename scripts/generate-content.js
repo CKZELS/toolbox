@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url'
 const rootDir = dirname(dirname(fileURLToPath(import.meta.url)))
 const contentDir = join(rootDir, 'content', 'tools')
 const outputFile = join(rootDir, 'src', 'js', 'generated-content.js')
+const indexFile = join(rootDir, 'index.html')
 
 const requiredFields = ['id', 'name', 'category', 'summary', 'icon', 'color', 'homepage', 'tags']
 
@@ -79,6 +80,10 @@ function escapeHtml(value) {
     .replaceAll('>', '&gt;')
     .replaceAll('"', '&quot;')
     .replaceAll("'", '&#39;')
+}
+
+function escapeAttribute(value) {
+  return escapeHtml(value).replaceAll('`', '&#96;')
 }
 
 function formatInline(value) {
@@ -175,6 +180,58 @@ function markdownToHtml(markdown) {
   return html.join('\n')
 }
 
+function groupByCategory(tools) {
+  return tools.reduce((groups, tool) => {
+    if (!groups.has(tool.category)) groups.set(tool.category, [])
+    groups.get(tool.category).push(tool)
+    return groups
+  }, new Map())
+}
+
+function renderStaticCategoryFilters(categories) {
+  return categories.map(category => `
+        <button class="category-tag${category === '全部' ? ' is-active' : ''}" type="button" data-category="${escapeAttribute(category)}">${escapeHtml(category)}</button>`).join('')
+}
+
+function renderStaticToolCard(tool, index) {
+  return `
+          <a href="${escapeAttribute(tool.detailUrl)}" class="tool-card stagger-item" style="animation-delay: ${index * 40}ms;">
+            <div class="tool-card-icon" style="background: ${escapeAttribute(tool.color)}15; border-color: ${escapeAttribute(tool.color)}30; color: ${escapeAttribute(tool.color)};">
+              ${escapeHtml(tool.icon)}
+            </div>
+            <div class="tool-card-content">
+              <div class="tool-card-title">${escapeHtml(tool.name)}</div>
+              <div class="tool-card-desc">${escapeHtml(tool.description)}</div>
+              <div class="tool-card-tags">
+                ${tool.tags.slice(0, 3).map(tag => `<span class="tool-card-tag">${escapeHtml(tag)}</span>`).join('')}
+              </div>
+            </div>
+          </a>`
+}
+
+function renderStaticToolSections(tools) {
+  return Array.from(groupByCategory(tools).entries()).map(([category, categoryTools]) => `
+        <section class="category-section">
+          <div class="section-header">
+            <h2 class="section-title">${escapeHtml(category)}</h2>
+            <span class="section-count">${categoryTools.length} 个工具</span>
+          </div>
+          <div class="tools-grid">
+            ${categoryTools.map((tool, index) => renderStaticToolCard(tool, index)).join('')}
+          </div>
+        </section>`).join('')
+}
+
+function replaceGeneratedBlock(source, name, html) {
+  const start = `<!-- generated:${name}:start -->`
+  const end = `<!-- generated:${name}:end -->`
+  const pattern = new RegExp(`${start}[\\s\\S]*?${end}`)
+  if (!pattern.test(source)) {
+    throw new Error(`index.html 缺少生成标记：${name}`)
+  }
+  return source.replace(pattern, `${start}${html}\n        ${end}`)
+}
+
 async function main() {
   const entries = await readdir(contentDir, { withFileTypes: true })
   const files = entries
@@ -221,7 +278,17 @@ async function main() {
 
   await mkdir(dirname(outputFile), { recursive: true })
   await writeFile(outputFile, generated, 'utf8')
+
+  const currentIndex = await readFile(indexFile, 'utf8')
+  const nextIndex = replaceGeneratedBlock(
+    replaceGeneratedBlock(currentIndex, 'category-filters', renderStaticCategoryFilters(categories)),
+    'tools-sections',
+    renderStaticToolSections(tools)
+  )
+  await writeFile(indexFile, nextIndex, 'utf8')
+
   console.log(`Generated ${tools.length} tools -> ${outputFile}`)
+  console.log(`Updated static homepage fallback -> ${indexFile}`)
 }
 
 main().catch(error => {
