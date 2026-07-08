@@ -178,6 +178,22 @@ window.toolboxContent = {
     "order": 60
   },
   {
+    "id": "cardinal",
+    "name": "Cardinal",
+    "icon": "🔍",
+    "description": "macOS 上的高速文件搜索工具，基于 Rust+Tauri，支持 Everything 语法。",
+    "category": "效率工具",
+    "tags": [
+      "文件搜索",
+      "macOS",
+      "Everything"
+    ],
+    "detailUrl": "tool-detail.html?id=cardinal",
+    "color": "#DC2626",
+    "homepage": "https://github.com/cardisoft/cardinal",
+    "order": 62
+  },
+  {
     "id": "brave",
     "name": "Brave",
     "icon": "◈",
@@ -210,6 +226,22 @@ window.toolboxContent = {
     "order": 66
   },
   {
+    "id": "helium",
+    "name": "Helium",
+    "icon": "🎈",
+    "description": "基于 Chromium 的隐私优先浏览器，默认拦截广告和追踪，开源无臃肿。",
+    "category": "浏览器",
+    "tags": [
+      "浏览器",
+      "隐私",
+      "开源"
+    ],
+    "detailUrl": "tool-detail.html?id=helium",
+    "color": "#0EA5E9",
+    "homepage": "https://helium.computer/",
+    "order": 68
+  },
+  {
     "id": "updf",
     "name": "UPDF",
     "icon": "📄",
@@ -240,6 +272,22 @@ window.toolboxContent = {
     "color": "#16A34A",
     "homepage": "https://www.gamemac.com/",
     "order": 82
+  },
+  {
+    "id": "destiny-2",
+    "name": "命运 2",
+    "icon": "🔫",
+    "description": "Bungie 出品的在线射击 MMORPG，融合枪械手感、副本和长期角色养成。",
+    "category": "游戏工具",
+    "tags": [
+      "FPS",
+      "MMORPG",
+      "在线射击"
+    ],
+    "detailUrl": "tool-detail.html?id=destiny-2",
+    "color": "#F59E0B",
+    "homepage": "https://www.bungie.com/",
+    "order": 84
   },
   {
     "id": "manbo",
@@ -301,6 +349,19 @@ window.toolboxContent = {
     "homepage": "https://brave.com/",
     "content": "<p>Brave 是一个基于 Chromium 的浏览器。它最值得推荐的地方不是“长得不一样”，而是默认就把广告拦截、防追踪和隐私保护做得比较积极。</p>\n<h2>核心特点</h2>\n<ul>\n<li>默认拦截广告、跟踪器和部分指纹识别</li>\n<li>基于 Chromium，兼容大多数 Chrome 扩展</li>\n<li>内置隐私搜索、阅读列表、同步和钱包等功能</li>\n<li>适合把它作为日常主浏览器或隐私优先的备用浏览器</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>适合不想折腾太多插件，但又希望浏览器默认更安静的人。对于经常查资料、看文档、打开大量网页的人，Brave 可以减少广告、弹窗和追踪带来的干扰。</p>\n<h2>使用建议</h2>\n<p>如果你已经长期使用 Chrome，可以先把 Brave 当作工作浏览器或资料搜索浏览器。等书签、扩展和同步都稳定后，再考虑完全迁移。</p>"
   },
+  "cardinal": {
+    "title": "Cardinal 使用心得",
+    "name": "Cardinal",
+    "category": "效率工具",
+    "tags": [
+      "文件搜索",
+      "macOS",
+      "Everything"
+    ],
+    "description": "macOS 上的高速文件搜索工具，基于 Rust+Tauri，支持 Everything 语法。",
+    "homepage": "https://github.com/cardisoft/cardinal",
+    "content": "<p>Cardinal 是 macOS 上对标 Windows Everything 的文件搜索工具。Rust 后端加 Tauri 前端，响应在毫秒级，千万级文件列表也能流畅渲染。</p>\n<h2>核心特点</h2>\n<ul>\n<li>毫秒级搜索，结果比 Spotlight 更精准</li>\n<li>Everything 兼容语法：空格 AND、<code>|</code> OR、<code>!</code> NOT、<code>ext:pdf</code>、<code>size:&gt;100MB</code></li>\n<li>路径分段匹配：<code>/root</code> 前缀、<code>root/</code> 后缀、<code>src/**/Cargo.toml</code> globstar</li>\n<li>全局热键 <code>Cmd+Shift+Space</code> 唤起，<code>Space</code> 快速预览</li>\n<li>开源免费，<code>brew install --cask cardinal-search</code> 一键安装</li>\n</ul>\n<h2>适合什么场景</h2>\n<ul>\n<li>Spotlight 结果遗漏、找不到文件的时候</li>\n<li>怀念 Windows Everything 的搜索体验</li>\n<li>需要按扩展名、大小、路径、Finder 标签精确过滤文件</li>\n<li>穿梭在大量代码仓库和系统目录之间</li>\n</ul>\n<h2>使用建议</h2>\n<p>如果常用 Everything 语法，上手很快。不熟悉的话，从最简单的关键词搜起，再逐步加 <code>ext:</code>、<code>size:</code> 这些过滤条件。它主打文件名和路径搜索，不是全文检索工具。</p>"
+  },
   "cherry-studio": {
     "title": "Cherry Studio 使用心得",
     "name": "Cherry Studio",
@@ -313,6 +374,19 @@ window.toolboxContent = {
     "description": "跨平台 AI 桌面工作站，可以统一接入多个大模型、助手和本地模型服务。",
     "homepage": "https://cherry-ai.com/",
     "content": "<p>Cherry Studio 是一个面向日常使用的大模型桌面客户端。它适合把不同模型服务、助手模板、文件处理和对话工作流放到同一个界面里管理。</p>\n<h2>核心特点</h2>\n<ul>\n<li>支持 OpenAI、Gemini、Anthropic 等云端模型服务</li>\n<li>可以连接 Ollama、LM Studio 等本地模型服务</li>\n<li>内置大量预设助手，也可以创建自己的助手</li>\n<li>支持文本、图片、Office、PDF 等材料处理</li>\n<li>支持 Windows、macOS 和 Linux</li>\n</ul>\n<h2>适合什么人</h2>\n<p>适合经常在多个模型之间切换的人。比如有时用云端模型做高质量写作，有时用本地模型处理私密材料，有时又想用不同助手模板完成翻译、总结、代码解释或资料整理。</p>\n<h2>使用建议</h2>\n<p>先配置一两个最常用模型，不要一开始塞满所有服务。等常用场景稳定后，再慢慢补助手、知识材料和自动化能力。</p>"
+  },
+  "destiny-2": {
+    "title": "命运 2 使用心得",
+    "name": "命运 2",
+    "category": "游戏工具",
+    "tags": [
+      "FPS",
+      "MMORPG",
+      "在线射击"
+    ],
+    "description": "Bungie 出品的在线射击 MMORPG，融合枪械手感、副本和长期角色养成。",
+    "homepage": "https://www.bungie.com/",
+    "content": "<p>命运 2 是 Bungie 做的在线共享世界射击游戏。它把 FPS 的枪械手感和 MMO 的副本、装备、赛季长线养成揉在一起，是那种&quot;打一把很爽，打一年也很深&quot;的游戏。</p>\n<h2>核心特点</h2>\n<ul>\n<li>枪械手感顶级，手柄震动和辅助瞄准调校是行业标杆</li>\n<li>突袭（Raid）和地牢（Dungeon）是最硬核的 6 人/3 人协作副本</li>\n<li>赛季制持续更新，每年有大型资料片扩展剧情和玩法</li>\n<li>PvP（熔炉）和 PvE（打击、副本）双轨并行</li>\n<li>跨平台联机，进度跨平台同步</li>\n</ul>\n<h2>适合什么场景</h2>\n<ul>\n<li>喜欢射击手感但又想要长线角色养成</li>\n<li>有固定队友，想挑战高难度团队副本</li>\n<li>单人也能刷赛季活动、做异域武器任务</li>\n<li>想要一款能长期投入的&quot;主力游戏&quot;</li>\n</ul>\n<h2>注意点</h2>\n<p>内容门槛不低：新资料片和赛季需要付费，部分旧内容已进入&quot;内容保险库&quot;被下架。新手前期会经历一段&quot;不知道该干什么&quot;的阶段，建议找一份当前赛季的新手指引跟进度。</p>"
   },
   "gamehub": {
     "title": "GameHub 使用心得",
@@ -339,6 +413,19 @@ window.toolboxContent = {
     "description": "代码托管和协作平台，适合开源项目、个人网站和自动化部署。",
     "homepage": "https://github.com/",
     "content": "<p>GitHub 不只是放代码的地方。对于个人网站来说，它还可以负责版本管理、协作修改和自动部署。</p>\n<h2>实用功能</h2>\n<ul>\n<li>Pull Request：在发布前检查改动</li>\n<li>Actions：自动构建和部署</li>\n<li>Pages：免费托管静态网站</li>\n<li>Issues：记录后续想做的功能</li>\n</ul>\n<h2>适合个人项目的用法</h2>\n<p>用 GitHub 管理个人网站、知识库或作品集很方便。它能记录每次修改，也能让你在发布前清楚看到变更。</p>"
+  },
+  "helium": {
+    "title": "Helium 使用心得",
+    "name": "Helium",
+    "category": "浏览器",
+    "tags": [
+      "浏览器",
+      "隐私",
+      "开源"
+    ],
+    "description": "基于 Chromium 的隐私优先浏览器，默认拦截广告和追踪，开源无臃肿。",
+    "homepage": "https://helium.computer/",
+    "content": "<p>Helium 基于 ungoogled-chromium，主打隐私优先和极简体验。默认拦截广告、追踪和钓鱼网站，不内置任何分析或追踪，首次启动零网络请求。</p>\n<h2>核心特点</h2>\n<ul>\n<li>默认屏蔽广告、追踪器、第三方 cookie（uBlock Origin 内置）</li>\n<li>原生支持 Chromium 扩展，包括 MV2</li>\n<li>分屏浏览、原生 !bangs、<code>Cmd+Shift+C</code> 快速复制链接</li>\n<li>安装网页应用作为独立桌面应用，不重复启动 Chromium</li>\n<li>完全开源（GPL-3.0），可自托管服务</li>\n</ul>\n<h2>适合什么场景</h2>\n<ul>\n<li>想要开箱即用的隐私保护，不想手动配置</li>\n<li>受够了浏览器内置广告、弹窗和无用功能</li>\n<li>需要 Chromium 扩展生态但不想被 Google 追踪</li>\n<li>希望浏览器轻量、不打扰、不越权</li>\n</ul>\n<h2>注意点</h2>\n<p>仍在 Beta 阶段，偶有兼容性问题。基于 Chromium 所以网页兼容性没问题，但部分需要 Google 服务登录的网站可能需要额外处理。</p>"
   },
   "laoda": {
     "title": "牢大使用心得",
