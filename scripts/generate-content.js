@@ -1,4 +1,4 @@
-import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises'
+import { copyFile, mkdir, readFile, readdir, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -6,6 +6,8 @@ const rootDir = dirname(dirname(fileURLToPath(import.meta.url)))
 const contentDir = join(rootDir, 'content', 'tools')
 const rootOutputFile = join(rootDir, 'generated-content.js')
 const publicOutputFile = join(rootDir, 'public', 'generated-content.js')
+const rootToolboxFile = join(rootDir, 'toolbox.js')
+const publicToolboxFile = join(rootDir, 'public', 'toolbox.js')
 const indexFile = join(rootDir, 'index.html')
 
 const requiredFields = ['id', 'name', 'category', 'summary', 'icon', 'color', 'homepage', 'tags']
@@ -280,6 +282,7 @@ async function main() {
   await writeFile(rootOutputFile, generated, 'utf8')
   await mkdir(dirname(publicOutputFile), { recursive: true })
   await writeFile(publicOutputFile, generated, 'utf8')
+  await copyFile(rootToolboxFile, publicToolboxFile)
 
   const currentIndex = await readFile(indexFile, 'utf8')
   const nextIndex = replaceGeneratedBlock(
@@ -292,6 +295,7 @@ async function main() {
   console.log(`Generated ${tools.length} tools`)
   console.log(`Generated root data -> ${rootOutputFile}`)
   console.log(`Generated public data -> ${publicOutputFile}`)
+  console.log(`Synced public script -> ${publicToolboxFile}`)
   console.log(`Updated static homepage fallback -> ${indexFile}`)
 }
 
