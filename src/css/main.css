@@ -83,6 +83,12 @@ img {
   gap: var(--spacer-32);
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacer-8);
+}
+
 .site-nav-link {
   position: relative;
   padding: var(--spacer-8) 0;
@@ -210,6 +216,10 @@ img {
   margin-top: var(--spacer-48);
 }
 
+.tools-sections {
+  margin-top: var(--spacer-16);
+}
+
 .section-header {
   display: flex;
   align-items: center;
@@ -223,6 +233,12 @@ img {
   font-weight: var(--heading-xl-font-weight);
   line-height: var(--heading-xl-line-height);
   color: var(--text-default);
+}
+
+.section-count {
+  color: var(--text-tertiary);
+  font-size: var(--body-sm-font-size);
+  line-height: var(--body-sm-line-height);
 }
 
 .category-filters {
@@ -379,6 +395,14 @@ img {
   margin-bottom: var(--spacer-8);
 }
 
+.tool-detail-description {
+  max-width: 720px;
+  margin: 0 0 var(--spacer-16) 0;
+  color: var(--text-secondary);
+  font-size: var(--body-base-font-size);
+  line-height: var(--body-base-line-height);
+}
+
 .tool-detail-meta {
   display: flex;
   flex-wrap: wrap;
@@ -392,6 +416,22 @@ img {
   flex-wrap: wrap;
 }
 
+.tool-info-card {
+  margin-bottom: var(--spacer-32);
+}
+
+.tool-info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacer-16);
+  color: var(--text-tertiary);
+}
+
+.tool-info-row a {
+  color: var(--text-brand);
+}
+
 .article-content {
   max-width: 780px;
   margin: 0 auto;
@@ -401,6 +441,15 @@ img {
   color: var(--text-secondary);
   font-size: var(--body-base-font-size);
   line-height: 1.8;
+}
+
+.article-body h1 {
+  font-family: var(--font-family-heading);
+  font-size: var(--heading-2xl-font-size);
+  font-weight: var(--heading-2xl-font-weight);
+  line-height: var(--heading-2xl-line-height);
+  color: var(--text-default);
+  margin: 0 0 var(--spacer-16) 0;
 }
 
 .article-body h2 {
@@ -466,6 +515,17 @@ img {
   margin: var(--spacer-16) 0;
   color: var(--text-tertiary);
   font-style: italic;
+}
+
+.article-body a,
+.site-footer a {
+  color: var(--text-brand);
+}
+
+.article-body a:hover,
+.site-footer a:hover {
+  color: var(--text-brand-hover);
+  text-decoration: underline;
 }
 
 .guide-section {

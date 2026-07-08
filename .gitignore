@@ -16,3 +16,6 @@ Thumbs.db
 
 # Trae internal
 .trae/
+
+# Build output
+dist/
