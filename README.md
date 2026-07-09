@@ -4,7 +4,7 @@
 
 一个用 Markdown 维护的工具收藏网站模板。把固定格式的 Markdown 文件放进 `content/tools/`，构建时会自动生成首页分类模块和工具详情页。
 
-![Toolbox 预览](docs/preview.png)
+![Toolbox 预览](https://raw.githubusercontent.com/CKZELS/toolbox/main/docs/preview.png)
 
 ## 当前架构速览
 
