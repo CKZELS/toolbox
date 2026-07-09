@@ -4,7 +4,7 @@ English | [中文](README.md)
 
 A tool collection website template maintained with Markdown. Drop fixed-format Markdown files into `content/tools/`, and the build automatically generates homepage category sections and tool detail pages.
 
-![Toolbox Preview](docs/preview.png)
+![Toolbox Preview](docs/preview.jpg)
 
 ## Architecture Overview
 
