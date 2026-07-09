@@ -1,10 +1,10 @@
-# My Toolbox
+# Toolbox
 
-个人工具箱网站。把固定格式的 Markdown 文件放进 `content/tools/`，构建时会自动生成首页分类模块和工具详情页。
+一个用 Markdown 维护的工具收藏网站模板。把固定格式的 Markdown 文件放进 `content/tools/`，构建时会自动生成首页分类模块和工具详情页。
 
 ## 当前架构速览
 
-这个项目是静态网站，适合部署到 Cloudflare Pages。
+这个项目是静态网站，适合部署到 Cloudflare Pages 或 GitHub Pages。
 
 - 公开网站只发布 `index.html` 和 `tool-detail.html`
 - 维护文档放在 `docs/writing-guide.md`，不会发布到公开网站
@@ -99,5 +99,4 @@ docs/writing-guide.md       维护者写作指南，不发布到公开网站
 - 修改交互：只改根目录 `toolbox.js`，然后运行 `npm run generate`
 - 不要手动改 `public/toolbox.js`，它会被覆盖
 - 不要手动改 `generated-content.js` 或 `public/generated-content.js`
-- 不要把 `writing-guide.html`、`markdown-demo.html` 重新加入构建入口；维护说明应留在 `docs/`
 - 每次提交前至少运行一次 `npm run build`

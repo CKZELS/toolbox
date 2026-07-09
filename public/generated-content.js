@@ -2,654 +2,99 @@
 window.toolboxContent = {
   toolsData: [
   {
-    "id": "vscode",
-    "name": "VS Code",
-    "icon": "💻",
-    "description": "轻量但强大的代码编辑器，适合前端、后端、数据分析和远程开发。",
+    "id": "example-dev-tool",
+    "name": "示例开发工具",
+    "icon": "⌨️",
+    "description": "这是一个示例条目，演示开发工具分类下工具卡片的展示效果。",
     "category": "开发工具",
     "tags": [
-      "编辑器",
-      "开源",
-      "跨平台"
+      "示例",
+      "开发工具",
+      "编辑器"
     ],
-    "detailUrl": "tool-detail.html?id=vscode",
+    "detailUrl": "tool-detail.html?id=example-dev-tool",
     "color": "#007ACC",
-    "homepage": "https://code.visualstudio.com/",
+    "homepage": "https://example.com/",
     "order": 10
   },
   {
-    "id": "otty",
-    "name": "Otty",
-    "icon": "▣",
-    "description": "原生、现代的终端应用，强调手感、主题、会话管理和代码 Agent 工作流。",
-    "category": "开发工具",
-    "tags": [
-      "终端",
-      "开发",
-      "Agent"
-    ],
-    "detailUrl": "tool-detail.html?id=otty",
-    "color": "#0F766E",
-    "homepage": "https://otty.sh/",
-    "order": 12
-  },
-  {
-    "id": "trae-ide",
-    "name": "Trae IDE",
-    "icon": "✦",
-    "description": "字节跳动推出的 AI IDE，基于 Code OSS，强调对话、上下文理解和智能编码协作。",
-    "category": "开发工具",
-    "tags": [
-      "AI IDE",
-      "编程",
-      "Code OSS"
-    ],
-    "detailUrl": "tool-detail.html?id=trae-ide",
-    "color": "#111827",
-    "homepage": "https://www.trae.ai/",
-    "order": 15
-  },
-  {
-    "id": "snapzy",
-    "name": "Snapzy",
-    "icon": "◎",
-    "description": "免费开源的 macOS 截图和录屏工具，支持标注、长截图、OCR 和本地优先保存。",
-    "category": "截图工具",
-    "tags": [
-      "截图",
-      "录屏",
-      "macOS"
-    ],
-    "detailUrl": "tool-detail.html?id=snapzy",
-    "color": "#F97316",
-    "homepage": "https://snapzy.app/",
-    "order": 22
-  },
-  {
-    "id": "cherry-studio",
-    "name": "Cherry Studio",
-    "icon": "🍒",
-    "description": "跨平台 AI 桌面工作站，可以统一接入多个大模型、助手和本地模型服务。",
-    "category": "AI 工具",
-    "tags": [
-      "AI 客户端",
-      "多模型",
-      "桌面应用"
-    ],
-    "detailUrl": "tool-detail.html?id=cherry-studio",
-    "color": "#D9466F",
-    "homepage": "https://cherry-ai.com/",
-    "order": 25
-  },
-  {
-    "id": "notion",
-    "name": "Notion",
-    "icon": "📝",
-    "description": "集笔记、文档、任务和知识库于一体的生产力工具。",
+    "id": "example-efficiency-tool",
+    "name": "示例效率工具",
+    "icon": "⚡",
+    "description": "这是一个示例条目，演示效率工具分类下工具卡片的展示效果。",
     "category": "效率工具",
     "tags": [
-      "笔记",
-      "知识库",
-      "任务管理"
+      "示例",
+      "效率工具",
+      "笔记"
     ],
-    "detailUrl": "tool-detail.html?id=notion",
-    "color": "#111111",
-    "homepage": "https://www.notion.so/",
+    "detailUrl": "tool-detail.html?id=example-efficiency-tool",
+    "color": "#7C3AED",
+    "homepage": "https://example.com/",
     "order": 30
   },
   {
-    "id": "lm-studio",
-    "name": "LM Studio",
-    "icon": "◐",
-    "description": "在本机下载、运行和测试开源大模型的桌面工具，适合本地 AI 实验。",
-    "category": "AI 工具",
-    "tags": [
-      "本地模型",
-      "LLM",
-      "隐私"
-    ],
-    "detailUrl": "tool-detail.html?id=lm-studio",
-    "color": "#10B981",
-    "homepage": "https://lmstudio.ai/",
-    "order": 35
-  },
-  {
-    "id": "anysearch",
-    "name": "AnySearch",
-    "icon": "🔎",
-    "description": "面向 AI Agent 的搜索基础设施，用来给智能体补充实时网页检索能力。",
-    "category": "AI 工具",
-    "tags": [
-      "AI 搜索",
-      "Agent",
-      "MCP"
-    ],
-    "detailUrl": "tool-detail.html?id=anysearch",
-    "color": "#2563EB",
-    "homepage": "https://anysearch.com/",
-    "order": 45
-  },
-  {
-    "id": "rikkahub",
-    "name": "RikkaHub",
+    "id": "example-ai-tool",
+    "name": "示例 AI 工具",
     "icon": "🤖",
-    "description": "安卓原生 AI 聊天客户端，支持多家模型供应商，Material You 设计。",
+    "description": "这是一个示例条目，演示 AI 工具分类下工具卡片的展示效果。",
     "category": "AI 工具",
     "tags": [
-      "AI 客户端",
-      "Android",
-      "多模型"
+      "示例",
+      "AI 工具",
+      "助手"
     ],
-    "detailUrl": "tool-detail.html?id=rikkahub",
-    "color": "#6750A4",
-    "homepage": "https://rikka-ai.com/",
-    "order": 47
-  },
-  {
-    "id": "kelivo",
-    "name": "Kelivo",
-    "icon": "💬",
-    "description": "基于 Flutter 的跨平台 AI 聊天客户端，覆盖移动端和桌面端。",
-    "category": "AI 工具",
-    "tags": [
-      "AI 客户端",
-      "跨平台",
-      "Flutter"
-    ],
-    "detailUrl": "tool-detail.html?id=kelivo",
-    "color": "#0EA5E9",
-    "homepage": "https://kelivo.psycheas.top/",
-    "order": 48
-  },
-  {
-    "id": "github",
-    "name": "GitHub",
-    "icon": "◇",
-    "description": "代码托管和协作平台，适合开源项目、个人网站和自动化部署。",
-    "category": "开发工具",
-    "tags": [
-      "代码托管",
-      "开源",
-      "部署"
-    ],
-    "detailUrl": "tool-detail.html?id=github",
-    "color": "#24292E",
-    "homepage": "https://github.com/",
+    "detailUrl": "tool-detail.html?id=example-ai-tool",
+    "color": "#2563EB",
+    "homepage": "https://example.com/",
     "order": 50
-  },
-  {
-    "id": "positron-ide",
-    "name": "Positron IDE",
-    "icon": "⬡",
-    "description": "Posit 推出的数据科学 IDE，面向 Python 和 R 的分析、建模与应用开发。",
-    "category": "开发工具",
-    "tags": [
-      "数据科学",
-      "Python",
-      "R"
-    ],
-    "detailUrl": "tool-detail.html?id=positron-ide",
-    "color": "#4F46E5",
-    "homepage": "https://positron.posit.co/",
-    "order": 55
-  },
-  {
-    "id": "obsidian",
-    "name": "Obsidian",
-    "icon": "◆",
-    "description": "基于本地 Markdown 文件的知识管理工具，强调数据所有权和双向链接。",
-    "category": "效率工具",
-    "tags": [
-      "Markdown",
-      "本地优先",
-      "知识管理"
-    ],
-    "detailUrl": "tool-detail.html?id=obsidian",
-    "color": "#7C3AED",
-    "homepage": "https://obsidian.md/",
-    "order": 60
-  },
-  {
-    "id": "cardinal",
-    "name": "Cardinal",
-    "icon": "🔍",
-    "description": "macOS 上的高速文件搜索工具，基于 Rust+Tauri，支持 Everything 语法。",
-    "category": "效率工具",
-    "tags": [
-      "文件搜索",
-      "macOS",
-      "Everything"
-    ],
-    "detailUrl": "tool-detail.html?id=cardinal",
-    "color": "#DC2626",
-    "homepage": "https://github.com/cardisoft/cardinal",
-    "order": 62
-  },
-  {
-    "id": "brave",
-    "name": "Brave",
-    "icon": "◈",
-    "description": "注重隐私和速度的 Chromium 系浏览器，内置广告拦截、防追踪和可选 AI 功能。",
-    "category": "浏览器",
-    "tags": [
-      "浏览器",
-      "隐私",
-      "Chromium"
-    ],
-    "detailUrl": "tool-detail.html?id=brave",
-    "color": "#FB542B",
-    "homepage": "https://brave.com/",
-    "order": 64
-  },
-  {
-    "id": "zen-browser",
-    "name": "Zen Browser",
-    "icon": "◌",
-    "description": "基于 Firefox 的现代浏览器，强调可定制、工作区、侧边栏和更沉浸的浏览体验。",
-    "category": "浏览器",
-    "tags": [
-      "浏览器",
-      "Firefox",
-      "工作区"
-    ],
-    "detailUrl": "tool-detail.html?id=zen-browser",
-    "color": "#7C3AED",
-    "homepage": "https://zen-browser.app/",
-    "order": 66
-  },
-  {
-    "id": "helium",
-    "name": "Helium",
-    "icon": "🎈",
-    "description": "基于 Chromium 的隐私优先浏览器，默认拦截广告和追踪，开源无臃肿。",
-    "category": "浏览器",
-    "tags": [
-      "浏览器",
-      "隐私",
-      "开源"
-    ],
-    "detailUrl": "tool-detail.html?id=helium",
-    "color": "#0EA5E9",
-    "homepage": "https://helium.computer/",
-    "order": 68
-  },
-  {
-    "id": "updf",
-    "name": "UPDF",
-    "icon": "📄",
-    "description": "跨平台 PDF 编辑器，支持编辑、批注、转换、OCR 和 AI 阅读分析。",
-    "category": "文档工具",
-    "tags": [
-      "PDF",
-      "OCR",
-      "AI 阅读"
-    ],
-    "detailUrl": "tool-detail.html?id=updf",
-    "color": "#6D5DF6",
-    "homepage": "https://updf.com/",
-    "order": 70
-  },
-  {
-    "id": "gamehub",
-    "name": "GameHub",
-    "icon": "◒",
-    "description": "面向 Mac 的 Windows 游戏运行工具，整合 Steam、GOG、Epic 和兼容层配置。",
-    "category": "游戏工具",
-    "tags": [
-      "Mac 游戏",
-      "Windows 游戏",
-      "Steam"
-    ],
-    "detailUrl": "tool-detail.html?id=gamehub",
-    "color": "#16A34A",
-    "homepage": "https://www.gamemac.com/",
-    "order": 82
-  },
-  {
-    "id": "destiny-2",
-    "name": "命运 2",
-    "icon": "🔫",
-    "description": "Bungie 出品的在线射击 MMORPG，融合枪械手感、副本和长期角色养成。",
-    "category": "游戏工具",
-    "tags": [
-      "FPS",
-      "MMORPG",
-      "在线射击"
-    ],
-    "detailUrl": "tool-detail.html?id=destiny-2",
-    "color": "#F59E0B",
-    "homepage": "https://www.bungie.com/",
-    "order": 84
-  },
-  {
-    "id": "manbo",
-    "name": "曼波",
-    "icon": "🐱",
-    "description": "哈基米南北绿豆，曼波曼波。抽象、无意义、但洗脑的互联网精神图腾。",
-    "category": "效率工具",
-    "tags": [
-      "哈基米",
-      "曼波",
-      "抽象"
-    ],
-    "detailUrl": "tool-detail.html?id=manbo",
-    "color": "#F97316",
-    "homepage": "https://zh.moegirl.org.cn/哈基米",
-    "order": 95
-  },
-  {
-    "id": "laoda",
-    "name": "牢大",
-    "icon": "🏀",
-    "description": "Man! What can I say? Mamba out.",
-    "category": "效率工具",
-    "tags": [
-      "Man",
-      "Mamba out",
-      "地狱笑话"
-    ],
-    "detailUrl": "tool-detail.html?id=laoda",
-    "color": "#552583",
-    "homepage": "https://www.bilibili.com/search?keyword=牢大",
-    "order": 96
   }
 ],
   toolDetails: {
-  "anysearch": {
-    "title": "AnySearch 使用心得",
-    "name": "AnySearch",
+  "example-ai-tool": {
+    "title": "示例 AI 工具使用心得",
+    "name": "示例 AI 工具",
     "category": "AI 工具",
     "tags": [
-      "AI 搜索",
-      "Agent",
-      "MCP"
+      "示例",
+      "AI 工具",
+      "助手"
     ],
-    "description": "面向 AI Agent 的搜索基础设施，用来给智能体补充实时网页检索能力。",
-    "homepage": "https://anysearch.com/",
-    "content": "<p>AnySearch 更适合被理解成“给 AI Agent 用的搜索能力”，而不是普通浏览器搜索框。它的价值在于让智能体在需要外部信息时，可以通过统一接口查找、核验和读取网页内容。</p>\n<h2>适合什么场景</h2>\n<ul>\n<li>需要让 AI 助手查找最新资料、产品信息或网页内容</li>\n<li>希望把搜索能力接入 Codex、Claude、Cursor 等 Agent 工作流</li>\n<li>需要先搜索结果，再进一步读取网页正文</li>\n<li>想把“搜索、打开、提取内容”这类动作交给自动化流程</li>\n</ul>\n<h2>我会怎么用</h2>\n<p>把它放在需要联网核验的环节，而不是所有问题都默认搜索。比如产品资料、价格、版本、政策、新闻这类容易变化的信息，就适合先让 AnySearch 查一遍；但个人笔记、固定流程、项目内部规则，仍然应该优先看本地资料。</p>\n<h2>注意点</h2>\n<p>搜索工具的质量取决于 API 配置和结果来源。使用时最好让 AI 明确区分“查到的事实”和“根据事实做出的判断”，这样后续维护会更稳。</p>"
+    "description": "这是一个示例条目，演示 AI 工具分类下工具卡片的展示效果。",
+    "homepage": "https://example.com/",
+    "content": "<p>这是一段示例正文，用来演示工具详情页的排版效果。实际使用时请替换为真实工具的介绍。</p>\n<h2>核心特点</h2>\n<ul>\n<li>示例特点一：支持哪些模型或能力</li>\n<li>示例特点二：有哪些集成或扩展能力</li>\n<li>示例特点三：数据隐私和本地化方面的表现</li>\n</ul>\n<h2>使用建议</h2>\n<p>先配置最常用的一个模型，确认效果后再逐步扩展。不要一开始就塞满所有配置。</p>\n<pre><code>// 这是一个示例代码块，用来展示代码块样式\nconst example = &#39;把这段替换成真实的配置或示例代码&#39;\nconsole.log(example)</code></pre>"
   },
-  "brave": {
-    "title": "Brave 使用心得",
-    "name": "Brave",
-    "category": "浏览器",
-    "tags": [
-      "浏览器",
-      "隐私",
-      "Chromium"
-    ],
-    "description": "注重隐私和速度的 Chromium 系浏览器，内置广告拦截、防追踪和可选 AI 功能。",
-    "homepage": "https://brave.com/",
-    "content": "<p>Brave 是一个基于 Chromium 的浏览器。它最值得推荐的地方不是“长得不一样”，而是默认就把广告拦截、防追踪和隐私保护做得比较积极。</p>\n<h2>核心特点</h2>\n<ul>\n<li>默认拦截广告、跟踪器和部分指纹识别</li>\n<li>基于 Chromium，兼容大多数 Chrome 扩展</li>\n<li>内置隐私搜索、阅读列表、同步和钱包等功能</li>\n<li>适合把它作为日常主浏览器或隐私优先的备用浏览器</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>适合不想折腾太多插件，但又希望浏览器默认更安静的人。对于经常查资料、看文档、打开大量网页的人，Brave 可以减少广告、弹窗和追踪带来的干扰。</p>\n<h2>使用建议</h2>\n<p>如果你已经长期使用 Chrome，可以先把 Brave 当作工作浏览器或资料搜索浏览器。等书签、扩展和同步都稳定后，再考虑完全迁移。</p>"
-  },
-  "cardinal": {
-    "title": "Cardinal 使用心得",
-    "name": "Cardinal",
-    "category": "效率工具",
-    "tags": [
-      "文件搜索",
-      "macOS",
-      "Everything"
-    ],
-    "description": "macOS 上的高速文件搜索工具，基于 Rust+Tauri，支持 Everything 语法。",
-    "homepage": "https://github.com/cardisoft/cardinal",
-    "content": "<p>Cardinal 是 macOS 上对标 Windows Everything 的文件搜索工具。Rust 后端加 Tauri 前端，响应在毫秒级，千万级文件列表也能流畅渲染。</p>\n<h2>核心特点</h2>\n<ul>\n<li>毫秒级搜索，结果比 Spotlight 更精准</li>\n<li>Everything 兼容语法：空格 AND、<code>|</code> OR、<code>!</code> NOT、<code>ext:pdf</code>、<code>size:&gt;100MB</code></li>\n<li>路径分段匹配：<code>/root</code> 前缀、<code>root/</code> 后缀、<code>src/**/Cargo.toml</code> globstar</li>\n<li>全局热键 <code>Cmd+Shift+Space</code> 唤起，<code>Space</code> 快速预览</li>\n<li>开源免费，<code>brew install --cask cardinal-search</code> 一键安装</li>\n</ul>\n<h2>适合什么场景</h2>\n<ul>\n<li>Spotlight 结果遗漏、找不到文件的时候</li>\n<li>怀念 Windows Everything 的搜索体验</li>\n<li>需要按扩展名、大小、路径、Finder 标签精确过滤文件</li>\n<li>穿梭在大量代码仓库和系统目录之间</li>\n</ul>\n<h2>使用建议</h2>\n<p>如果常用 Everything 语法，上手很快。不熟悉的话，从最简单的关键词搜起，再逐步加 <code>ext:</code>、<code>size:</code> 这些过滤条件。它主打文件名和路径搜索，不是全文检索工具。</p>"
-  },
-  "cherry-studio": {
-    "title": "Cherry Studio 使用心得",
-    "name": "Cherry Studio",
-    "category": "AI 工具",
-    "tags": [
-      "AI 客户端",
-      "多模型",
-      "桌面应用"
-    ],
-    "description": "跨平台 AI 桌面工作站，可以统一接入多个大模型、助手和本地模型服务。",
-    "homepage": "https://cherry-ai.com/",
-    "content": "<p>Cherry Studio 是一个面向日常使用的大模型桌面客户端。它适合把不同模型服务、助手模板、文件处理和对话工作流放到同一个界面里管理。</p>\n<h2>核心特点</h2>\n<ul>\n<li>支持 OpenAI、Gemini、Anthropic 等云端模型服务</li>\n<li>可以连接 Ollama、LM Studio 等本地模型服务</li>\n<li>内置大量预设助手，也可以创建自己的助手</li>\n<li>支持文本、图片、Office、PDF 等材料处理</li>\n<li>支持 Windows、macOS 和 Linux</li>\n</ul>\n<h2>适合什么人</h2>\n<p>适合经常在多个模型之间切换的人。比如有时用云端模型做高质量写作，有时用本地模型处理私密材料，有时又想用不同助手模板完成翻译、总结、代码解释或资料整理。</p>\n<h2>使用建议</h2>\n<p>先配置一两个最常用模型，不要一开始塞满所有服务。等常用场景稳定后，再慢慢补助手、知识材料和自动化能力。</p>"
-  },
-  "destiny-2": {
-    "title": "命运 2 使用心得",
-    "name": "命运 2",
-    "category": "游戏工具",
-    "tags": [
-      "FPS",
-      "MMORPG",
-      "在线射击"
-    ],
-    "description": "Bungie 出品的在线射击 MMORPG，融合枪械手感、副本和长期角色养成。",
-    "homepage": "https://www.bungie.com/",
-    "content": "<p>命运 2 是 Bungie 做的在线共享世界射击游戏。它把 FPS 的枪械手感和 MMO 的副本、装备、赛季长线养成揉在一起，是那种&quot;打一把很爽，打一年也很深&quot;的游戏。</p>\n<h2>核心特点</h2>\n<ul>\n<li>枪械手感顶级，手柄震动和辅助瞄准调校是行业标杆</li>\n<li>突袭（Raid）和地牢（Dungeon）是最硬核的 6 人/3 人协作副本</li>\n<li>赛季制持续更新，每年有大型资料片扩展剧情和玩法</li>\n<li>PvP（熔炉）和 PvE（打击、副本）双轨并行</li>\n<li>跨平台联机，进度跨平台同步</li>\n</ul>\n<h2>适合什么场景</h2>\n<ul>\n<li>喜欢射击手感但又想要长线角色养成</li>\n<li>有固定队友，想挑战高难度团队副本</li>\n<li>单人也能刷赛季活动、做异域武器任务</li>\n<li>想要一款能长期投入的&quot;主力游戏&quot;</li>\n</ul>\n<h2>注意点</h2>\n<p>内容门槛不低：新资料片和赛季需要付费，部分旧内容已进入&quot;内容保险库&quot;被下架。新手前期会经历一段&quot;不知道该干什么&quot;的阶段，建议找一份当前赛季的新手指引跟进度。</p>"
-  },
-  "gamehub": {
-    "title": "GameHub 使用心得",
-    "name": "GameHub",
-    "category": "游戏工具",
-    "tags": [
-      "Mac 游戏",
-      "Windows 游戏",
-      "Steam"
-    ],
-    "description": "面向 Mac 的 Windows 游戏运行工具，整合 Steam、GOG、Epic 和兼容层配置。",
-    "homepage": "https://www.gamemac.com/",
-    "content": "<p>GameHub 是一个让 Mac 用户更方便运行 Windows 游戏的工具。它把游戏库、兼容层、运行环境和启动配置放到一个更接近游戏启动器的界面里。</p>\n<h2>核心特点</h2>\n<ul>\n<li>支持管理和启动 Steam、GOG、Epic 等来源的游戏</li>\n<li>围绕 Wine、Proton、GPTK 等兼容技术做封装</li>\n<li>可以为不同游戏准备独立运行环境</li>\n<li>比手动配置命令行和容器更适合普通玩家上手</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>适合想在 Mac 上尝试 Windows 游戏，但不想自己折腾 Wine、Proton、DXVK、GPTK 和各种运行参数的人。它不能保证所有游戏都顺畅运行，但能把试错门槛降下来。</p>\n<h2>注意点</h2>\n<p>Mac 跑 Windows 游戏仍然有兼容性边界。反作弊、DRM、图形 API、输入设备和性能都会影响体验。建议把它当作“让更多游戏有机会运行”的工具，而不是当作稳定替代 Windows 游戏电脑。</p>"
-  },
-  "github": {
-    "title": "GitHub 使用技巧",
-    "name": "GitHub",
+  "example-dev-tool": {
+    "title": "示例开发工具使用心得",
+    "name": "示例开发工具",
     "category": "开发工具",
     "tags": [
-      "代码托管",
-      "开源",
-      "部署"
+      "示例",
+      "开发工具",
+      "编辑器"
     ],
-    "description": "代码托管和协作平台，适合开源项目、个人网站和自动化部署。",
-    "homepage": "https://github.com/",
-    "content": "<p>GitHub 不只是放代码的地方。对于个人网站来说，它还可以负责版本管理、协作修改和自动部署。</p>\n<h2>实用功能</h2>\n<ul>\n<li>Pull Request：在发布前检查改动</li>\n<li>Actions：自动构建和部署</li>\n<li>Pages：免费托管静态网站</li>\n<li>Issues：记录后续想做的功能</li>\n</ul>\n<h2>适合个人项目的用法</h2>\n<p>用 GitHub 管理个人网站、知识库或作品集很方便。它能记录每次修改，也能让你在发布前清楚看到变更。</p>"
+    "description": "这是一个示例条目，演示开发工具分类下工具卡片的展示效果。",
+    "homepage": "https://example.com/",
+    "content": "<p>这是一段示例正文，用来演示工具详情页的排版效果。你可以把它替换成任意真实工具的介绍。</p>\n<h2>为什么推荐</h2>\n<ul>\n<li>第一条示例理由：说明这个工具解决了什么问题</li>\n<li>第二条示例理由：说明它比同类工具好在哪里</li>\n<li>第三条示例理由：说明适合什么样的使用场景</li>\n</ul>\n<h2>使用建议</h2>\n<p>这里写给读者的具体建议。例如先掌握某个核心功能，再逐步深入进阶用法。</p>\n<blockquote>这是一个示例引用块，用来展示引用样式。</blockquote>"
   },
-  "helium": {
-    "title": "Helium 使用心得",
-    "name": "Helium",
-    "category": "浏览器",
-    "tags": [
-      "浏览器",
-      "隐私",
-      "开源"
-    ],
-    "description": "基于 Chromium 的隐私优先浏览器，默认拦截广告和追踪，开源无臃肿。",
-    "homepage": "https://helium.computer/",
-    "content": "<p>Helium 基于 ungoogled-chromium，主打隐私优先和极简体验。默认拦截广告、追踪和钓鱼网站，不内置任何分析或追踪，首次启动零网络请求。</p>\n<h2>核心特点</h2>\n<ul>\n<li>默认屏蔽广告、追踪器、第三方 cookie（uBlock Origin 内置）</li>\n<li>原生支持 Chromium 扩展，包括 MV2</li>\n<li>分屏浏览、原生 !bangs、<code>Cmd+Shift+C</code> 快速复制链接</li>\n<li>安装网页应用作为独立桌面应用，不重复启动 Chromium</li>\n<li>完全开源（GPL-3.0），可自托管服务</li>\n</ul>\n<h2>适合什么场景</h2>\n<ul>\n<li>想要开箱即用的隐私保护，不想手动配置</li>\n<li>受够了浏览器内置广告、弹窗和无用功能</li>\n<li>需要 Chromium 扩展生态但不想被 Google 追踪</li>\n<li>希望浏览器轻量、不打扰、不越权</li>\n</ul>\n<h2>注意点</h2>\n<p>仍在 Beta 阶段，偶有兼容性问题。基于 Chromium 所以网页兼容性没问题，但部分需要 Google 服务登录的网站可能需要额外处理。</p>"
-  },
-  "kelivo": {
-    "title": "Kelivo 使用心得",
-    "name": "Kelivo",
-    "category": "AI 工具",
-    "tags": [
-      "AI 客户端",
-      "跨平台",
-      "Flutter"
-    ],
-    "description": "基于 Flutter 的跨平台 AI 聊天客户端，覆盖移动端和桌面端。",
-    "homepage": "https://kelivo.psycheas.top/",
-    "content": "<p>Kelivo 用 Flutter 开发，一套代码跑遍 Android、iOS、HarmonyOS、Windows、macOS 和 Linux。界面设计受 RikkaHub 启发，主打多平台、多供应商和本地优先。</p>\n<h2>核心特点</h2>\n<ul>\n<li>全平台：移动端（Android/iOS/鸿蒙）+ 桌面端（Windows/macOS/Linux）</li>\n<li>多供应商：OpenAI、Gemini、Anthropic 等主流模型，自配 API Key</li>\n<li>MCP 支持：工具集成 + 内置 fetch 工具</li>\n<li>联网搜索：Bing、Exa、Tavily、Brave、Metaso、SearXNG 等十多种</li>\n<li>多模态输入：图片、PDF、Word 文档</li>\n<li>语音 TTS：系统 TTS + OpenAI / Gemini / ElevenLabs</li>\n<li>数据备份：支持聊天记录备份恢复，可接 WebDAV / S3</li>\n<li>自定义字体、二维码分享供应商配置</li>\n</ul>\n<h2>适合什么场景</h2>\n<ul>\n<li>需要在手机和电脑上用同一个 AI 客户端</li>\n<li>想要鸿蒙端也能用的 AI 聊天工具</li>\n<li>需要联网搜索和 MCP 工具调用</li>\n<li>重视数据可控，想自己备份聊天记录</li>\n</ul>\n<h2>注意点</h2>\n<p>同样需要自备 API Key。多端同步靠手动备份恢复，不是自动云同步。内置本地 Bing 搜索质量一般，建议配置 Exa 或 Tavily 等 API 提升搜索效果。</p>"
-  },
-  "laoda": {
-    "title": "牢大使用心得",
-    "name": "牢大",
+  "example-efficiency-tool": {
+    "title": "示例效率工具使用心得",
+    "name": "示例效率工具",
     "category": "效率工具",
     "tags": [
-      "Man",
-      "Mamba out",
-      "地狱笑话"
+      "示例",
+      "效率工具",
+      "笔记"
     ],
-    "description": "Man! What can I say? Mamba out.",
-    "homepage": "https://www.bilibili.com/search?keyword=牢大",
-    "content": "<p>Man! What can I say?</p>\n<h2>核心技能</h2>\n<ul>\n<li>肘击：近身攻击，儿童免肘</li>\n<li>坠机：从高空坠落自动触发，又称&quot;曼巴着陆&quot;</li>\n<li>冰红茶：选定一张蓝色背景定妆照，对手无法移开视线</li>\n</ul>\n<h2>经典连招</h2>\n<ul>\n<li><code>Man!</code> 起手</li>\n<li><code>What can I say?</code> 蓄力</li>\n<li><code>Mamba out.</code> 收尾</li>\n<li>全程保持微笑</li>\n</ul>\n<h2>适合什么场景</h2>\n<ul>\n<li>有人问&quot;你能说什么&quot;的时候</li>\n<li>需要肘击整顿职场、亲戚、熊孩子的时候</li>\n<li>看到直升机的时候</li>\n<li>想选一款饮料的时候</li>\n</ul>\n<h2>注意点</h2>\n<p>孩子们，这并不好笑。</p>\n<blockquote>事已至此，选一款饮料吧。</blockquote>"
-  },
-  "lm-studio": {
-    "title": "LM Studio 使用心得",
-    "name": "LM Studio",
-    "category": "AI 工具",
-    "tags": [
-      "本地模型",
-      "LLM",
-      "隐私"
-    ],
-    "description": "在本机下载、运行和测试开源大模型的桌面工具，适合本地 AI 实验。",
-    "homepage": "https://lmstudio.ai/",
-    "content": "<p>LM Studio 的重点是把本地大模型变得容易使用。它可以在自己的电脑上下载模型、运行对话，并提供兼容 OpenAI 风格的本地 API，方便被其他工具调用。</p>\n<h2>核心价值</h2>\n<ul>\n<li>在本机运行开源大模型，减少对云端服务的依赖</li>\n<li>图形界面友好，适合先试模型效果再决定是否长期使用</li>\n<li>可以作为本地模型服务，供 Cherry Studio、代码工具或自写脚本调用</li>\n<li>适合测试不同模型在写作、总结、翻译、代码等任务上的表现</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>如果你关心隐私，或者经常想测试新模型，LM Studio 很适合作为本地 AI 实验台。它不一定替代所有云端模型，但很适合处理不想上传的资料、做低成本试验，以及学习本地模型能力边界。</p>\n<h2>注意点</h2>\n<p>本地模型体验很依赖电脑性能。模型越大，对内存、显存和散热要求越高。建议从小模型开始试，确认速度和效果都能接受后，再尝试更大的模型。</p>"
-  },
-  "manbo": {
-    "title": "曼波使用心得",
-    "name": "曼波",
-    "category": "效率工具",
-    "tags": [
-      "哈基米",
-      "曼波",
-      "抽象"
-    ],
-    "description": "哈基米南北绿豆，曼波曼波。抽象、无意义、但洗脑的互联网精神图腾。",
-    "homepage": "https://zh.moegirl.org.cn/哈基米",
-    "content": "<p>曼波不是工具，是一种状态。当你脑子里只剩&quot;哈基米~哈基米~哈基米波~南北绿豆~&quot;的时候，你已经进入曼波段了。</p>\n<h2>它到底是个啥</h2>\n<ul>\n<li>哈基米来自《赛马娘》东海帝王哼的《蜂蜜之歌》，はちみつ（蜂蜜）的空耳</li>\n<li>曼波来自同作角色诗歌剧，原意是翻车鱼，因为游泳姿势像跳曼波舞</li>\n<li>两个梗在二创里混在一起，最后谁都分不清谁是谁</li>\n<li>现在的意思：没有意思。就是曼波曼波</li>\n</ul>\n<h2>适合什么场景</h2>\n<ul>\n<li>任何需要 BGM 的猫咪视频</li>\n<li>想把一首正经歌填词成&quot;哈基米南北绿豆&quot;</li>\n<li>别人问你问题时，回答&quot;曼波曼波&quot;</li>\n<li>需要让大脑短暂放空的时刻</li>\n</ul>\n<h2>使用建议</h2>\n<p>不要试图搞懂它。搞懂的那一刻，你就输了。把它当背景循环播放，该干活干活，该曼波曼波。</p>\n<blockquote>曼波就像人生：没有什么意思，但停不下来。</blockquote>"
-  },
-  "notion": {
-    "title": "Notion 知识库搭建",
-    "name": "Notion",
-    "category": "效率工具",
-    "tags": [
-      "笔记",
-      "知识库",
-      "任务管理"
-    ],
-    "description": "集笔记、文档、任务和知识库于一体的生产力工具。",
-    "homepage": "https://www.notion.so/",
-    "content": "<p>Notion 的优势是灵活：同一套页面可以是笔记、数据库、项目看板，也可以是公开文档。</p>\n<h2>我会怎么组织</h2>\n<ul>\n<li>每日日志：记录工作和想法</li>\n<li>项目管理：维护正在推进的事情</li>\n<li>读书笔记：沉淀长期有用的内容</li>\n<li>工具收藏：记录软件、网站和配置心得</li>\n</ul>\n<h2>注意点</h2>\n<p>不要一开始就做太复杂的系统。先用起来，再根据真实需求慢慢调整结构。</p>"
-  },
-  "obsidian": {
-    "title": "Obsidian 笔记法",
-    "name": "Obsidian",
-    "category": "效率工具",
-    "tags": [
-      "Markdown",
-      "本地优先",
-      "知识管理"
-    ],
-    "description": "基于本地 Markdown 文件的知识管理工具，强调数据所有权和双向链接。",
-    "homepage": "https://obsidian.md/",
-    "content": "<p>Obsidian 的核心优势是本地优先。你的笔记就是普通 Markdown 文件，不容易被某个平台锁住。</p>\n<h2>核心概念</h2>\n<ul>\n<li>双向链接：让笔记之间形成网络</li>\n<li>图谱视图：观察知识连接</li>\n<li>插件生态：补足日历、查询、模板等能力</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>适合长期沉淀笔记、项目资料和个人知识库。越是想保留原始文件所有权，越能感受到它的价值。</p>"
-  },
-  "otty": {
-    "title": "Otty 使用心得",
-    "name": "Otty",
-    "category": "开发工具",
-    "tags": [
-      "终端",
-      "开发",
-      "Agent"
-    ],
-    "description": "原生、现代的终端应用，强调手感、主题、会话管理和代码 Agent 工作流。",
-    "homepage": "https://otty.sh/",
-    "content": "<p>Otty 是一个现代终端应用。它不像传统终端那样只关注“能不能跑命令”，而是更在意敲击手感、视觉体验、会话组织，以及现在越来越常见的 AI 编程 Agent 工作流。</p>\n<h2>核心特点</h2>\n<ul>\n<li>原生、GPU 加速，滚动和渲染体验更现代</li>\n<li>支持标签页、分屏、会话恢复和快速跳转</li>\n<li>支持丰富主题、真彩色、连字、Unicode 和内联图片</li>\n<li>对 Claude Code、Codex、opencode 等 Agent 工作流更友好</li>\n<li>可以追踪长时间运行的命令，并在结束时提醒</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>适合经常在终端里写代码、跑脚本、开本地服务和使用代码 Agent 的人。如果你的终端里同时有开发服务器、Git、SSH、AI Agent、日志窗口，Otty 的会话组织会很有价值。</p>\n<h2>使用建议</h2>\n<p>先把它当作主力终端试一周，重点观察分屏、会话恢复和 Agent 支持是否真的改善工作流。终端是高频工具，手感和稳定性比功能数量更重要。</p>"
-  },
-  "positron-ide": {
-    "title": "Positron IDE 使用心得",
-    "name": "Positron IDE",
-    "category": "开发工具",
-    "tags": [
-      "数据科学",
-      "Python",
-      "R"
-    ],
-    "description": "Posit 推出的数据科学 IDE，面向 Python 和 R 的分析、建模与应用开发。",
-    "homepage": "https://positron.posit.co/",
-    "content": "<p>Positron 是 Posit 推出的数据科学 IDE。它更像是面向数据分析场景的开发环境，而不是通用代码编辑器：重点放在 Python、R、交互式分析、模型探索和数据应用开发上。</p>\n<h2>核心特点</h2>\n<ul>\n<li>面向 Python 和 R 的数据科学工作流</li>\n<li>适合从问题探索一路推进到分析、建模和应用</li>\n<li>由 RStudio 背后的 Posit 团队推出</li>\n<li>免费使用，采用 source-available 许可</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>如果你的工作经常围绕数据表、脚本、Notebook、图表和模型来回切换，Positron 比普通编辑器更贴近这个流程。它尤其适合原本熟悉 RStudio，又希望把 Python 和 R 放在同一套现代 IDE 里的人。</p>\n<h2>使用建议</h2>\n<p>把它定位成数据分析工作台，而不是替代所有开发工具。网站、脚本、自动化项目可以继续用 VS Code 或 Trae；数据探索、统计分析和 R/Python 混合项目，则可以考虑放到 Positron。</p>"
-  },
-  "rikkahub": {
-    "title": "RikkaHub 使用心得",
-    "name": "RikkaHub",
-    "category": "AI 工具",
-    "tags": [
-      "AI 客户端",
-      "Android",
-      "多模型"
-    ],
-    "description": "安卓原生 AI 聊天客户端，支持多家模型供应商，Material You 设计。",
-    "homepage": "https://rikka-ai.com/",
-    "content": "<p>RikkaHub 是用 Kotlin + Jetpack Compose 写的安卓原生 LLM 聊天客户端，界面遵循 Material You，支持动态主题色和深色模式。可以接入 OpenAI、Google、Anthropic 及所有兼容 API，自由切换模型。</p>\n<h2>核心特点</h2>\n<ul>\n<li>多供应商：自定义 API / URL / 模型，支持 OpenAI、Gemini、Anthropic</li>\n<li>多模态输入：图片、文档、PDF、Docx</li>\n<li>MCP 支持：集成 Model Context Protocol 工具调用</li>\n<li>搜索增强：Exa、Tavily、Brave、Perplexity 等多种搜索引擎</li>\n<li>消息分支：随时创建对话分支，探索不同回复方向</li>\n<li>智能记忆：类 ChatGPT 记忆功能，记住你的偏好</li>\n<li>Markdown 渲染：代码高亮、LaTeX 公式、表格、Mermaid 流程图</li>\n<li>Web 界面：不止手机端，浏览器也能用</li>\n</ul>\n<h2>适合什么场景</h2>\n<ul>\n<li>安卓用户想要一个原生体验的 AI 聊天客户端</li>\n<li>需要在多个模型供应商之间自由切换</li>\n<li>想要 MCP 工具调用和联网搜索能力</li>\n<li>重视本地隐私，API Key 只存在设备上</li>\n</ul>\n<h2>注意点</h2>\n<p>需要自备 API Key。它不是厂商官方客户端，默认不内置系统提示词，回答风格和官方 App 会有差异，可以在助手设置里自行调整。</p>"
-  },
-  "snapzy": {
-    "title": "Snapzy 使用心得",
-    "name": "Snapzy",
-    "category": "截图工具",
-    "tags": [
-      "截图",
-      "录屏",
-      "macOS"
-    ],
-    "description": "免费开源的 macOS 截图和录屏工具，支持标注、长截图、OCR 和本地优先保存。",
-    "homepage": "https://snapzy.app/",
-    "content": "<p>Snapzy 是一个原生 macOS 截图工具。它的定位很清楚：把截图、标注、录屏、OCR 和历史管理这些高频动作放到一个轻量、好看的工具里。</p>\n<h2>核心特点</h2>\n<ul>\n<li>支持区域截图、滚动截图和屏幕录制</li>\n<li>内置标注编辑，可以快速加箭头、文字和高亮</li>\n<li>支持 OCR，把截图里的文字直接提取到剪贴板</li>\n<li>本地优先，默认不把截图上传到外部服务</li>\n<li>免费开源，适合不想订阅重型截图工具的人</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>适合经常写教程、反馈问题、记录界面状态的人。相比系统自带截图，Snapzy 更适合“截完马上处理”的工作流：截图之后直接美化、标注、复制或保存。</p>\n<h2>使用建议</h2>\n<p>先把快捷键和保存位置设置好。截图工具最怕临时找不到文件，固定命名和固定目录会让后续整理轻松很多。</p>"
-  },
-  "trae-ide": {
-    "title": "Trae IDE 使用心得",
-    "name": "Trae IDE",
-    "category": "开发工具",
-    "tags": [
-      "AI IDE",
-      "编程",
-      "Code OSS"
-    ],
-    "description": "字节跳动推出的 AI IDE，基于 Code OSS，强调对话、上下文理解和智能编码协作。",
-    "homepage": "https://www.trae.ai/",
-    "content": "<p>Trae IDE 是面向 AI 编程的新一代开发环境。它基于 Code OSS，也就是 VS Code 的开源基础，因此整体交互会让 VS Code 用户比较熟悉。</p>\n<h2>核心特点</h2>\n<ul>\n<li>内置 AI 对话和代码辅助能力</li>\n<li>可以结合项目上下文理解代码</li>\n<li>适合用自然语言让 AI 解释、修改、生成和重构代码</li>\n<li>对 VS Code 用户迁移成本较低</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>适合想尝试 AI 编程，但又不想完全离开传统编辑器习惯的人。对于新项目搭建、代码解释、小功能修改、报错排查，它可以明显降低进入成本。</p>\n<h2>使用建议</h2>\n<p>把它当作“能读项目的编程搭档”，不要只让它补全单行代码。更好的用法是给它明确目标、约束和验收方式，让它围绕整个文件或整个功能协助修改。</p>"
-  },
-  "updf": {
-    "title": "UPDF 使用心得",
-    "name": "UPDF",
-    "category": "文档工具",
-    "tags": [
-      "PDF",
-      "OCR",
-      "AI 阅读"
-    ],
-    "description": "跨平台 PDF 编辑器，支持编辑、批注、转换、OCR 和 AI 阅读分析。",
-    "homepage": "https://updf.com/",
-    "content": "<p>UPDF 是一个偏全能型的 PDF 工具。它覆盖阅读、批注、编辑、页面整理、格式转换、OCR、签名和 AI 总结等常见 PDF 工作。</p>\n<h2>核心特点</h2>\n<ul>\n<li>可以直接编辑 PDF 中的文字、图片和链接</li>\n<li>支持批注、高亮、形状、贴纸和签名</li>\n<li>支持 PDF 转 Word、Excel、图片等格式</li>\n<li>支持 OCR、页面拆分合并、裁剪和旋转</li>\n<li>AI 功能可以总结、翻译、对 PDF 提问，也可以处理图片内容</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>适合经常处理论文、报告、合同、说明书和扫描件的人。相比只读型 PDF 工具，UPDF 更像是“PDF 工作台”，既能阅读，也能整理和修改。</p>\n<h2>使用建议</h2>\n<p>日常阅读可以先用批注和 AI 总结提高效率；真正修改合同、论文或正式文件前，建议保留原文件备份，避免改动后难以回溯。</p>"
-  },
-  "vscode": {
-    "title": "VS Code 使用心得",
-    "name": "VS Code",
-    "category": "开发工具",
-    "tags": [
-      "编辑器",
-      "开源",
-      "跨平台"
-    ],
-    "description": "轻量但强大的代码编辑器，适合前端、后端、数据分析和远程开发。",
-    "homepage": "https://code.visualstudio.com/",
-    "content": "<p>Visual Studio Code 是我日常开发中使用频率最高的工具。它轻量、快速，同时拥有成熟的插件生态。</p>\n<h2>适合谁</h2>\n<ul>\n<li>需要一个启动快、扩展多的代码编辑器</li>\n<li>经常在不同语言和项目之间切换</li>\n<li>希望把 Git、终端、调试都放在一个工作界面里</li>\n</ul>\n<h2>常用插件</h2>\n<ul>\n<li><code>ESLint</code>：JavaScript / TypeScript 代码检查</li>\n<li><code>Prettier</code>：统一代码格式</li>\n<li><code>GitLens</code>：增强 Git 历史和 blame 信息</li>\n</ul>\n<h2>小建议</h2>\n<p>先掌握命令面板和快速打开文件，再慢慢补插件。编辑器越轻，工作流越顺。</p>"
-  },
-  "zen-browser": {
-    "title": "Zen Browser 使用心得",
-    "name": "Zen Browser",
-    "category": "浏览器",
-    "tags": [
-      "浏览器",
-      "Firefox",
-      "工作区"
-    ],
-    "description": "基于 Firefox 的现代浏览器，强调可定制、工作区、侧边栏和更沉浸的浏览体验。",
-    "homepage": "https://zen-browser.app/",
-    "content": "<p>Zen Browser 是一个基于 Firefox 的现代浏览器。它更像是给重度网页工作流准备的浏览器：侧边栏、工作区、分屏和可定制界面会比传统浏览器更突出。</p>\n<h2>核心特点</h2>\n<ul>\n<li>基于 Firefox，适合不想完全依赖 Chromium 生态的人</li>\n<li>支持工作区，把不同项目或主题的标签分开管理</li>\n<li>侧边栏和紧凑界面适合宽屏和多任务浏览</li>\n<li>可以通过主题和布局调整，做出更个人化的浏览环境</li>\n</ul>\n<h2>适合什么场景</h2>\n<p>适合标签页很多、经常在不同项目之间切换的人。比如一个工作区放研究资料，一个工作区放项目后台，一个工作区放写作和参考页面，会比所有标签挤在同一排更清楚。</p>\n<h2>使用建议</h2>\n<p>先不要一次性迁移所有浏览数据。可以把 Zen Browser 用作“研究和阅读浏览器”，等工作区和侧边栏习惯建立后，再决定它是否适合成为主浏览器。</p>"
+    "description": "这是一个示例条目，演示效率工具分类下工具卡片的展示效果。",
+    "homepage": "https://example.com/",
+    "content": "<p>这是一段示例正文，用来演示工具详情页的排版效果。把 <code>content/tools/</code> 里的示例文件替换成真实工具即可。</p>\n<h2>核心特点</h2>\n<ul>\n<li>示例特点一：简要描述一个功能亮点</li>\n<li>示例特点二：简要描述另一个功能亮点</li>\n<li>示例特点三：简要描述第三个功能亮点</li>\n</ul>\n<h2>适合什么场景</h2>\n<ul>\n<li>场景一：什么人在什么情况下会用到它</li>\n<li>场景二：另一种使用场景</li>\n</ul>\n<h2>注意点</h2>\n<p>使用前请确认它是否真的符合你的工作流，不要为了用而用。</p>"
   }
 },
   categories: [
   "全部",
   "开发工具",
-  "截图工具",
-  "AI 工具",
   "效率工具",
-  "浏览器",
-  "文档工具",
-  "游戏工具"
+  "AI 工具"
 ]
 }

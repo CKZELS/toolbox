@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZELCAO Toolbox</title>
-  <meta name="description" content="记录和分享常用的软件、网站与工具。">
+  <title>Toolbox</title>
+  <meta name="description" content="用 Markdown 维护的工具收藏网站模板。">
   <link rel="stylesheet" href="src/css/main.css">
 </head>
 <body data-page="home">
   <div class="app-container">
     <header class="site-header">
       <nav class="site-nav">
-        <a href="index.html" class="site-logo" aria-label="ZELCAO Toolbox 首页">
-          <span class="site-logo-mark">Z</span>
+        <a href="index.html" class="site-logo" aria-label="Toolbox 首页">
+          <span class="site-logo-mark">◆</span>
           <span class="site-logo-copy">
-            <span class="site-logo-name">ZELCAO</span>
-            <span class="site-logo-note">Toolbox</span>
+            <span class="site-logo-name">Toolbox</span>
+            <span class="site-logo-note">Demo</span>
           </span>
         </a>
         <div class="site-nav-links">
@@ -26,9 +26,9 @@
 
     <main class="site-main">
       <section class="hero-section fade-in">
-        <p class="hero-kicker">Curated by ZELCAO</p>
-        <h1 class="hero-title">ZELCAO Toolbox</h1>
-        <p class="hero-subtitle">我日常使用、认真筛选过的软件、网站与效率工具。</p>
+        <p class="hero-kicker">Toolbox Template</p>
+        <h1 class="hero-title">Toolbox</h1>
+        <p class="hero-subtitle">一个用 Markdown 维护的工具收藏网站模板。把固定格式的工具介绍放进 content/tools/，构建时自动生成首页和详情页。</p>
         <div class="hero-search">
           <div class="ds-input search-input">
             <span class="search-icon" aria-hidden="true">⌕</span>
@@ -37,35 +37,12 @@
         </div>
       </section>
 
-      <section class="easter-egg-panel" data-easter-egg hidden aria-live="polite">
-        <div class="easter-egg-beat" aria-hidden="true">
-          <span>mambo</span>
-          <span>hakimi</span>
-          <span>hidden track</span>
-        </div>
-        <div class="easter-egg-copy">
-          <p class="easter-egg-kicker" data-egg-kicker>Hidden module</p>
-          <h2 class="easter-egg-title" data-egg-title>曼波校准台已启动</h2>
-          <p class="easter-egg-text" data-egg-text>工具列表暂时进入哈基米节奏，鼠标也许会开始左右摇摆。</p>
-          <div class="easter-egg-tags" data-egg-tags>
-            <span>搜索触发</span>
-            <span>低调出现</span>
-            <span>不影响正事</span>
-          </div>
-        </div>
-        <button class="easter-egg-close" type="button" data-easter-close aria-label="关闭彩蛋">×</button>
-      </section>
-
       <div class="category-filters" data-category-filters aria-label="工具分类">
         <!-- generated:category-filters:start -->
         <button class="category-tag is-active" type="button" data-category="全部">全部</button>
         <button class="category-tag" type="button" data-category="开发工具">开发工具</button>
-        <button class="category-tag" type="button" data-category="截图工具">截图工具</button>
-        <button class="category-tag" type="button" data-category="AI 工具">AI 工具</button>
         <button class="category-tag" type="button" data-category="效率工具">效率工具</button>
-        <button class="category-tag" type="button" data-category="浏览器">浏览器</button>
-        <button class="category-tag" type="button" data-category="文档工具">文档工具</button>
-        <button class="category-tag" type="button" data-category="游戏工具">游戏工具</button>
+        <button class="category-tag" type="button" data-category="AI 工具">AI 工具</button>
         <!-- generated:category-filters:end -->
       </div>
       <div class="tools-sections" data-tools-sections>
@@ -73,157 +50,19 @@
         <section class="category-section">
           <div class="section-header">
             <h2 class="section-title">开发工具</h2>
-            <span class="section-count">5 个工具</span>
-          </div>
-          <div class="tools-grid">
-            
-          <a href="tool-detail.html?id=vscode" class="tool-card stagger-item" style="animation-delay: 0ms;">
-            <div class="tool-card-icon" style="background: #007ACC15; border-color: #007ACC30; color: #007ACC;">
-              💻
-            </div>
-            <div class="tool-card-content">
-              <div class="tool-card-title">VS Code</div>
-              <div class="tool-card-desc">轻量但强大的代码编辑器，适合前端、后端、数据分析和远程开发。</div>
-              <div class="tool-card-tags">
-                <span class="tool-card-tag">编辑器</span><span class="tool-card-tag">开源</span><span class="tool-card-tag">跨平台</span>
-              </div>
-            </div>
-          </a>
-          <a href="tool-detail.html?id=otty" class="tool-card stagger-item" style="animation-delay: 40ms;">
-            <div class="tool-card-icon" style="background: #0F766E15; border-color: #0F766E30; color: #0F766E;">
-              ▣
-            </div>
-            <div class="tool-card-content">
-              <div class="tool-card-title">Otty</div>
-              <div class="tool-card-desc">原生、现代的终端应用，强调手感、主题、会话管理和代码 Agent 工作流。</div>
-              <div class="tool-card-tags">
-                <span class="tool-card-tag">终端</span><span class="tool-card-tag">开发</span><span class="tool-card-tag">Agent</span>
-              </div>
-            </div>
-          </a>
-          <a href="tool-detail.html?id=trae-ide" class="tool-card stagger-item" style="animation-delay: 80ms;">
-            <div class="tool-card-icon" style="background: #11182715; border-color: #11182730; color: #111827;">
-              ✦
-            </div>
-            <div class="tool-card-content">
-              <div class="tool-card-title">Trae IDE</div>
-              <div class="tool-card-desc">字节跳动推出的 AI IDE，基于 Code OSS，强调对话、上下文理解和智能编码协作。</div>
-              <div class="tool-card-tags">
-                <span class="tool-card-tag">AI IDE</span><span class="tool-card-tag">编程</span><span class="tool-card-tag">Code OSS</span>
-              </div>
-            </div>
-          </a>
-          <a href="tool-detail.html?id=github" class="tool-card stagger-item" style="animation-delay: 120ms;">
-            <div class="tool-card-icon" style="background: #24292E15; border-color: #24292E30; color: #24292E;">
-              ◇
-            </div>
-            <div class="tool-card-content">
-              <div class="tool-card-title">GitHub</div>
-              <div class="tool-card-desc">代码托管和协作平台，适合开源项目、个人网站和自动化部署。</div>
-              <div class="tool-card-tags">
-                <span class="tool-card-tag">代码托管</span><span class="tool-card-tag">开源</span><span class="tool-card-tag">部署</span>
-              </div>
-            </div>
-          </a>
-          <a href="tool-detail.html?id=positron-ide" class="tool-card stagger-item" style="animation-delay: 160ms;">
-            <div class="tool-card-icon" style="background: #4F46E515; border-color: #4F46E530; color: #4F46E5;">
-              ⬡
-            </div>
-            <div class="tool-card-content">
-              <div class="tool-card-title">Positron IDE</div>
-              <div class="tool-card-desc">Posit 推出的数据科学 IDE，面向 Python 和 R 的分析、建模与应用开发。</div>
-              <div class="tool-card-tags">
-                <span class="tool-card-tag">数据科学</span><span class="tool-card-tag">Python</span><span class="tool-card-tag">R</span>
-              </div>
-            </div>
-          </a>
-          </div>
-        </section>
-        <section class="category-section">
-          <div class="section-header">
-            <h2 class="section-title">截图工具</h2>
             <span class="section-count">1 个工具</span>
           </div>
           <div class="tools-grid">
             
-          <a href="tool-detail.html?id=snapzy" class="tool-card stagger-item" style="animation-delay: 0ms;">
-            <div class="tool-card-icon" style="background: #F9731615; border-color: #F9731630; color: #F97316;">
-              ◎
+          <a href="tool-detail.html?id=example-dev-tool" class="tool-card stagger-item" style="animation-delay: 0ms;">
+            <div class="tool-card-icon" style="background: #007ACC15; border-color: #007ACC30; color: #007ACC;">
+              ⌨️
             </div>
             <div class="tool-card-content">
-              <div class="tool-card-title">Snapzy</div>
-              <div class="tool-card-desc">免费开源的 macOS 截图和录屏工具，支持标注、长截图、OCR 和本地优先保存。</div>
+              <div class="tool-card-title">示例开发工具</div>
+              <div class="tool-card-desc">这是一个示例条目，演示开发工具分类下工具卡片的展示效果。</div>
               <div class="tool-card-tags">
-                <span class="tool-card-tag">截图</span><span class="tool-card-tag">录屏</span><span class="tool-card-tag">macOS</span>
-              </div>
-            </div>
-          </a>
-          </div>
-        </section>
-        <section class="category-section">
-          <div class="section-header">
-            <h2 class="section-title">AI 工具</h2>
-            <span class="section-count">5 个工具</span>
-          </div>
-          <div class="tools-grid">
-            
-          <a href="tool-detail.html?id=cherry-studio" class="tool-card stagger-item" style="animation-delay: 0ms;">
-            <div class="tool-card-icon" style="background: #D9466F15; border-color: #D9466F30; color: #D9466F;">
-              🍒
-            </div>
-            <div class="tool-card-content">
-              <div class="tool-card-title">Cherry Studio</div>
-              <div class="tool-card-desc">跨平台 AI 桌面工作站，可以统一接入多个大模型、助手和本地模型服务。</div>
-              <div class="tool-card-tags">
-                <span class="tool-card-tag">AI 客户端</span><span class="tool-card-tag">多模型</span><span class="tool-card-tag">桌面应用</span>
-              </div>
-            </div>
-          </a>
-          <a href="tool-detail.html?id=lm-studio" class="tool-card stagger-item" style="animation-delay: 40ms;">
-            <div class="tool-card-icon" style="background: #10B98115; border-color: #10B98130; color: #10B981;">
-              ◐
-            </div>
-            <div class="tool-card-content">
-              <div class="tool-card-title">LM Studio</div>
-              <div class="tool-card-desc">在本机下载、运行和测试开源大模型的桌面工具，适合本地 AI 实验。</div>
-              <div class="tool-card-tags">
-                <span class="tool-card-tag">本地模型</span><span class="tool-card-tag">LLM</span><span class="tool-card-tag">隐私</span>
-              </div>
-            </div>
-          </a>
-          <a href="tool-detail.html?id=anysearch" class="tool-card stagger-item" style="animation-delay: 80ms;">
-            <div class="tool-card-icon" style="background: #2563EB15; border-color: #2563EB30; color: #2563EB;">
-              🔎
-            </div>
-            <div class="tool-card-content">
-              <div class="tool-card-title">AnySearch</div>
-              <div class="tool-card-desc">面向 AI Agent 的搜索基础设施，用来给智能体补充实时网页检索能力。</div>
-              <div class="tool-card-tags">
-                <span class="tool-card-tag">AI 搜索</span><span class="tool-card-tag">Agent</span><span class="tool-card-tag">MCP</span>
-              </div>
-            </div>
-          </a>
-          <a href="tool-detail.html?id=rikkahub" class="tool-card stagger-item" style="animation-delay: 120ms;">
-            <div class="tool-card-icon" style="background: #6750A415; border-color: #6750A430; color: #6750A4;">
-              🤖
-            </div>
-            <div class="tool-card-content">
-              <div class="tool-card-title">RikkaHub</div>
-              <div class="tool-card-desc">安卓原生 AI 聊天客户端，支持多家模型供应商，Material You 设计。</div>
-              <div class="tool-card-tags">
-                <span class="tool-card-tag">AI 客户端</span><span class="tool-card-tag">Android</span><span class="tool-card-tag">多模型</span>
-              </div>
-            </div>
-          </a>
-          <a href="tool-detail.html?id=kelivo" class="tool-card stagger-item" style="animation-delay: 160ms;">
-            <div class="tool-card-icon" style="background: #0EA5E915; border-color: #0EA5E930; color: #0EA5E9;">
-              💬
-            </div>
-            <div class="tool-card-content">
-              <div class="tool-card-title">Kelivo</div>
-              <div class="tool-card-desc">基于 Flutter 的跨平台 AI 聊天客户端，覆盖移动端和桌面端。</div>
-              <div class="tool-card-tags">
-                <span class="tool-card-tag">AI 客户端</span><span class="tool-card-tag">跨平台</span><span class="tool-card-tag">Flutter</span>
+                <span class="tool-card-tag">示例</span><span class="tool-card-tag">开发工具</span><span class="tool-card-tag">编辑器</span>
               </div>
             </div>
           </a>
@@ -232,133 +71,19 @@
         <section class="category-section">
           <div class="section-header">
             <h2 class="section-title">效率工具</h2>
-            <span class="section-count">5 个工具</span>
-          </div>
-          <div class="tools-grid">
-            
-          <a href="tool-detail.html?id=notion" class="tool-card stagger-item" style="animation-delay: 0ms;">
-            <div class="tool-card-icon" style="background: #11111115; border-color: #11111130; color: #111111;">
-              📝
-            </div>
-            <div class="tool-card-content">
-              <div class="tool-card-title">Notion</div>
-              <div class="tool-card-desc">集笔记、文档、任务和知识库于一体的生产力工具。</div>
-              <div class="tool-card-tags">
-                <span class="tool-card-tag">笔记</span><span class="tool-card-tag">知识库</span><span class="tool-card-tag">任务管理</span>
-              </div>
-            </div>
-          </a>
-          <a href="tool-detail.html?id=obsidian" class="tool-card stagger-item" style="animation-delay: 40ms;">
-            <div class="tool-card-icon" style="background: #7C3AED15; border-color: #7C3AED30; color: #7C3AED;">
-              ◆
-            </div>
-            <div class="tool-card-content">
-              <div class="tool-card-title">Obsidian</div>
-              <div class="tool-card-desc">基于本地 Markdown 文件的知识管理工具，强调数据所有权和双向链接。</div>
-              <div class="tool-card-tags">
-                <span class="tool-card-tag">Markdown</span><span class="tool-card-tag">本地优先</span><span class="tool-card-tag">知识管理</span>
-              </div>
-            </div>
-          </a>
-          <a href="tool-detail.html?id=cardinal" class="tool-card stagger-item" style="animation-delay: 80ms;">
-            <div class="tool-card-icon" style="background: #DC262615; border-color: #DC262630; color: #DC2626;">
-              🔍
-            </div>
-            <div class="tool-card-content">
-              <div class="tool-card-title">Cardinal</div>
-              <div class="tool-card-desc">macOS 上的高速文件搜索工具，基于 Rust+Tauri，支持 Everything 语法。</div>
-              <div class="tool-card-tags">
-                <span class="tool-card-tag">文件搜索</span><span class="tool-card-tag">macOS</span><span class="tool-card-tag">Everything</span>
-              </div>
-            </div>
-          </a>
-          <a href="tool-detail.html?id=manbo" class="tool-card stagger-item" style="animation-delay: 120ms;">
-            <div class="tool-card-icon" style="background: #F9731615; border-color: #F9731630; color: #F97316;">
-              🐱
-            </div>
-            <div class="tool-card-content">
-              <div class="tool-card-title">曼波</div>
-              <div class="tool-card-desc">哈基米南北绿豆，曼波曼波。抽象、无意义、但洗脑的互联网精神图腾。</div>
-              <div class="tool-card-tags">
-                <span class="tool-card-tag">哈基米</span><span class="tool-card-tag">曼波</span><span class="tool-card-tag">抽象</span>
-              </div>
-            </div>
-          </a>
-          <a href="tool-detail.html?id=laoda" class="tool-card stagger-item" style="animation-delay: 160ms;">
-            <div class="tool-card-icon" style="background: #55258315; border-color: #55258330; color: #552583;">
-              🏀
-            </div>
-            <div class="tool-card-content">
-              <div class="tool-card-title">牢大</div>
-              <div class="tool-card-desc">Man! What can I say? Mamba out.</div>
-              <div class="tool-card-tags">
-                <span class="tool-card-tag">Man</span><span class="tool-card-tag">Mamba out</span><span class="tool-card-tag">地狱笑话</span>
-              </div>
-            </div>
-          </a>
-          </div>
-        </section>
-        <section class="category-section">
-          <div class="section-header">
-            <h2 class="section-title">浏览器</h2>
-            <span class="section-count">3 个工具</span>
-          </div>
-          <div class="tools-grid">
-            
-          <a href="tool-detail.html?id=brave" class="tool-card stagger-item" style="animation-delay: 0ms;">
-            <div class="tool-card-icon" style="background: #FB542B15; border-color: #FB542B30; color: #FB542B;">
-              ◈
-            </div>
-            <div class="tool-card-content">
-              <div class="tool-card-title">Brave</div>
-              <div class="tool-card-desc">注重隐私和速度的 Chromium 系浏览器，内置广告拦截、防追踪和可选 AI 功能。</div>
-              <div class="tool-card-tags">
-                <span class="tool-card-tag">浏览器</span><span class="tool-card-tag">隐私</span><span class="tool-card-tag">Chromium</span>
-              </div>
-            </div>
-          </a>
-          <a href="tool-detail.html?id=zen-browser" class="tool-card stagger-item" style="animation-delay: 40ms;">
-            <div class="tool-card-icon" style="background: #7C3AED15; border-color: #7C3AED30; color: #7C3AED;">
-              ◌
-            </div>
-            <div class="tool-card-content">
-              <div class="tool-card-title">Zen Browser</div>
-              <div class="tool-card-desc">基于 Firefox 的现代浏览器，强调可定制、工作区、侧边栏和更沉浸的浏览体验。</div>
-              <div class="tool-card-tags">
-                <span class="tool-card-tag">浏览器</span><span class="tool-card-tag">Firefox</span><span class="tool-card-tag">工作区</span>
-              </div>
-            </div>
-          </a>
-          <a href="tool-detail.html?id=helium" class="tool-card stagger-item" style="animation-delay: 80ms;">
-            <div class="tool-card-icon" style="background: #0EA5E915; border-color: #0EA5E930; color: #0EA5E9;">
-              🎈
-            </div>
-            <div class="tool-card-content">
-              <div class="tool-card-title">Helium</div>
-              <div class="tool-card-desc">基于 Chromium 的隐私优先浏览器，默认拦截广告和追踪，开源无臃肿。</div>
-              <div class="tool-card-tags">
-                <span class="tool-card-tag">浏览器</span><span class="tool-card-tag">隐私</span><span class="tool-card-tag">开源</span>
-              </div>
-            </div>
-          </a>
-          </div>
-        </section>
-        <section class="category-section">
-          <div class="section-header">
-            <h2 class="section-title">文档工具</h2>
             <span class="section-count">1 个工具</span>
           </div>
           <div class="tools-grid">
             
-          <a href="tool-detail.html?id=updf" class="tool-card stagger-item" style="animation-delay: 0ms;">
-            <div class="tool-card-icon" style="background: #6D5DF615; border-color: #6D5DF630; color: #6D5DF6;">
-              📄
+          <a href="tool-detail.html?id=example-efficiency-tool" class="tool-card stagger-item" style="animation-delay: 0ms;">
+            <div class="tool-card-icon" style="background: #7C3AED15; border-color: #7C3AED30; color: #7C3AED;">
+              ⚡
             </div>
             <div class="tool-card-content">
-              <div class="tool-card-title">UPDF</div>
-              <div class="tool-card-desc">跨平台 PDF 编辑器，支持编辑、批注、转换、OCR 和 AI 阅读分析。</div>
+              <div class="tool-card-title">示例效率工具</div>
+              <div class="tool-card-desc">这是一个示例条目，演示效率工具分类下工具卡片的展示效果。</div>
               <div class="tool-card-tags">
-                <span class="tool-card-tag">PDF</span><span class="tool-card-tag">OCR</span><span class="tool-card-tag">AI 阅读</span>
+                <span class="tool-card-tag">示例</span><span class="tool-card-tag">效率工具</span><span class="tool-card-tag">笔记</span>
               </div>
             </div>
           </a>
@@ -366,32 +91,20 @@
         </section>
         <section class="category-section">
           <div class="section-header">
-            <h2 class="section-title">游戏工具</h2>
-            <span class="section-count">2 个工具</span>
+            <h2 class="section-title">AI 工具</h2>
+            <span class="section-count">1 个工具</span>
           </div>
           <div class="tools-grid">
             
-          <a href="tool-detail.html?id=gamehub" class="tool-card stagger-item" style="animation-delay: 0ms;">
-            <div class="tool-card-icon" style="background: #16A34A15; border-color: #16A34A30; color: #16A34A;">
-              ◒
+          <a href="tool-detail.html?id=example-ai-tool" class="tool-card stagger-item" style="animation-delay: 0ms;">
+            <div class="tool-card-icon" style="background: #2563EB15; border-color: #2563EB30; color: #2563EB;">
+              🤖
             </div>
             <div class="tool-card-content">
-              <div class="tool-card-title">GameHub</div>
-              <div class="tool-card-desc">面向 Mac 的 Windows 游戏运行工具，整合 Steam、GOG、Epic 和兼容层配置。</div>
+              <div class="tool-card-title">示例 AI 工具</div>
+              <div class="tool-card-desc">这是一个示例条目，演示 AI 工具分类下工具卡片的展示效果。</div>
               <div class="tool-card-tags">
-                <span class="tool-card-tag">Mac 游戏</span><span class="tool-card-tag">Windows 游戏</span><span class="tool-card-tag">Steam</span>
-              </div>
-            </div>
-          </a>
-          <a href="tool-detail.html?id=destiny-2" class="tool-card stagger-item" style="animation-delay: 40ms;">
-            <div class="tool-card-icon" style="background: #F59E0B15; border-color: #F59E0B30; color: #F59E0B;">
-              🔫
-            </div>
-            <div class="tool-card-content">
-              <div class="tool-card-title">命运 2</div>
-              <div class="tool-card-desc">Bungie 出品的在线射击 MMORPG，融合枪械手感、副本和长期角色养成。</div>
-              <div class="tool-card-tags">
-                <span class="tool-card-tag">FPS</span><span class="tool-card-tag">MMORPG</span><span class="tool-card-tag">在线射击</span>
+                <span class="tool-card-tag">示例</span><span class="tool-card-tag">AI 工具</span><span class="tool-card-tag">助手</span>
               </div>
             </div>
           </a>
@@ -406,7 +119,7 @@
     </footer>
   </div>
 
-  <script src="generated-content.js?v=ef52acf83d73" defer></script>
-  <script src="toolbox.js?v=ef52acf83d73" defer></script>
+  <script src="generated-content.js?v=328d9856ab07" defer></script>
+  <script src="toolbox.js?v=328d9856ab07" defer></script>
 </body>
 </html>

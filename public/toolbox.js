@@ -2,34 +2,10 @@ const { categories = [], toolDetails = {}, toolsData = [] } = window.toolboxCont
 
 let currentCategory = '全部'
 let searchQuery = ''
-let heroTitleTapCount = 0
-let heroTitleTapTimer = null
-
-const easterEggModes = {
-  mambo: {
-    kicker: 'Manbo mode',
-    title: '曼波校准台已启动',
-    text: '工具列表暂时进入哈基米节奏。该干活干活，该曼波曼波。',
-    tags: ['搜索「曼波」触发', 'mambo verified', '节奏通过']
-  },
-  guard: {
-    kicker: 'Man! What can I say?',
-    title: 'Mamba out.',
-    text: '孩子们，事已至此，选一款饮料吧。搜索触发，儿童免肘。',
-    tags: ['搜索「牢大」触发', '曼巴退场', '冰红茶已就位']
-  },
-  secret: {
-    kicker: 'Title tap combo',
-    title: '隐藏音轨解锁',
-    text: '你连续点开了一个没人写进导航的入口。ZELCAO Toolbox 现在短暂进入后台调音时间。',
-    tags: ['连点标题触发', 'hidden module', '已解锁']
-  }
-}
 
 document.addEventListener('DOMContentLoaded', () => {
   initNavigation()
   initSearch()
-  initEasterEggs()
   renderCategoryFilters()
   renderTools()
   initToolDetailPage()
@@ -51,77 +27,7 @@ function initSearch() {
   searchInput.addEventListener('input', event => {
     searchQuery = event.target.value.trim().toLowerCase()
     renderTools()
-    syncEasterEggFromSearch(searchQuery)
   })
-}
-
-function initEasterEggs() {
-  const heroTitle = document.querySelector('.hero-title')
-  const closeButton = document.querySelector('[data-easter-close]')
-
-  heroTitle?.addEventListener('click', () => {
-    heroTitleTapCount += 1
-    window.clearTimeout(heroTitleTapTimer)
-    heroTitleTapTimer = window.setTimeout(() => {
-      heroTitleTapCount = 0
-    }, 1200)
-
-    if (heroTitleTapCount >= 5) {
-      heroTitleTapCount = 0
-      showEasterEgg('secret')
-    }
-  })
-
-  closeButton?.addEventListener('click', () => {
-    hideEasterEgg()
-  })
-}
-
-function syncEasterEggFromSearch(query) {
-  const normalizedQuery = query.replace(/\s+/g, '')
-  if (!normalizedQuery) {
-    hideEasterEgg()
-    return
-  }
-
-  if (hasAny(normalizedQuery, ['曼波', 'mambo', 'manbo', '哈基米', 'hakimi'])) {
-    showEasterEgg('mambo')
-    return
-  }
-
-  if (hasAny(normalizedQuery, ['牢大', 'laoda'])) {
-    showEasterEgg('guard')
-    return
-  }
-
-  hideEasterEgg()
-}
-
-function hasAny(value, keywords) {
-  return keywords.some(keyword => value.includes(keyword))
-}
-
-function showEasterEgg(mode) {
-  const panel = document.querySelector('[data-easter-egg]')
-  const content = easterEggModes[mode]
-  if (!panel || !content) return
-
-  setText('[data-egg-kicker]', content.kicker)
-  setText('[data-egg-title]', content.title)
-  setText('[data-egg-text]', content.text)
-
-  const tags = panel.querySelector('[data-egg-tags]')
-  if (tags) {
-    tags.innerHTML = content.tags.map(tag => `<span>${escapeHtml(tag)}</span>`).join('')
-  }
-
-  panel.dataset.eggMode = mode
-  panel.hidden = false
-}
-
-function hideEasterEgg() {
-  const panel = document.querySelector('[data-easter-egg]')
-  if (panel) panel.hidden = true
 }
 
 function renderCategoryFilters() {
@@ -226,7 +132,7 @@ function initToolDetailPage() {
         <div class="empty-state-text">工具不存在。</div>
       </div>
     `
-    document.title = '工具不存在 - ZELCAO Toolbox'
+    document.title = '工具不存在 - Toolbox'
     return
   }
 
@@ -266,7 +172,7 @@ function initToolDetailPage() {
     })
   }
 
-  document.title = `${detail.title} - ZELCAO Toolbox`
+  document.title = `${detail.title} - Toolbox`
 }
 
 function setText(selector, value) {
