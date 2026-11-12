@@ -5,9 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>工具详情 - Toolbox</title>
   <meta name="description" content="工具详情和使用心得。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23171717'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='system-ui,sans-serif' font-size='20' font-weight='700' fill='%23ffffff'%3ET%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="src/css/main.css">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body data-page="detail">
+  <div class="living-bg" aria-hidden="true">
+    <div class="living-mesh"></div>
+    <div class="living-orb living-orb--a"></div>
+    <div class="living-orb living-orb--b"></div>
+    <div class="living-grain"></div>
+  </div>
   <div class="app-container">
     <header class="site-header">
       <nav class="site-nav">
@@ -30,31 +38,45 @@
         返回首页
       </a>
 
-      <article class="article-content fade-in">
-        <nav class="ds-breadcrumb breadcrumb-nav">
+      <article class="article-content fade-in" data-tool-detail-content>
+        <!-- skeleton loading -->
+        <div class="detail-skeleton" data-detail-skeleton>
+          <div class="skeleton-block" style="width: 120px; height: 14px; margin-bottom: 24px;"></div>
+          <div class="skeleton-block" style="width: 60%; height: 36px; margin-bottom: 8px;"></div>
+          <div class="skeleton-block" style="width: 80%; height: 16px; margin-bottom: 20px;"></div>
+          <div class="skeleton-block" style="width: 100px; height: 14px; margin-bottom: 24px;"></div>
+          <div class="skeleton-block" style="width: 100%; height: 120px; margin-bottom: 32px;"></div>
+          <div class="skeleton-block" style="width: 30%; height: 14px; margin-bottom: 12px;"></div>
+          <div class="skeleton-block" style="width: 100%; height: 14px; margin-bottom: 8px;"></div>
+          <div class="skeleton-block" style="width: 90%; height: 14px; margin-bottom: 8px;"></div>
+          <div class="skeleton-block" style="width: 70%; height: 14px; margin-bottom: 8px;"></div>
+        </div>
+
+        <!-- real content (hidden until JS renders) -->
+        <nav class="ds-breadcrumb breadcrumb-nav" hidden>
           <a href="index.html">首页</a>
           <span class="ds-breadcrumb__sep">/</span>
           <span data-tool-category>工具</span>
           <span class="ds-breadcrumb__sep">/</span>
-          <span class="ds-breadcrumb__current">加载中</span>
+          <span class="ds-breadcrumb__current"></span>
         </nav>
 
-        <header class="tool-detail-header">
-          <h1 class="tool-detail-title">加载中</h1>
+        <header class="tool-detail-header" hidden>
+          <h1 class="tool-detail-title"></h1>
           <p class="tool-detail-description"></p>
           <div class="tool-detail-meta"></div>
           <div class="tool-detail-actions"></div>
         </header>
 
-        <div class="ds-card tool-info-card">
+        <div class="ds-card tool-info-card" hidden>
           <div class="ds-card__title">工具信息</div>
           <div class="tool-info-row">
             <span>官网</span>
-            <a target="_blank" rel="noopener noreferrer" data-tool-homepage>加载中</a>
+            <a target="_blank" rel="noopener noreferrer" data-tool-homepage></a>
           </div>
         </div>
 
-        <section class="article-body"></section>
+        <section class="article-body" hidden></section>
       </article>
     </main>
 
@@ -63,7 +85,7 @@
     </footer>
   </div>
 
-  <script src="generated-content.js?v=328d9856ab07" defer></script>
-  <script src="toolbox.js?v=328d9856ab07" defer></script>
+  <script src="generated-content.js?v=9c2d34c54d44" defer></script>
+  <script src="toolbox.js?v=9c2d34c54d44" defer></script>
 </body>
 </html>

@@ -4,8 +4,6 @@
 
 一个用 Markdown 维护的工具收藏网站模板。把固定格式的 Markdown 文件放进 `content/tools/`，构建时会自动生成首页分类模块和工具详情页。
 
-![Toolbox 预览](https://github.com/CKZELS/toolbox/releases/download/preview-assets-v1/preview.png)
-
 ## 当前架构速览
 
 这个项目是静态网站，适合部署到 Cloudflare Pages 或 GitHub Pages。
@@ -16,6 +14,14 @@
 - 首页工具卡片会在构建时写入 `index.html`，即使 JavaScript 失效也能看到工具列表
 - 搜索、分类、详情页渲染由 `toolbox.js` 增强
 - `generated-content.js`、`public/generated-content.js`、`public/toolbox.js` 都由脚本生成或同步，不要手动编辑
+
+## 界面与交互
+
+- 石色背景、青绿色强调色，以及跟随系统的深色模式
+- 动态背景；系统开启减少动态效果时会简化动画
+- 搜索、分类筛选、清除搜索，以及 `/`、`Ctrl+K` / `⌘K` 快捷键
+- 滚动进度、回到顶部、详情页加载骨架和复制链接
+- 搜索「曼波」或「牢大」，或连续点击首页标题 5 次可触发彩蛋；清除搜索或关闭面板会恢复默认效果
 
 ## 怎么添加一个工具
 

@@ -3,9 +3,6 @@
  * TraeWork design library tokens
  * Light-mode canonical tokens in parser-friendly standard structure.
  *
- * Source of truth:
- * - /Users/bytedance/Desktop/样板间/TraeWork skill.md
- *
  * Notes:
  * - Token values are preserved from the current TraeWork Light system.
  * - Added numeric tokens use direct values, e.g. --radius-12: 12px.
@@ -257,6 +254,13 @@
   --color-on-primary: var(--text-onbrand);
   --text-brand: #4B3FE3;
   --text-brand-hover: #6A6FFF;
+
+  /* project accent (Liquid Glass palette) */
+  --accent-teal: #206C5F;
+  --accent-teal-deep: #1F5045;
+  --accent-indigo: #4B3FE3;
+  --accent-orange: #F97316;
+  --surface-solid: #171717;
 
   /* icon */
   --icon-default: #262626;

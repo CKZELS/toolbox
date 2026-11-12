@@ -195,7 +195,7 @@ function groupByCategory(tools) {
 
 function renderStaticCategoryFilters(categories) {
   return categories.map(category => `
-        <button class="category-tag${category === '全部' ? ' is-active' : ''}" type="button" data-category="${escapeAttribute(category)}">${escapeHtml(category)}</button>`).join('')
+        <button class="category-tag${category === '全部' ? ' is-active' : ''}" type="button" data-category="${escapeAttribute(category)}" aria-pressed="${category === '全部'}">${escapeHtml(category)}</button>`).join('')
 }
 
 function renderStaticToolCard(tool, index) {
@@ -321,6 +321,6 @@ async function main() {
 }
 
 main().catch(error => {
-  console.error(error.message)
+  console.error(error)
   process.exitCode = 1
 })

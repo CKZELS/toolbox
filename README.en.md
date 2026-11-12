@@ -4,8 +4,6 @@ English | [中文](README.md)
 
 A tool collection website template maintained with Markdown. Drop fixed-format Markdown files into `content/tools/`, and the build automatically generates homepage category sections and tool detail pages.
 
-![Toolbox Preview](https://github.com/CKZELS/toolbox/releases/download/preview-assets-v1/preview.png)
-
 ## Architecture Overview
 
 This project is a static website, suitable for deployment on Cloudflare Pages or GitHub Pages.
@@ -16,6 +14,14 @@ This project is a static website, suitable for deployment on Cloudflare Pages or
 - Homepage tool cards are written into `index.html` at build time — the tool list is visible even without JavaScript
 - Search, category filtering, and detail page rendering are enhanced by `toolbox.js`
 - `generated-content.js`, `public/generated-content.js`, and `public/toolbox.js` are generated or synced by scripts — do not edit them manually
+
+## Interface and Interactions
+
+- Stone canvas, teal accent, and a system-aware dark theme
+- Animated background with support for reduced-motion preferences
+- Search, category filters, clear button, and `/`, `Ctrl+K` / `⌘K` shortcuts
+- Scroll progress, back-to-top, detail loading skeleton, and copy-link action
+- Search for `mambo` or `laoda`, or click the homepage title five times, to reveal an easter egg; clear search or close the panel to restore the default effects
 
 ## How to Add a Tool
 

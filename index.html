@@ -5,9 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Toolbox</title>
   <meta name="description" content="用 Markdown 维护的工具收藏网站模板。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23171717'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='system-ui,sans-serif' font-size='20' font-weight='700' fill='%23ffffff'%3ET%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="src/css/main.css">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body data-page="home">
+  <div class="living-bg" aria-hidden="true">
+    <div class="living-mesh"></div>
+    <div class="living-orb living-orb--a"></div>
+    <div class="living-orb living-orb--b"></div>
+    <div class="living-grain"></div>
+  </div>
+  <div class="egg-fx" aria-hidden="true">
+    <div class="egg-fx__mambo">
+      <span class="mambo-blob mambo-blob--a"></span>
+      <span class="mambo-blob mambo-blob--b"></span>
+      <span class="mambo-blob mambo-blob--c"></span>
+      <span class="mambo-blob mambo-blob--d"></span>
+      <span class="mambo-scrim"></span>
+      <span class="mambo-streak mambo-streak--a"></span>
+      <span class="mambo-streak mambo-streak--b"></span>
+      <span class="mambo-streak mambo-streak--c"></span>
+    </div>
+    <div class="egg-fx__guard">
+      <span class="guard-wash"></span>
+      <span class="guard-beam"></span>
+      <span class="guard-column guard-column--a"></span>
+      <span class="guard-column guard-column--b"></span>
+      <span class="guard-scrim"></span>
+      <span class="guard-gold"></span>
+    </div>
+    <div class="egg-fx__secret">
+      <span class="secret-halo"></span>
+      <span class="secret-ring"></span>
+      <span class="secret-scrim"></span>
+    </div>
+  </div>
   <div class="app-container">
     <header class="site-header">
       <nav class="site-nav">
@@ -26,26 +59,51 @@
 
     <main class="site-main">
       <section class="hero-section fade-in">
-        <p class="hero-kicker">Toolbox Template</p>
+        <p class="hero-kicker">Markdown-powered collection</p>
         <h1 class="hero-title">Toolbox</h1>
         <p class="hero-subtitle">一个用 Markdown 维护的工具收藏网站模板。把固定格式的工具介绍放进 content/tools/，构建时自动生成首页和详情页。</p>
         <div class="hero-search">
+          <label class="sr-only" for="tool-search">搜索工具、分类或标签</label>
           <div class="ds-input search-input">
             <span class="search-icon" aria-hidden="true">⌕</span>
-            <input type="search" data-tool-search placeholder="搜索工具、分类或标签">
+            <input id="tool-search" type="text" data-tool-search placeholder="搜索工具、分类或标签" aria-controls="tools-sections" autocomplete="off" spellcheck="false">
+            <button class="search-clear" type="button" data-search-clear aria-label="清除搜索" hidden>×</button>
+            <kbd class="search-kbd" aria-hidden="true">/</kbd>
           </div>
         </div>
       </section>
 
-      <div class="category-filters" data-category-filters aria-label="工具分类">
-        <!-- generated:category-filters:start -->
-        <button class="category-tag is-active" type="button" data-category="全部">全部</button>
-        <button class="category-tag" type="button" data-category="开发工具">开发工具</button>
-        <button class="category-tag" type="button" data-category="效率工具">效率工具</button>
-        <button class="category-tag" type="button" data-category="AI 工具">AI 工具</button>
+      <section class="easter-egg-panel" data-easter-egg hidden aria-live="polite">
+        <div class="easter-egg-beat" aria-hidden="true">
+          <span>mambo</span>
+          <span>hakimi</span>
+          <span>hidden track</span>
+        </div>
+        <div class="easter-egg-copy">
+          <p class="easter-egg-kicker" data-egg-kicker>Hidden module</p>
+          <h2 class="easter-egg-title" data-egg-title>曼波校准台已启动</h2>
+          <p class="easter-egg-text" data-egg-text>工具列表暂时进入哈基米节奏，鼠标也许会开始左右摇摆。</p>
+          <div class="easter-egg-tags" data-egg-tags>
+            <span>搜索触发</span>
+            <span>低调出现</span>
+            <span>不影响正事</span>
+          </div>
+        </div>
+        <button class="easter-egg-close" type="button" data-easter-close aria-label="关闭彩蛋">×</button>
+      </section>
+
+      <div class="category-filters-scroll" data-category-filters-scroll>
+        <div class="category-filters" data-category-filters role="group" aria-label="工具分类">
+          <!-- generated:category-filters:start -->
+        <button class="category-tag is-active" type="button" data-category="全部" aria-pressed="true">全部</button>
+        <button class="category-tag" type="button" data-category="开发工具" aria-pressed="false">开发工具</button>
+        <button class="category-tag" type="button" data-category="效率工具" aria-pressed="false">效率工具</button>
+        <button class="category-tag" type="button" data-category="AI 工具" aria-pressed="false">AI 工具</button>
         <!-- generated:category-filters:end -->
+        </div>
       </div>
-      <div class="tools-sections" data-tools-sections>
+      <p class="sr-only" data-tools-result-status aria-live="polite" aria-atomic="true"></p>
+      <div class="tools-sections" id="tools-sections" data-tools-sections>
         <!-- generated:tools-sections:start -->
         <section class="category-section">
           <div class="section-header">
@@ -119,7 +177,7 @@
     </footer>
   </div>
 
-  <script src="generated-content.js?v=328d9856ab07" defer></script>
-  <script src="toolbox.js?v=328d9856ab07" defer></script>
+  <script src="generated-content.js?v=9c2d34c54d44" defer></script>
+  <script src="toolbox.js?v=9c2d34c54d44" defer></script>
 </body>
 </html>
